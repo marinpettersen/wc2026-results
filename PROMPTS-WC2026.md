@@ -20,6 +20,15 @@ Aturan umum yang berlaku ke semua prompt:
 **Prompt 3**
 > Di workflow `fetch-results.yml`, jalankan `node scripts/validate.mjs` **sebelum** step commit. Kalau validasi gagal, batalkan commit (jangan push data rusak). Pastikan langkah ini juga jalan di `workflow_dispatch`.
 
+## M1.5 — Verifikasi coverage provider (jalankan SEBELUM mengandalkan API key)
+**Prompt 3b — Cek coverage API-Football untuk season 2026**
+> Buat `scripts/check-coverage.mjs` (zero-dep, Node 20) yang memanggil endpoint API-Football `leagues?id=1&season=2026` memakai `API_FOOTBALL_KEY` dari env, lalu cetak ringkas apakah `coverage.fixtures.events`, `coverage.fixtures.statistics_fixtures`, dan `coverage.standings` bernilai `true`. Exit non-zero + pesan jelas kalau free tier tidak mencakup events/statistics untuk season 2026, sehingga aku tahu harus pindah provider. Tanpa API key, cetak instruksi cara men-set-nya. Tambahkan script `check:coverage` di package.json. JANGAN ubah `results.json`.
+
+> Catatan: kalau hasilnya `events`/`statistics_fixtures` = false di free tier, lanjut ke Prompt 3c (adapter Highlightly) sebagai fallback. Kalau true, lewati 3c.
+
+**Prompt 3c — (opsional, fallback) Adapter Highlightly**
+> Tambahkan adapter provider kedua di `scripts/fetch-results.mjs` untuk **Highlightly** (free tier: 100 req/hari, punya scores + player stats + lineups). Implementasikan sebagai pilihan via env `PROVIDER=highlightly|apifootball` (default `apifootball`), tanpa mengubah skema `results.json` maupun invarian apa pun. Isolasi semua kode provider-specific di blok ADAPTER (`api`, `mapFixture`, `mapEvents`, `mapStats`). Pertahankan zero-dependency, freeze-logic, dan mode seed (jalan tanpa key). Update README: cara set `PROVIDER` dan secret key masing-masing. Verifikasi dulu skema respons Highlightly dari dokumentasi resminya sebelum menulis mapping — jangan menebak nama field.
+
 ## M2 — Fitur turunan (tanpa API call tambahan)
 **Prompt 4 — Klasemen**
 > Buat `src/standings.mjs` berisi fungsi murni `computeStandings(matches)` yang menghitung klasemen per grup HANYA dari laga berstatus FT/AET/PEN: main, menang, seri, kalah, GF, GA, selisih gol, poin. Urutkan per grup (poin → selisih gol → GF). Abaikan laga tanpa `group`. Jangan ubah `results.json`.
