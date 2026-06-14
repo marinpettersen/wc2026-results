@@ -2,6 +2,38 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-14 — M1.5: Verifikasi coverage provider → pivot ke Highlightly
+
+### Temuan: API-Football free tier menolak season 2026
+- Menjalankan `npm run check:coverage` dengan key API-Football menghasilkan:
+  "Free plans do not have access to this season, try from 2022 to 2024."
+- API-Football gratis tidak bisa dipakai untuk WC 2026. Pipeline tidak bisa
+  mengandalkan provider ini tanpa upgrade berbayar.
+
+### Keputusan: pivot ke Highlightly (Opsi A — free tier cukup untuk kebutuhan utama)
+- **Base URL**: `https://soccer.highlightly.net` (atau via RapidAPI)
+- **League ID WC 2026**: `1635`
+- **Free tier**: 100 req/hari, tidak butuh kartu kredit
+- **Yang tersedia di free tier**:
+  - ✓ Skor & status laga (`/matches?leagueId=1635&date=...`)
+  - ✓ Gol + top scorer (field `events[].type = "Goal"` inline di `/matches`)
+  - ✓ Klasemen (`/standings?leagueId=1635&season=2026`)
+- **Yang TIDAK diambil (berbayar / tidak diprioritaskan)**:
+  - ✗ Statistik per laga (possession, shots) — butuh PRO atau endpoint terpisah
+  - ✗ Kartu merah/kuning — di free tier belum terkonfirmasi eksplisit
+- **Konsekuensi pada skema**: field `stats` tetap `null` untuk semua laga;
+  `events` hanya berisi gol (bukan kartu). Schema dan validator tidak perlu diubah
+  karena keduanya sudah mengizinkan `null` lewat `anyOf`.
+- **Yang masih perlu dikonfirmasi setelah daftar**:
+  1. Nama header auth untuk akses langsung (bukan RapidAPI)
+  2. Apakah `leagueId=1635` + events gol benar-benar tersedia di plan BASIC
+
+### scripts/check-coverage.mjs
+- Bug UV_HANDLE_CLOSING diperbaiki: semua `process.exit()` di tengah async
+  diganti dengan `return <code>` dari dalam `main()`, dan exit code di-set via
+  `process.exitCode` setelah `main().then(...)` selesai. Event-loop Node
+  sempat bersih sebelum proses keluar.
+
 ## 2026-06-14 — M1: Type safety & validasi data
 
 ### schema/results.schema.json
