@@ -2,6 +2,30 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-14 — M1: Type safety & validasi data
+
+### schema/results.schema.json
+- JSON Schema draft-07 mendefinisikan seluruh kontrak `results.json`: root, match,
+  team, event, stats.
+- Field nullable (`group`, `venue`, `goals`, `penalty`, `events`, `stats`) pakai
+  `anyOf` + `null` — tidak pakai `type: ["string","null"]` agar kompatibel luas.
+- `additionalProperties: false` hanya di level `event` (struktur paling ketat);
+  root dan match dibiarkan terbuka agar field dinamis fetcher (`source`, dll.) tidak
+  ditolak validator di CI.
+- Enum status resmi API-Football: NS/1H/HT/2H/ET/BT/P/FT/AET/PEN/PST/CANC/ABD/SUSP/INT.
+
+### scripts/validate.mjs (zero-dep, Node 20)
+- Implementasi subset JSON Schema: type, required, enum, minimum, anyOf, $ref,
+  minItems/maxItems, additionalProperties — cukup untuk kontrak ini tanpa ajv.
+- Error handling eksplisit: file hilang → "file tidak ditemukan"; JSON korup →
+  "JSON korup — <detail>"; bukan stack trace mentah.
+- Exit 1 + daftar error jika tidak valid; exit 0 + jumlah laga jika valid.
+
+### fetch-results.yml
+- Step "Validasi results.json" disisipkan sebagai step **terpisah** setelah fetch,
+  sebelum commit. Jika exit 1, GitHub Actions menghentikan job — commit tidak jalan,
+  data rusak tidak pernah di-push.
+
 ## 2026-06-14 — M0: Setup VS Code & hygiene
 - Tambah Prettier `^3.5.3` sebagai devDependency + script `npm run format`.
 - `.prettierrc`: semi, double quotes, tabWidth 2, trailingComma es5, printWidth 100.

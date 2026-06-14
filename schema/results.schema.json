@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WC 2026 Results",
+  "type": "object",
+  "required": ["competition", "season", "updatedAt", "matches"],
+  "properties": {
+    "competition": { "type": "string" },
+    "season": { "type": "integer" },
+    "updatedAt": { "type": "string" },
+    "source": { "type": "string" },
+    "matches": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/match" }
+    }
+  },
+  "definitions": {
+    "match": {
+      "type": "object",
+      "required": ["id", "kickoff", "status", "home", "away", "penalty", "events", "stats"],
+      "properties": {
+        "id": { "type": "integer", "minimum": 1 },
+        "kickoff": { "type": "string" },
+        "group": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+        "venue": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+        "status": {
+          "type": "string",
+          "enum": ["NS", "1H", "HT", "2H", "ET", "BT", "P", "FT", "AET", "PEN", "PST", "CANC", "ABD", "SUSP", "INT"]
+        },
+        "home": { "$ref": "#/definitions/team" },
+        "away": { "$ref": "#/definitions/team" },
+        "penalty": {
+          "anyOf": [
+            {
+              "type": "object",
+              "required": ["home", "away"],
+              "properties": {
+                "home": { "type": "integer", "minimum": 0 },
+                "away": { "type": "integer", "minimum": 0 }
+              }
+            },
+            { "type": "null" }
+          ]
+        },
+        "events": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": { "$ref": "#/definitions/event" }
+            },
+            { "type": "null" }
+          ]
+        },
+        "stats": {
+          "anyOf": [{ "$ref": "#/definitions/stats" }, { "type": "null" }]
+        }
+      }
+    },
+    "team": {
+      "type": "object",
+      "required": ["name", "flag", "goals"],
+      "properties": {
+        "name": { "type": "string" },
+        "flag": { "type": "string" },
+        "goals": { "anyOf": [{ "type": "integer", "minimum": 0 }, { "type": "null" }] }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": ["team", "type", "player", "minute"],
+      "additionalProperties": false,
+      "properties": {
+        "team": { "type": "string", "enum": ["home", "away"] },
+        "type": { "type": "string", "enum": ["goal", "redcard", "yellowcard", "yellowred"] },
+        "player": { "type": "string" },
+        "minute": { "type": "string" },
+        "tag": { "type": "string", "enum": ["b.d.", "pen"] }
+      }
+    },
+    "stats": {
+      "type": "object",
+      "required": ["possession", "shots", "sot", "fouls", "offsides"],
+      "properties": {
+        "possession": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "shots": {
+          "type": "array",
+          "items": { "type": "integer" },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "sot": {
+          "type": "array",
+          "items": { "type": "integer" },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "fouls": {
+          "type": "array",
+          "items": { "type": "integer" },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "offsides": {
+          "type": "array",
+          "items": { "type": "integer" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    }
+  }
+}

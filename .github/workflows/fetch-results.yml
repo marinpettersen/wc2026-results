@@ -36,6 +36,9 @@ jobs:
           # WC_SEASON: "2026"
         run: node scripts/fetch-results.mjs
 
+      - name: Validasi results.json
+        run: node scripts/validate.mjs
+
       - name: Commit jika ada perubahan
         run: |
           if [[ -n "$(git status --porcelain results.json)" ]]; then

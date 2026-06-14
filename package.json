@@ -6,6 +6,7 @@
   "description": "PoC: GitHub Action -> results.json -> frontend statis (results-only, jam WIB)",
   "scripts": {
     "fetch": "node scripts/fetch-results.mjs",
+    "validate": "node scripts/validate.mjs",
     "dev": "npx --yes serve .",
     "format": "prettier --write ."
   },
