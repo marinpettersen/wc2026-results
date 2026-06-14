@@ -6,7 +6,11 @@
   "description": "PoC: GitHub Action -> results.json -> frontend statis (results-only, jam WIB)",
   "scripts": {
     "fetch": "node scripts/fetch-results.mjs",
-    "dev": "npx --yes serve ."
+    "dev": "npx --yes serve .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
   },
   "engines": { "node": ">=20" }
 }
