@@ -26,25 +26,35 @@ Buka alamat yang muncul. **Jangan** buka `index.html` lewat `file://` — browse
 
 ## Mengaktifkan update otomatis
 
-1. Push repo ini ke GitHub.
-2. Ambil API key gratis di **api-football.com** (atau via RapidAPI).
-3. Repo → **Settings → Secrets and variables → Actions → New repository secret**
-   - Name: `API_FOOTBALL_KEY`
-   - Value: API key kamu
-4. Tab **Actions** → jalankan workflow *Fetch World Cup results* manual untuk tes (atau tunggu cron).
-5. (Opsional) **Settings → Pages** → Deploy from branch `main` `/root` agar frontend live di internet.
+### Provider aktif: Highlightly (direkomendasikan untuk WC 2026)
 
-Hanya itu — tinggal colok key dan jalan.
+> API-Football free tier **menolak season 2026**. Gunakan Highlightly.
+
+1. Push repo ini ke GitHub.
+2. Daftar di **highlightly.net** atau **RapidAPI** → ambil API key (gratis, 100 req/hari).
+3. Repo → **Settings → Secrets and variables → Actions → New repository secret**:
+   - `HIGHLIGHTLY_KEY` — API key dari Highlightly/RapidAPI
+   - `PROVIDER` — isi `highlightly`
+   - `HIGHLIGHTLY_HOST` — *(opsional)* default: `football-highlights-api.p.rapidapi.com`
+4. Tab **Actions** → jalankan workflow *Fetch World Cup results* manual untuk tes.
+5. *(Opsional)* **Settings → Pages** → Deploy from branch `main` `/root`.
+
+### Provider alternatif: API-Football v3
+
+> ⚠️ Free tier tidak mendukung WC 2026 — butuh plan berbayar.
+
+Secrets yang diperlukan: `API_FOOTBALL_KEY` (dan `PROVIDER` dikosongkan atau diisi `apifootball`).
 
 ## Cara kerja fetcher
 
-- Sekali run = **1** call `fixtures` untuk seluruh turnamen.
+- Sekali run = **1** call `/matches` (Highlightly) atau `fixtures` (API-Football) untuk seluruh turnamen.
 - Untuk laga yang **baru** berstatus selesai, ditarik tambahan `events` (gol + kartu merah) & `statistics` (possession, tembakan, dll).
 - Laga yang sudah final **dan** punya events dianggap *frozen* → tidak di-fetch ulang (hemat kuota free tier ~100 call/hari).
-- Tanpa `API_FOOTBALL_KEY`, script keluar tanpa mengubah `results.json` (frontend tetap pakai seed).
+- Tanpa API key, script keluar tanpa mengubah `results.json` (frontend tetap pakai seed).
 
 ### Ganti provider
-Default-nya API-Football v3. Mau pindah ke Sportmonks/TheStatsAPI/dll? Edit blok **ADAPTER** di `scripts/fetch-results.mjs` (3 fungsi: `api`, `mapFixture`, `mapEvents`/`mapStats`). Schema `results.json` tetap.
+Set env `PROVIDER=highlightly` atau `PROVIDER=apifootball`. Semua kode provider-specific
+terisolasi di blok **ADAPTER A / B** di `scripts/fetch-results.mjs`. Schema `results.json` tetap sama.
 
 ## Skema `results.json`
 

@@ -2,6 +2,43 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-14 — Prompt 3c: Adapter Highlightly — versi LENGKAP (bukan Opsi A terbatas)
+
+### Koreksi dari asumsi awal
+Setelah mendapat key dan memeriksa respons API nyata: Highlightly BASIC (free tier)
+ternyata mencakup **semua** fitur yang diperlukan — bukan hanya skor & gol seperti
+diasumsikan di M1.5. Coverage aktual:
+- ✓ Skor, status, kickoff, venue
+- ✓ Events: gol, own goal, penalti, kartu merah (+ semua VAR variant)
+- ✓ Statistik per laga: possession, shots, xG, fouls, offsides
+- ✓ Klasemen (standings)
+Tidak ada yang perlu dibayar. Implementasi adapter jadi versi penuh.
+
+### Detail teknis Highlightly
+- **Base URL**: `https://soccer.highlightly.net`
+- **Auth**: dua header wajib — `x-rapidapi-key: <HIGHLIGHTLY_KEY>` dan
+  `x-rapidapi-host: <HIGHLIGHTLY_HOST>` (default: `football-highlights-api.p.rapidapi.com`)
+- **League ID WC 2026**: `1635`
+- **Free tier**: 100 req/hari, tidak butuh kartu kredit
+- **Env**: `PROVIDER=highlightly`, `HIGHLIGHTLY_KEY=<key>`, `HIGHLIGHTLY_HOST=<opsional>`
+
+### Implementasi fetch-results.mjs
+- Provider switch: `PROVIDER=highlightly|apifootball` (default `apifootball`); adapter
+  APF dipertahankan sebagai fallback bila ada key berbayar di masa depan.
+- TEAMS map: tambah alias `"Bosnia & Herzegovina"` (Highlightly pakai `&`, bukan `and`).
+- **Pagination**: WC 2026 punya 104 laga (72 grup + 32 fase gugur); loop via
+  `pagination.totalCount` + `offset` agar tidak ada laga terpotong saat limit=100.
+- **hlMapEvents** — mapping lengkap dari dokumentasi resmi Highlightly:
+  - `"Goal"` → gol biasa
+  - `"Own Goal"` → gol bunuh diri: tim dibalik + tag `"b.d."`
+  - `"Penalty"` → gol penalti: + tag `"pen"`
+  - `"Missed Penalty"`, `"Yellow Card"`, `"Substitution"`, `"VAR ..."` → diabaikan
+  - `"Red Card"` → redcard
+  - Type tak dikenal → `console.warn` (tidak crash, tidak dihitung sebagai gol)
+- **hlMapStats** — verifikasi home/away via `team.id` (bukan asumsi urutan);
+  possession dikali 100 (API kasih desimal); shots = on target + off target.
+- Freeze-logic, zero-dep, mode seed dipertahankan identik dengan sebelumnya.
+
 ## 2026-06-14 — M1.5: Verifikasi coverage provider → pivot ke Highlightly
 
 ### Temuan: API-Football free tier menolak season 2026
