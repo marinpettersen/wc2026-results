@@ -1,0 +1,12 @@
+# deps & build
+node_modules/
+dist/
+.cache/
+# env & secrets
+.env
+.env.*
+# editor & OS
+.DS_Store
+Thumbs.db
+*.log
+.vscode/*.local

@@ -1,0 +1,12 @@
+{
+  "name": "wc2026-results-poc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PoC: GitHub Action -> results.json -> frontend statis (results-only, jam WIB)",
+  "scripts": {
+    "fetch": "node scripts/fetch-results.mjs",
+    "dev": "npx --yes serve ."
+  },
+  "engines": { "node": ">=20" }
+}

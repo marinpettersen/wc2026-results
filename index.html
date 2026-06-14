@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hasil Piala Dunia 2026 — WIB</title>
+<style>
+  :root{
+    --ink:#080B14; --ink2:#0C1120; --surface:#141A2E; --surface-hi:#1B2440;
+    --line:rgba(255,255,255,.08); --line-hi:rgba(255,255,255,.16);
+    --text:#EAEEF8; --muted:#7E889F; --muted2:#5A647F;
+    --lime:#C6FF3D; --magenta:#FF4785; --cyan:#52D6FF; --violet:#B58CFF; --red:#FF3B47;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--ink);color:var(--text);
+    font-family:"Inter","Helvetica Neue",Arial,system-ui,sans-serif;line-height:1.5;padding-bottom:64px;
+    background-image:radial-gradient(1200px 600px at 80% -10%, rgba(255,71,133,.10), transparent 60%),
+                     radial-gradient(900px 500px at -10% 0%, rgba(82,214,255,.08), transparent 55%);}
+  .wrap{max-width:880px;margin:0 auto;padding:0 18px}
+
+  header{padding:54px 0 30px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--magenta);font-weight:700}
+  h1{font-family:"Arial Narrow","Inter",sans-serif;font-weight:900;line-height:.9;letter-spacing:-.02em;
+    font-size:clamp(48px,13vw,108px);text-transform:uppercase;margin:8px 0 4px;
+    background:linear-gradient(100deg,var(--text) 30%,var(--lime));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+  .hostline{font-size:clamp(14px,3.2vw,18px);font-weight:700;color:var(--text)}
+  .hostline span{color:var(--muted);font-weight:500}
+  .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;align-items:center}
+  .fact{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--muted)}
+  .fact b{color:var(--text)}
+  .updated{font-size:12px;color:var(--muted2);margin-top:10px}
+
+  .controls{position:sticky;top:0;z-index:20;background:rgba(8,11,20,.86);backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:8px}
+  .controls .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .search{flex:1;min-width:160px;display:flex;align-items:center;gap:8px;background:var(--surface);
+    border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+  .search:focus-within{border-color:var(--line-hi)}
+  .search svg{flex:none;opacity:.5}
+  .search input{flex:1;background:none;border:none;color:var(--text);font-size:14px;outline:none;font-family:inherit}
+  .search input::placeholder{color:var(--muted)}
+  .seg{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px}
+  .seg button{background:none;border:none;color:var(--muted);font-family:inherit;font-size:12.5px;font-weight:700;
+    padding:6px 11px;border-radius:7px;cursor:pointer;white-space:nowrap}
+  .seg button.on{background:var(--surface-hi);color:var(--text)}
+
+  .day{margin-top:26px}
+  .day-head{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .day-dow{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--lime)}
+  .day-date{font-size:13px;color:var(--muted);font-weight:600}
+  .day-count{margin-left:auto;font-size:12px;color:var(--muted2)}
+
+  .match{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:13px 15px;margin-bottom:9px;transition:border-color .15s}
+  .match:hover{border-color:var(--line-hi)}
+  .match.upcoming{opacity:.92}
+  .match.live{border-color:rgba(255,59,71,.5)}
+  .match-main{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:center}
+
+  .timecol{text-align:center;border-right:1px solid var(--line);padding-right:14px}
+  .time{font-size:22px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+  .wib{font-size:10px;font-weight:700;letter-spacing:.14em;color:var(--muted);margin-top:3px}
+  .tod{display:inline-block;margin-top:6px;font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:5px}
+  .tod.dini{color:var(--magenta);background:rgba(255,71,133,.12)}
+  .tod.pagi{color:var(--cyan);background:rgba(82,214,255,.12)}
+  .tod.siang{color:var(--lime);background:rgba(198,255,61,.13)}
+  .tod.malam{color:var(--violet);background:rgba(181,140,255,.14)}
+  .ft{display:inline-block;margin-top:6px;font-size:9px;font-weight:800;color:var(--lime);border:1px solid rgba(198,255,61,.35);border-radius:5px;padding:2px 6px;letter-spacing:.08em}
+  .livebadge{display:inline-flex;align-items:center;gap:5px;margin-top:6px;font-size:9px;font-weight:800;color:var(--red);
+    border:1px solid rgba(255,59,71,.4);border-radius:5px;padding:2px 6px;letter-spacing:.06em}
+  .livedot{width:6px;height:6px;border-radius:50%;background:var(--red);animation:bl 1.1s infinite}
+  @keyframes bl{0%,100%{opacity:1}50%{opacity:.25}}
+
+  .teams{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px}
+  .team{display:flex;align-items:center;gap:9px;min-width:0}
+  .team.home{justify-content:flex-end;text-align:right}
+  .team.away{justify-content:flex-start}
+  .flag{font-size:24px;line-height:1;flex:none}
+  .tname{font-size:14px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .win{color:var(--lime)}
+  .mid{text-align:center;min-width:54px}
+  .vs{font-size:11px;font-weight:800;color:var(--muted)}
+  .live-q{font-size:11px;font-weight:800;color:var(--red)}
+  .score{font-size:21px;font-weight:900;letter-spacing:.03em;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .pen{display:block;font-size:10px;color:var(--muted);font-weight:700;margin-top:1px}
+
+  .detail-toggle{display:flex;align-items:center;gap:6px;margin:11px auto 0;background:none;border:1px solid var(--line);
+    color:var(--muted);font-family:inherit;font-size:11.5px;font-weight:700;padding:5px 12px;border-radius:8px;cursor:pointer}
+  .detail-toggle:hover{border-color:var(--line-hi);color:var(--text)}
+  .chev{transition:transform .2s}.match.open .chev{transform:rotate(180deg)}
+  .detail{display:none;margin-top:12px;padding-top:13px;border-top:1px dashed var(--line)}
+  .match.open .detail{display:block}
+  .venue{font-size:11.5px;color:var(--muted2);margin-bottom:11px;text-align:center}.venue::before{content:"📍 "}
+  .goals{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;margin-bottom:13px}
+  .gc-title{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:5px}
+  .goalcol.away{text-align:right}
+  .goal{font-size:12.5px;font-weight:600;margin-bottom:3px}
+  .goal .gmin{color:var(--lime);font-weight:800;font-variant-numeric:tabular-nums;margin-right:5px}
+  .goalcol.away .goal .gmin{margin-right:0;margin-left:5px}
+  .goal .gtag{color:var(--muted);font-size:11px}
+  .stat{margin:9px 0}
+  .stat-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+  .stat-val{font-size:13px;font-weight:800;font-variant-numeric:tabular-nums;min-width:42px}
+  .stat-val.home{color:var(--lime)}.stat-val.away{text-align:right;color:var(--magenta)}
+  .stat-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+  .bar{display:flex;height:5px;border-radius:3px;overflow:hidden;background:#222C46}
+  .bar .h{background:var(--lime)}.bar .a{background:var(--magenta)}
+  .cards{margin-top:11px;font-size:12px;color:var(--muted)}
+  .cards .cd{display:inline-flex;align-items:center;gap:5px;margin:2px 9px 2px 0}
+  .redcard{width:9px;height:12px;background:var(--red);border-radius:2px;display:inline-block}
+
+  .state{text-align:center;color:var(--muted);padding:60px 18px;font-size:14px;line-height:1.7}
+  .state code{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:13px;color:var(--cyan)}
+  footer{margin-top:46px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7}
+  footer b{color:var(--text)}
+
+  @media(max-width:540px){
+    .match-main{grid-template-columns:64px 1fr;gap:10px}.timecol{padding-right:9px}
+    .time{font-size:18px}.flag{font-size:20px}.tname{font-size:12px}.teams{gap:5px}.score{font-size:18px}
+    .day-count{display:none}.goals{gap:8px 10px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">FIFA World Cup · Results</div>
+    <h1>Piala<br>Dunia 2026</h1>
+    <div class="hostline">Amerika Serikat · Kanada · Meksiko <span>— semua jam WIB</span></div>
+    <div class="facts" id="facts"></div>
+    <div class="updated" id="updated"></div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <label class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="q" type="text" placeholder="Cari tim…">
+    </label>
+    <div class="seg" id="seg">
+      <button data-f="all" class="on">Semua</button>
+      <button data-f="finished">Selesai</button>
+      <button data-f="live">Live</button>
+      <button data-f="upcoming">Akan datang</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div id="list"></div>
+  <div class="state" id="state" style="display:none"></div>
+  <footer id="footer"></footer>
+</main>
+
+<script>
+const FINAL = new Set(["FT","AET","PEN"]);
+const LIVE  = new Set(["1H","HT","2H","ET","BT","P","LIVE","INT","SUSP"]);
+
+const TZ = "Asia/Jakarta";
+const fmtTime = iso => new Intl.DateTimeFormat("id-ID",{timeZone:TZ,hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(iso)).replace(":",".");
+const dayKey  = iso => new Intl.DateTimeFormat("en-CA",{timeZone:TZ,year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(iso));
+const fmtDow  = iso => new Intl.DateTimeFormat("id-ID",{timeZone:TZ,weekday:"long"}).format(new Date(iso));
+const fmtDate = iso => new Intl.DateTimeFormat("id-ID",{timeZone:TZ,day:"numeric",month:"long",year:"numeric"}).format(new Date(iso));
+const hourWIB = iso => Number(new Intl.DateTimeFormat("en-GB",{timeZone:TZ,hour:"2-digit",hour12:false}).format(new Date(iso)));
+function tod(iso){const h=hourWIB(iso);
+  if(h<5)return["dini","Dini hari"];if(h<11)return["pagi","Pagi"];if(h<18)return["siang","Siang"];return["malam","Malam"];}
+
+const qEl=document.getElementById("q");
+const listEl=document.getElementById("list");
+const stateEl=document.getElementById("state");
+let DATA=null, filter="all";
+
+document.getElementById("seg").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b)return;
+  filter=b.dataset.f;
+  [...e.currentTarget.children].forEach(x=>x.classList.toggle("on",x===b));
+  render();
+});
+qEl.addEventListener("input",render);
+
+function bucket(m){
+  if(FINAL.has(m.status))return"finished";
+  if(LIVE.has(m.status))return"live";
+  return"upcoming";
+}
+function statBar(label,h,a){
+  const tot=h+a||1,hp=Math.round(h/tot*100);
+  return `<div class="stat"><div class="stat-row"><span class="stat-val home">${h}</span>
+    <span class="stat-label">${label}</span><span class="stat-val away">${a}</span></div>
+    <div class="bar"><span class="h" style="width:${hp}%"></span><span class="a" style="width:${100-hp}%"></span></div></div>`;
+}
+function goalsHTML(m){
+  const gh=m.events.filter(e=>e.type==="goal"&&e.team==="home");
+  const ga=m.events.filter(e=>e.type==="goal"&&e.team==="away");
+  const line=(g,away)=>{const tag=g.tag?` <span class="gtag">(${g.tag})</span>`:"";
+    return away?`<div class="goal">${g.player}${tag} <span class="gmin">${g.minute}'</span></div>`
+               :`<div class="goal"><span class="gmin">${g.minute}'</span> ${g.player}${tag}</div>`;};
+  const col=(arr,away)=>arr.length?arr.map(g=>line(g,away)).join(""):`<div class="goal" style="color:var(--muted2)">—</div>`;
+  return `<div class="goals">
+    <div class="goalcol home"><div class="gc-title">⚽ ${m.home.name}</div>${col(gh,false)}</div>
+    <div class="goalcol away"><div class="gc-title">${m.away.name} ⚽</div>${col(ga,true)}</div></div>`;
+}
+function detailHTML(m){
+  let s = m.venue?`<div class="venue">${m.venue}${m.group?" · Grup "+m.group:""}</div>`:"";
+  s += goalsHTML(m);
+  if(m.stats){const t=m.stats;
+    s+=statBar("Penguasaan bola %",t.possession[0],t.possession[1]);
+    s+=statBar("Tembakan",t.shots[0],t.shots[1]);
+    s+=statBar("Tepat sasaran",t.sot[0],t.sot[1]);
+    s+=statBar("Pelanggaran",t.fouls[0],t.fouls[1]);
+    s+=statBar("Offside",t.offsides[0],t.offsides[1]);
+  }
+  const reds=m.events.filter(e=>e.type==="redcard");
+  if(reds.length) s+=`<div class="cards"><b style="color:var(--text)">Kartu merah:</b> `+
+    reds.map(c=>`<span class="cd"><span class="redcard"></span>${c.player} ${c.minute}' (${c.team==="home"?m.home.name:m.away.name})</span>`).join("")+`</div>`;
+  return s;
+}
+
+function render(){
+  if(!DATA) return;
+  const q=qEl.value.trim().toLowerCase();
+  const rows=DATA.matches.filter(m=>{
+    if(filter!=="all"&&bucket(m)!==filter)return false;
+    if(q&&!(m.home.name.toLowerCase().includes(q)||m.away.name.toLowerCase().includes(q)))return false;
+    return true;
+  });
+  listEl.innerHTML="";
+  if(!rows.length){stateEl.style.display="block";stateEl.textContent="Tidak ada laga yang cocok.";return;}
+  stateEl.style.display="none";
+
+  const groups={};
+  rows.forEach(m=>{(groups[dayKey(m.kickoff)] ||= []).push(m);});
+  Object.keys(groups).sort().forEach(k=>{
+    const ms=groups[k], iso=ms[0].kickoff;
+    const sec=document.createElement("section");sec.className="day";
+    sec.innerHTML=`<div class="day-head"><span class="day-dow">${fmtDow(iso)}</span>
+      <span class="day-date">${fmtDate(iso)}</span><span class="day-count">${ms.length} laga</span></div>`;
+    ms.forEach(m=>{
+      const b=bucket(m);
+      const el=document.createElement("div");
+      el.className="match "+b;
+      let badge,mid,hCls="",aCls="";
+      if(b==="finished"){
+        if(m.home.goals>m.away.goals)hCls="win";else if(m.away.goals>m.home.goals)aCls="win";
+        badge=`<span class="ft">SELESAI</span>`;
+        const pen=m.penalty?`<span class="pen">pen ${m.penalty.home}-${m.penalty.away}</span>`:"";
+        mid=`<div class="mid"><div class="score">${m.home.goals}–${m.away.goals}</div>${pen}</div>`;
+      }else if(b==="live"){
+        badge=`<span class="livebadge"><span class="livedot"></span>LIVE</span>`;
+        mid=`<div class="mid"><span class="live-q">• • •</span></div>`; // skor sengaja disembunyikan
+      }else{
+        const[c,l]=tod(m.kickoff);badge=`<span class="tod ${c}">${l}</span>`;
+        mid=`<div class="mid"><span class="vs">VS</span></div>`;
+      }
+      el.innerHTML=`<div class="match-main">
+        <div class="timecol"><div class="time">${fmtTime(m.kickoff)}</div><div class="wib">WIB</div>${badge}</div>
+        <div class="teams">
+          <div class="team home"><span class="tname ${hCls}">${m.home.name}</span><span class="flag">${m.home.flag}</span></div>
+          ${mid}
+          <div class="team away"><span class="flag">${m.away.flag}</span><span class="tname ${aCls}">${m.away.name}</span></div>
+        </div></div>
+        ${b==="finished"?`<button class="detail-toggle">Statistik &amp; gol <span class="chev">▾</span></button><div class="detail">${detailHTML(m)}</div>`:""}`;
+      if(b==="finished"){el.querySelector(".detail-toggle").addEventListener("click",()=>el.classList.toggle("open"));}
+      sec.appendChild(el);
+    });
+    listEl.appendChild(sec);
+  });
+}
+
+function setFacts(){
+  const done=DATA.matches.filter(m=>FINAL.has(m.status)).length;
+  const live=DATA.matches.filter(m=>LIVE.has(m.status)).length;
+  const goals=DATA.matches.reduce((s,m)=>s+(FINAL.has(m.status)?(m.home.goals||0)+(m.away.goals||0):0),0);
+  document.getElementById("facts").innerHTML=
+    `<div class="fact"><b>${DATA.matches.length}</b> laga</div>
+     <div class="fact"><b>${done}</b> selesai</div>
+     ${live?`<div class="fact" style="color:var(--red)"><b>${live}</b> berlangsung</div>`:""}
+     <div class="fact"><b>${goals}</b> gol</div>`;
+  if(DATA.updatedAt){
+    const u=new Intl.DateTimeFormat("id-ID",{timeZone:TZ,dateStyle:"medium",timeStyle:"short"}).format(new Date(DATA.updatedAt));
+    document.getElementById("updated").textContent=`Diperbarui: ${u} WIB · sumber: ${DATA.source||"results.json"}`;
+  }
+  document.getElementById("footer").innerHTML=
+    `<b>Cara kerja:</b> GitHub Action mengambil hasil laga yang sudah selesai dan menulis <code style="color:var(--cyan)">results.json</code>; halaman ini membacanya.
+     Skor hanya muncul saat status laga <b>FT/AET/PEN</b>. Laga berlangsung ditandai <b style="color:var(--red)">LIVE</b> tanpa skor.`;
+}
+
+fetch("results.json",{cache:"no-store"})
+  .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
+  .then(d=>{DATA=d;setFacts();render();})
+  .catch(err=>{
+    stateEl.style.display="block";
+    stateEl.innerHTML=`Gagal memuat <code>results.json</code> (${err.message}).<br><br>
+      Kalau membuka file ini langsung lewat <code>file://</code>, browser memblokir fetch.<br>
+      Jalankan server lokal dulu:<br><br><code>npx serve .</code> &nbsp;atau&nbsp; <code>python3 -m http.server</code><br><br>
+      lalu buka alamat yang ditampilkan.`;
+  });
+</script>
+</body>
+</html>

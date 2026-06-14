@@ -1,0 +1,1585 @@
+{
+  "competition": "FIFA World Cup 2026",
+  "season": 2026,
+  "updatedAt": "2026-06-13T12:59:44.553Z",
+  "source": "seed (manual) — akan diperbarui oleh GitHub Action",
+  "matches": [
+    {
+      "id": 1,
+      "kickoff": "2026-06-12T02:00:00+07:00",
+      "group": "A",
+      "venue": "Estadio Azteca, Mexico City",
+      "status": "FT",
+      "home": {
+        "name": "Meksiko",
+        "flag": "🇲🇽",
+        "goals": 2
+      },
+      "away": {
+        "name": "Afrika Selatan",
+        "flag": "🇿🇦",
+        "goals": 0
+      },
+      "penalty": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Quiñones",
+          "minute": "9"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Jiménez",
+          "minute": "67"
+        },
+        {
+          "team": "away",
+          "type": "redcard",
+          "player": "Sithole",
+          "minute": "50"
+        },
+        {
+          "team": "away",
+          "type": "redcard",
+          "player": "Zwane",
+          "minute": "84"
+        },
+        {
+          "team": "home",
+          "type": "redcard",
+          "player": "Montes",
+          "minute": "90+2"
+        }
+      ],
+      "stats": null
+    },
+    {
+      "id": 2,
+      "kickoff": "2026-06-12T09:00:00+07:00",
+      "group": "A",
+      "venue": "Estadio Guadalajara (Akron)",
+      "status": "FT",
+      "home": {
+        "name": "Korea Selatan",
+        "flag": "🇰🇷",
+        "goals": 2
+      },
+      "away": {
+        "name": "Ceko",
+        "flag": "🇨🇿",
+        "goals": 1
+      },
+      "penalty": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "Krejčí",
+          "minute": "59"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Hwang In-beom",
+          "minute": "67"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Oh Hyeon-gyu",
+          "minute": "80"
+        }
+      ],
+      "stats": {
+        "possession": [
+          64,
+          36
+        ],
+        "shots": [
+          14,
+          6
+        ],
+        "sot": [
+          7,
+          3
+        ],
+        "fouls": [
+          8,
+          13
+        ],
+        "offsides": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "kickoff": "2026-06-13T02:00:00+07:00",
+      "group": "B",
+      "venue": "BMO Field, Toronto",
+      "status": "FT",
+      "home": {
+        "name": "Kanada",
+        "flag": "🇨🇦",
+        "goals": 1
+      },
+      "away": {
+        "name": "Bosnia & Herzegovina",
+        "flag": "🇧🇦",
+        "goals": 1
+      },
+      "penalty": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "Lukić",
+          "minute": "21"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Larin",
+          "minute": "78"
+        }
+      ],
+      "stats": null
+    },
+    {
+      "id": 4,
+      "kickoff": "2026-06-13T08:00:00+07:00",
+      "group": "D",
+      "venue": "SoFi Stadium, Los Angeles",
+      "status": "FT",
+      "home": {
+        "name": "Amerika Serikat",
+        "flag": "🇺🇸",
+        "goals": 4
+      },
+      "away": {
+        "name": "Paraguay",
+        "flag": "🇵🇾",
+        "goals": 1
+      },
+      "penalty": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Bobadilla",
+          "minute": "7",
+          "tag": "b.d."
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Balogun",
+          "minute": "31"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Balogun",
+          "minute": "45+5"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "Mauricio",
+          "minute": "73"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Reyna",
+          "minute": "90+8"
+        }
+      ],
+      "stats": {
+        "possession": [
+          63,
+          37
+        ],
+        "shots": [
+          17,
+          8
+        ],
+        "sot": [
+          6,
+          1
+        ],
+        "fouls": [
+          13,
+          17
+        ],
+        "offsides": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "kickoff": "2026-06-14T02:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Qatar",
+        "flag": "🇶🇦",
+        "goals": null
+      },
+      "away": {
+        "name": "Swiss",
+        "flag": "🇨🇭",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 6,
+      "kickoff": "2026-06-14T05:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Brasil",
+        "flag": "🇧🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Maroko",
+        "flag": "🇲🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 7,
+      "kickoff": "2026-06-14T08:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Haiti",
+        "flag": "🇭🇹",
+        "goals": null
+      },
+      "away": {
+        "name": "Skotlandia",
+        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 8,
+      "kickoff": "2026-06-14T11:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Australia",
+        "flag": "🇦🇺",
+        "goals": null
+      },
+      "away": {
+        "name": "Turki",
+        "flag": "🇹🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 9,
+      "kickoff": "2026-06-15T00:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Jerman",
+        "flag": "🇩🇪",
+        "goals": null
+      },
+      "away": {
+        "name": "Curacao",
+        "flag": "🇨🇼",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 10,
+      "kickoff": "2026-06-15T03:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Belanda",
+        "flag": "🇳🇱",
+        "goals": null
+      },
+      "away": {
+        "name": "Jepang",
+        "flag": "🇯🇵",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 11,
+      "kickoff": "2026-06-15T06:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Pantai Gading",
+        "flag": "🇨🇮",
+        "goals": null
+      },
+      "away": {
+        "name": "Ekuador",
+        "flag": "🇪🇨",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 12,
+      "kickoff": "2026-06-15T09:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Swedia",
+        "flag": "🇸🇪",
+        "goals": null
+      },
+      "away": {
+        "name": "Tunisia",
+        "flag": "🇹🇳",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 13,
+      "kickoff": "2026-06-15T23:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Spanyol",
+        "flag": "🇪🇸",
+        "goals": null
+      },
+      "away": {
+        "name": "Tanjung Verde",
+        "flag": "🇨🇻",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 14,
+      "kickoff": "2026-06-16T02:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Belgia",
+        "flag": "🇧🇪",
+        "goals": null
+      },
+      "away": {
+        "name": "Mesir",
+        "flag": "🇪🇬",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 15,
+      "kickoff": "2026-06-16T05:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Arab Saudi",
+        "flag": "🇸🇦",
+        "goals": null
+      },
+      "away": {
+        "name": "Uruguay",
+        "flag": "🇺🇾",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 16,
+      "kickoff": "2026-06-16T08:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Iran",
+        "flag": "🇮🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Selandia Baru",
+        "flag": "🇳🇿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 17,
+      "kickoff": "2026-06-17T02:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Prancis",
+        "flag": "🇫🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Senegal",
+        "flag": "🇸🇳",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 18,
+      "kickoff": "2026-06-17T05:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Irak",
+        "flag": "🇮🇶",
+        "goals": null
+      },
+      "away": {
+        "name": "Norwegia",
+        "flag": "🇳🇴",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 19,
+      "kickoff": "2026-06-17T08:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Argentina",
+        "flag": "🇦🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Aljazair",
+        "flag": "🇩🇿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 20,
+      "kickoff": "2026-06-17T11:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Austria",
+        "flag": "🇦🇹",
+        "goals": null
+      },
+      "away": {
+        "name": "Yordania",
+        "flag": "🇯🇴",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 21,
+      "kickoff": "2026-06-18T00:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "goals": null
+      },
+      "away": {
+        "name": "Kongo",
+        "flag": "🇨🇩",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 22,
+      "kickoff": "2026-06-18T03:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Inggris",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "goals": null
+      },
+      "away": {
+        "name": "Kroasia",
+        "flag": "🇭🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 23,
+      "kickoff": "2026-06-18T06:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Ghana",
+        "flag": "🇬🇭",
+        "goals": null
+      },
+      "away": {
+        "name": "Panama",
+        "flag": "🇵🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 24,
+      "kickoff": "2026-06-18T09:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Uzbekistan",
+        "flag": "🇺🇿",
+        "goals": null
+      },
+      "away": {
+        "name": "Kolombia",
+        "flag": "🇨🇴",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 25,
+      "kickoff": "2026-06-18T23:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Ceko",
+        "flag": "🇨🇿",
+        "goals": null
+      },
+      "away": {
+        "name": "Afrika Selatan",
+        "flag": "🇿🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 26,
+      "kickoff": "2026-06-19T02:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Swiss",
+        "flag": "🇨🇭",
+        "goals": null
+      },
+      "away": {
+        "name": "Bosnia & Herzegovina",
+        "flag": "🇧🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 27,
+      "kickoff": "2026-06-19T05:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Kanada",
+        "flag": "🇨🇦",
+        "goals": null
+      },
+      "away": {
+        "name": "Qatar",
+        "flag": "🇶🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 28,
+      "kickoff": "2026-06-19T08:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Meksiko",
+        "flag": "🇲🇽",
+        "goals": null
+      },
+      "away": {
+        "name": "Korea Selatan",
+        "flag": "🇰🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 29,
+      "kickoff": "2026-06-20T02:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Amerika Serikat",
+        "flag": "🇺🇸",
+        "goals": null
+      },
+      "away": {
+        "name": "Australia",
+        "flag": "🇦🇺",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 30,
+      "kickoff": "2026-06-20T05:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Skotlandia",
+        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "goals": null
+      },
+      "away": {
+        "name": "Maroko",
+        "flag": "🇲🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 31,
+      "kickoff": "2026-06-20T07:30:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Brasil",
+        "flag": "🇧🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Haiti",
+        "flag": "🇭🇹",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 32,
+      "kickoff": "2026-06-20T10:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Turki",
+        "flag": "🇹🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Paraguay",
+        "flag": "🇵🇾",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 33,
+      "kickoff": "2026-06-21T00:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Belanda",
+        "flag": "🇳🇱",
+        "goals": null
+      },
+      "away": {
+        "name": "Swedia",
+        "flag": "🇸🇪",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 34,
+      "kickoff": "2026-06-21T03:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Jerman",
+        "flag": "🇩🇪",
+        "goals": null
+      },
+      "away": {
+        "name": "Pantai Gading",
+        "flag": "🇨🇮",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 35,
+      "kickoff": "2026-06-21T07:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Ekuador",
+        "flag": "🇪🇨",
+        "goals": null
+      },
+      "away": {
+        "name": "Curacao",
+        "flag": "🇨🇼",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 36,
+      "kickoff": "2026-06-21T11:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Tunisia",
+        "flag": "🇹🇳",
+        "goals": null
+      },
+      "away": {
+        "name": "Jepang",
+        "flag": "🇯🇵",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 37,
+      "kickoff": "2026-06-21T23:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Spanyol",
+        "flag": "🇪🇸",
+        "goals": null
+      },
+      "away": {
+        "name": "Arab Saudi",
+        "flag": "🇸🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 38,
+      "kickoff": "2026-06-22T02:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Belgia",
+        "flag": "🇧🇪",
+        "goals": null
+      },
+      "away": {
+        "name": "Iran",
+        "flag": "🇮🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 39,
+      "kickoff": "2026-06-22T05:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Uruguay",
+        "flag": "🇺🇾",
+        "goals": null
+      },
+      "away": {
+        "name": "Tanjung Verde",
+        "flag": "🇨🇻",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 40,
+      "kickoff": "2026-06-22T08:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Selandia Baru",
+        "flag": "🇳🇿",
+        "goals": null
+      },
+      "away": {
+        "name": "Mesir",
+        "flag": "🇪🇬",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 41,
+      "kickoff": "2026-06-23T00:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Argentina",
+        "flag": "🇦🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Austria",
+        "flag": "🇦🇹",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 42,
+      "kickoff": "2026-06-23T04:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Prancis",
+        "flag": "🇫🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Irak",
+        "flag": "🇮🇶",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 43,
+      "kickoff": "2026-06-23T07:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Norwegia",
+        "flag": "🇳🇴",
+        "goals": null
+      },
+      "away": {
+        "name": "Senegal",
+        "flag": "🇸🇳",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 44,
+      "kickoff": "2026-06-23T10:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Yordania",
+        "flag": "🇯🇴",
+        "goals": null
+      },
+      "away": {
+        "name": "Aljazair",
+        "flag": "🇩🇿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 45,
+      "kickoff": "2026-06-24T00:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "goals": null
+      },
+      "away": {
+        "name": "Uzbekistan",
+        "flag": "🇺🇿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 46,
+      "kickoff": "2026-06-24T03:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Inggris",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "goals": null
+      },
+      "away": {
+        "name": "Ghana",
+        "flag": "🇬🇭",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 47,
+      "kickoff": "2026-06-24T06:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Panama",
+        "flag": "🇵🇦",
+        "goals": null
+      },
+      "away": {
+        "name": "Kroasia",
+        "flag": "🇭🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 48,
+      "kickoff": "2026-06-24T09:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Kolombia",
+        "flag": "🇨🇴",
+        "goals": null
+      },
+      "away": {
+        "name": "Kongo",
+        "flag": "🇨🇩",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 49,
+      "kickoff": "2026-06-25T02:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Swiss",
+        "flag": "🇨🇭",
+        "goals": null
+      },
+      "away": {
+        "name": "Kanada",
+        "flag": "🇨🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 50,
+      "kickoff": "2026-06-25T02:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Bosnia & Herzegovina",
+        "flag": "🇧🇦",
+        "goals": null
+      },
+      "away": {
+        "name": "Qatar",
+        "flag": "🇶🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 51,
+      "kickoff": "2026-06-25T05:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Skotlandia",
+        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "goals": null
+      },
+      "away": {
+        "name": "Brasil",
+        "flag": "🇧🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 52,
+      "kickoff": "2026-06-25T05:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Maroko",
+        "flag": "🇲🇦",
+        "goals": null
+      },
+      "away": {
+        "name": "Haiti",
+        "flag": "🇭🇹",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 53,
+      "kickoff": "2026-06-25T08:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Ceko",
+        "flag": "🇨🇿",
+        "goals": null
+      },
+      "away": {
+        "name": "Meksiko",
+        "flag": "🇲🇽",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 54,
+      "kickoff": "2026-06-25T08:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Afrika Selatan",
+        "flag": "🇿🇦",
+        "goals": null
+      },
+      "away": {
+        "name": "Korea Selatan",
+        "flag": "🇰🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 55,
+      "kickoff": "2026-06-26T03:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Curacao",
+        "flag": "🇨🇼",
+        "goals": null
+      },
+      "away": {
+        "name": "Pantai Gading",
+        "flag": "🇨🇮",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 56,
+      "kickoff": "2026-06-26T03:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Ekuador",
+        "flag": "🇪🇨",
+        "goals": null
+      },
+      "away": {
+        "name": "Jerman",
+        "flag": "🇩🇪",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 57,
+      "kickoff": "2026-06-26T06:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Jepang",
+        "flag": "🇯🇵",
+        "goals": null
+      },
+      "away": {
+        "name": "Swedia",
+        "flag": "🇸🇪",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 58,
+      "kickoff": "2026-06-26T06:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Tunisia",
+        "flag": "🇹🇳",
+        "goals": null
+      },
+      "away": {
+        "name": "Belanda",
+        "flag": "🇳🇱",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 59,
+      "kickoff": "2026-06-26T09:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Turki",
+        "flag": "🇹🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Amerika Serikat",
+        "flag": "🇺🇸",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 60,
+      "kickoff": "2026-06-26T09:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Paraguay",
+        "flag": "🇵🇾",
+        "goals": null
+      },
+      "away": {
+        "name": "Australia",
+        "flag": "🇦🇺",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 61,
+      "kickoff": "2026-06-27T02:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Norwegia",
+        "flag": "🇳🇴",
+        "goals": null
+      },
+      "away": {
+        "name": "Prancis",
+        "flag": "🇫🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 62,
+      "kickoff": "2026-06-27T02:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Senegal",
+        "flag": "🇸🇳",
+        "goals": null
+      },
+      "away": {
+        "name": "Irak",
+        "flag": "🇮🇶",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 63,
+      "kickoff": "2026-06-27T07:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Tanjung Verde",
+        "flag": "🇨🇻",
+        "goals": null
+      },
+      "away": {
+        "name": "Arab Saudi",
+        "flag": "🇸🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 64,
+      "kickoff": "2026-06-27T07:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Uruguay",
+        "flag": "🇺🇾",
+        "goals": null
+      },
+      "away": {
+        "name": "Spanyol",
+        "flag": "🇪🇸",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 65,
+      "kickoff": "2026-06-27T10:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Mesir",
+        "flag": "🇪🇬",
+        "goals": null
+      },
+      "away": {
+        "name": "Iran",
+        "flag": "🇮🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 66,
+      "kickoff": "2026-06-27T10:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Selandia Baru",
+        "flag": "🇳🇿",
+        "goals": null
+      },
+      "away": {
+        "name": "Belgia",
+        "flag": "🇧🇪",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 67,
+      "kickoff": "2026-06-28T04:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Panama",
+        "flag": "🇵🇦",
+        "goals": null
+      },
+      "away": {
+        "name": "Inggris",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 68,
+      "kickoff": "2026-06-28T04:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Kroasia",
+        "flag": "🇭🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Ghana",
+        "flag": "🇬🇭",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 69,
+      "kickoff": "2026-06-28T06:30:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Kolombia",
+        "flag": "🇨🇴",
+        "goals": null
+      },
+      "away": {
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 70,
+      "kickoff": "2026-06-28T06:30:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Kongo",
+        "flag": "🇨🇩",
+        "goals": null
+      },
+      "away": {
+        "name": "Uzbekistan",
+        "flag": "🇺🇿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 71,
+      "kickoff": "2026-06-28T09:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Aljazair",
+        "flag": "🇩🇿",
+        "goals": null
+      },
+      "away": {
+        "name": "Austria",
+        "flag": "🇦🇹",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 72,
+      "kickoff": "2026-06-28T09:00:00+07:00",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Yordania",
+        "flag": "🇯🇴",
+        "goals": null
+      },
+      "away": {
+        "name": "Argentina",
+        "flag": "🇦🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    }
+  ]
+}
