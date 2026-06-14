@@ -9,10 +9,14 @@
     "validate": "node scripts/validate.mjs",
     "check:coverage": "node scripts/check-coverage.mjs",
     "dev": "npx --yes serve .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "vitest run"
   },
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "vitest": "^4.1.8"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }

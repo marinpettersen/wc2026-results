@@ -2,6 +2,30 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-15 — M3: Vitest unit tests untuk standings & top scorers
+
+- Install Vitest ^4.1.8 sebagai devDependency; script `npm test` → `vitest run`.
+- `src/standings.test.mjs`: 14 unit test untuk `computeStandings` dan `topScorers`,
+  semuanya menggunakan fixture minimal buatan sendiri (tidak impor `results.json`).
+- Kasus yang dicover: menang/seri/kalah, GF/GA/GD, tie-break (poin→GD→GF),
+  laga non-FT diabaikan, laga `group:null` diabaikan, akumulasi multi-laga,
+  gol bunuh diri (`b.d.`) tidak dihitung, urut menurun, info tim dari sisi yang benar.
+- Satu perbaikan ekspektasi test: Delta (GD +3) memang di atas Alpha (GD +1)
+  saat poin sama — tie-break benar, bukan bug di fungsi.
+- **14/14 hijau**.
+
+## 2026-06-15 — Baseline regenerasi dari Highlightly, deduplikasi seed
+
+- Seed `results.json` diregerasi ulang menggunakan ID fixture dari Highlightly (bukan
+  API-Football). Total: **72 laga** terkonfirmasi (sebelumnya 144 — duplikat dihapus).
+- Penyebab duplikat: fixture lama pakai ID APF yang berbeda dengan ID Highlightly;
+  merge naif menghasilkan dua entri per laga. Fix: baseline di-generate ulang bersih.
+- Field `round` di-map ke `group` agar frontend bisa menampilkan label grup (A–L).
+- **Verifikasi end-to-end lolos**: 8 laga berstatus `FT` tampil skor + events + stats
+  dari API Highlightly (bukan seed); timezone WIB benar via `Intl.DateTimeFormat`.
+- Semua tes visual lokal lolos. Commit: *"fix: regenerate baseline dari Highlightly,
+  hapus duplikasi seed (144→72), map round→group"*.
+
 ## 2026-06-14 — Prompt 3c: Adapter Highlightly — versi LENGKAP (bukan Opsi A terbatas)
 
 ### Koreksi dari asumsi awal
