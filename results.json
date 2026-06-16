@@ -1,14 +1,14 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-13T12:59:44.553Z",
-  "source": "seed (manual) — akan diperbarui oleh GitHub Action",
+  "updatedAt": "2026-06-14T14:24:29.314Z",
+  "source": "highlightly league 1635 season 2026",
   "matches": [
     {
-      "id": 1,
-      "kickoff": "2026-06-12T02:00:00+07:00",
-      "group": "A",
-      "venue": "Estadio Azteca, Mexico City",
+      "id": 1267453803,
+      "kickoff": "2026-06-11T19:00:00.000Z",
+      "group": null,
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Meksiko",
@@ -25,41 +25,62 @@
         {
           "team": "home",
           "type": "goal",
-          "player": "Quiñones",
+          "player": "J. Quinones",
           "minute": "9"
+        },
+        {
+          "team": "away",
+          "type": "redcard",
+          "player": "Y. Sithole",
+          "minute": "49"
         },
         {
           "team": "home",
           "type": "goal",
-          "player": "Jiménez",
+          "player": "R. Jimenez",
           "minute": "67"
         },
         {
           "team": "away",
           "type": "redcard",
-          "player": "Sithole",
-          "minute": "50"
-        },
-        {
-          "team": "away",
-          "type": "redcard",
-          "player": "Zwane",
+          "player": "T. Zwane",
           "minute": "84"
         },
         {
           "team": "home",
           "type": "redcard",
-          "player": "Montes",
+          "player": "C. Montes",
           "minute": "90+2"
         }
       ],
-      "stats": null
+      "stats": {
+        "possession": [
+          60,
+          40
+        ],
+        "shots": [
+          11,
+          3
+        ],
+        "sot": [
+          4,
+          2
+        ],
+        "fouls": [
+          12,
+          11
+        ],
+        "offsides": [
+          1,
+          1
+        ]
+      }
     },
     {
-      "id": 2,
-      "kickoff": "2026-06-12T09:00:00+07:00",
-      "group": "A",
-      "venue": "Estadio Guadalajara (Akron)",
+      "id": 1309688933,
+      "kickoff": "2026-06-12T02:00:00.000Z",
+      "group": null,
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Korea Selatan",
@@ -76,38 +97,38 @@
         {
           "team": "away",
           "type": "goal",
-          "player": "Krejčí",
+          "player": "L. Krejci",
           "minute": "59"
         },
         {
           "team": "home",
           "type": "goal",
-          "player": "Hwang In-beom",
+          "player": "Hwang In-Beom",
           "minute": "67"
         },
         {
           "team": "home",
           "type": "goal",
-          "player": "Oh Hyeon-gyu",
+          "player": "Oh Hyeon-Gyu",
           "minute": "80"
         }
       ],
       "stats": {
         "possession": [
-          64,
-          36
+          62,
+          38
         ],
         "shots": [
-          14,
-          6
+          11,
+          7
         ],
         "sot": [
-          7,
-          3
+          6,
+          4
         ],
         "fouls": [
-          8,
-          13
+          9,
+          16
         ],
         "offsides": [
           2,
@@ -116,10 +137,10 @@
       }
     },
     {
-      "id": 3,
-      "kickoff": "2026-06-13T02:00:00+07:00",
-      "group": "B",
-      "venue": "BMO Field, Toronto",
+      "id": 1309689784,
+      "kickoff": "2026-06-12T19:00:00.000Z",
+      "group": null,
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Kanada",
@@ -136,23 +157,44 @@
         {
           "team": "away",
           "type": "goal",
-          "player": "Lukić",
+          "player": "J. Lukic",
           "minute": "21"
         },
         {
           "team": "home",
           "type": "goal",
-          "player": "Larin",
+          "player": "C. Larin",
           "minute": "78"
         }
       ],
-      "stats": null
+      "stats": {
+        "possession": [
+          61,
+          39
+        ],
+        "shots": [
+          9,
+          7
+        ],
+        "sot": [
+          4,
+          3
+        ],
+        "fouls": [
+          10,
+          20
+        ],
+        "offsides": [
+          1,
+          0
+        ]
+      }
     },
     {
-      "id": 4,
-      "kickoff": "2026-06-13T08:00:00+07:00",
-      "group": "D",
-      "venue": "SoFi Stadium, Los Angeles",
+      "id": 1267454654,
+      "kickoff": "2026-06-13T01:00:00.000Z",
+      "group": null,
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Amerika Serikat",
@@ -167,22 +209,22 @@
       "penalty": null,
       "events": [
         {
-          "team": "home",
+          "team": "away",
           "type": "goal",
-          "player": "Bobadilla",
+          "player": "D. Bobadilla",
           "minute": "7",
           "tag": "b.d."
         },
         {
           "team": "home",
           "type": "goal",
-          "player": "Balogun",
+          "player": "F. Balogun",
           "minute": "31"
         },
         {
           "team": "home",
           "type": "goal",
-          "player": "Balogun",
+          "player": "F. Balogun",
           "minute": "45+5"
         },
         {
@@ -194,18 +236,18 @@
         {
           "team": "home",
           "type": "goal",
-          "player": "Reyna",
+          "player": "G. Reyna",
           "minute": "90+8"
         }
       ],
       "stats": {
         "possession": [
-          63,
-          37
+          65,
+          35
         ],
         "shots": [
-          17,
-          8
+          12,
+          4
         ],
         "sot": [
           6,
@@ -222,88 +264,219 @@
       }
     },
     {
-      "id": 5,
-      "kickoff": "2026-06-14T02:00:00+07:00",
+      "id": 1267457207,
+      "kickoff": "2026-06-13T19:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Qatar",
         "flag": "🇶🇦",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Swiss",
         "flag": "🇨🇭",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "B. Embolo",
+          "minute": "17",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "B. Khoukhi",
+          "minute": "90+4"
+        }
+      ],
+      "stats": {
+        "possession": [
+          32,
+          68
+        ],
+        "shots": [
+          6,
+          17
+        ],
+        "sot": [
+          3,
+          7
+        ],
+        "fouls": [
+          12,
+          11
+        ],
+        "offsides": [
+          0,
+          1
+        ]
+      }
     },
     {
-      "id": 6,
-      "kickoff": "2026-06-14T05:00:00+07:00",
+      "id": 1267455505,
+      "kickoff": "2026-06-13T22:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Brasil",
         "flag": "🇧🇷",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Maroko",
         "flag": "🇲🇦",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "I. Saibari",
+          "minute": "21"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Vinicius Junior",
+          "minute": "32"
+        }
+      ],
+      "stats": {
+        "possession": [
+          51,
+          49
+        ],
+        "shots": [
+          9,
+          8
+        ],
+        "sot": [
+          5,
+          3
+        ],
+        "fouls": [
+          16,
+          14
+        ],
+        "offsides": [
+          0,
+          1
+        ]
+      }
     },
     {
-      "id": 7,
-      "kickoff": "2026-06-14T08:00:00+07:00",
+      "id": 1267456356,
+      "kickoff": "2026-06-14T01:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Haiti",
         "flag": "🇭🇹",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Skotlandia",
         "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "J. McGinn",
+          "minute": "28"
+        }
+      ],
+      "stats": {
+        "possession": [
+          54,
+          46
+        ],
+        "shots": [
+          11,
+          7
+        ],
+        "sot": [
+          2,
+          2
+        ],
+        "fouls": [
+          23,
+          21
+        ],
+        "offsides": [
+          3,
+          1
+        ]
+      }
     },
     {
-      "id": 8,
-      "kickoff": "2026-06-14T11:00:00+07:00",
+      "id": 1309690635,
+      "kickoff": "2026-06-14T04:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Australia",
         "flag": "🇦🇺",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Turki",
         "flag": "🇹🇷",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "N. Irankunda",
+          "minute": "27"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "C. Metcalfe",
+          "minute": "75"
+        }
+      ],
+      "stats": {
+        "possession": [
+          28,
+          72
+        ],
+        "shots": [
+          8,
+          18
+        ],
+        "sot": [
+          4,
+          8
+        ],
+        "fouls": [
+          12,
+          4
+        ],
+        "offsides": [
+          1,
+          3
+        ]
+      }
     },
     {
-      "id": 9,
-      "kickoff": "2026-06-15T00:00:00+07:00",
+      "id": 1267458058,
+      "kickoff": "2026-06-14T17:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -322,8 +495,8 @@
       "stats": null
     },
     {
-      "id": 10,
-      "kickoff": "2026-06-15T03:00:00+07:00",
+      "id": 1267459760,
+      "kickoff": "2026-06-14T20:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -342,8 +515,8 @@
       "stats": null
     },
     {
-      "id": 11,
-      "kickoff": "2026-06-15T06:00:00+07:00",
+      "id": 1267458909,
+      "kickoff": "2026-06-14T23:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -362,8 +535,8 @@
       "stats": null
     },
     {
-      "id": 12,
-      "kickoff": "2026-06-15T09:00:00+07:00",
+      "id": 1309691486,
+      "kickoff": "2026-06-15T02:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -382,8 +555,8 @@
       "stats": null
     },
     {
-      "id": 13,
-      "kickoff": "2026-06-15T23:00:00+07:00",
+      "id": 1267463164,
+      "kickoff": "2026-06-15T16:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -402,8 +575,8 @@
       "stats": null
     },
     {
-      "id": 14,
-      "kickoff": "2026-06-16T02:00:00+07:00",
+      "id": 1267460611,
+      "kickoff": "2026-06-15T19:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -422,8 +595,8 @@
       "stats": null
     },
     {
-      "id": 15,
-      "kickoff": "2026-06-16T05:00:00+07:00",
+      "id": 1267462313,
+      "kickoff": "2026-06-15T22:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -442,8 +615,8 @@
       "stats": null
     },
     {
-      "id": 16,
-      "kickoff": "2026-06-16T08:00:00+07:00",
+      "id": 1267461462,
+      "kickoff": "2026-06-16T01:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -462,8 +635,8 @@
       "stats": null
     },
     {
-      "id": 17,
-      "kickoff": "2026-06-17T02:00:00+07:00",
+      "id": 1267465717,
+      "kickoff": "2026-06-16T19:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -482,8 +655,8 @@
       "stats": null
     },
     {
-      "id": 18,
-      "kickoff": "2026-06-17T05:00:00+07:00",
+      "id": 1309703400,
+      "kickoff": "2026-06-16T22:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -502,8 +675,8 @@
       "stats": null
     },
     {
-      "id": 19,
-      "kickoff": "2026-06-17T08:00:00+07:00",
+      "id": 1267464015,
+      "kickoff": "2026-06-17T01:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -522,8 +695,8 @@
       "stats": null
     },
     {
-      "id": 20,
-      "kickoff": "2026-06-17T11:00:00+07:00",
+      "id": 1267464866,
+      "kickoff": "2026-06-17T04:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -542,8 +715,8 @@
       "stats": null
     },
     {
-      "id": 21,
-      "kickoff": "2026-06-18T00:00:00+07:00",
+      "id": 1309692337,
+      "kickoff": "2026-06-17T17:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -562,8 +735,8 @@
       "stats": null
     },
     {
-      "id": 22,
-      "kickoff": "2026-06-18T03:00:00+07:00",
+      "id": 1267466568,
+      "kickoff": "2026-06-17T20:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -582,8 +755,8 @@
       "stats": null
     },
     {
-      "id": 23,
-      "kickoff": "2026-06-18T06:00:00+07:00",
+      "id": 1267467419,
+      "kickoff": "2026-06-17T23:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -602,8 +775,8 @@
       "stats": null
     },
     {
-      "id": 24,
-      "kickoff": "2026-06-18T09:00:00+07:00",
+      "id": 1267468270,
+      "kickoff": "2026-06-18T02:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -622,8 +795,8 @@
       "stats": null
     },
     {
-      "id": 25,
-      "kickoff": "2026-06-18T23:00:00+07:00",
+      "id": 1309693188,
+      "kickoff": "2026-06-18T16:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -642,8 +815,8 @@
       "stats": null
     },
     {
-      "id": 26,
-      "kickoff": "2026-06-19T02:00:00+07:00",
+      "id": 1309694039,
+      "kickoff": "2026-06-18T19:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -662,8 +835,8 @@
       "stats": null
     },
     {
-      "id": 27,
-      "kickoff": "2026-06-19T05:00:00+07:00",
+      "id": 1267469121,
+      "kickoff": "2026-06-18T22:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -682,8 +855,8 @@
       "stats": null
     },
     {
-      "id": 28,
-      "kickoff": "2026-06-19T08:00:00+07:00",
+      "id": 1267469972,
+      "kickoff": "2026-06-19T01:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -702,8 +875,8 @@
       "stats": null
     },
     {
-      "id": 29,
-      "kickoff": "2026-06-20T02:00:00+07:00",
+      "id": 1267472525,
+      "kickoff": "2026-06-19T19:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -722,8 +895,8 @@
       "stats": null
     },
     {
-      "id": 30,
-      "kickoff": "2026-06-20T05:00:00+07:00",
+      "id": 1267471674,
+      "kickoff": "2026-06-19T22:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -742,8 +915,8 @@
       "stats": null
     },
     {
-      "id": 31,
-      "kickoff": "2026-06-20T07:30:00+07:00",
+      "id": 1267470823,
+      "kickoff": "2026-06-20T00:30:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -762,8 +935,8 @@
       "stats": null
     },
     {
-      "id": 32,
-      "kickoff": "2026-06-20T10:00:00+07:00",
+      "id": 1309694890,
+      "kickoff": "2026-06-20T03:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -782,8 +955,8 @@
       "stats": null
     },
     {
-      "id": 33,
-      "kickoff": "2026-06-21T00:00:00+07:00",
+      "id": 1309695741,
+      "kickoff": "2026-06-20T17:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -802,8 +975,8 @@
       "stats": null
     },
     {
-      "id": 34,
-      "kickoff": "2026-06-21T03:00:00+07:00",
+      "id": 1267474227,
+      "kickoff": "2026-06-20T20:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -822,8 +995,8 @@
       "stats": null
     },
     {
-      "id": 35,
-      "kickoff": "2026-06-21T07:00:00+07:00",
+      "id": 1267473376,
+      "kickoff": "2026-06-21T00:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -842,8 +1015,8 @@
       "stats": null
     },
     {
-      "id": 36,
-      "kickoff": "2026-06-21T11:00:00+07:00",
+      "id": 1267475078,
+      "kickoff": "2026-06-21T04:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -862,8 +1035,8 @@
       "stats": null
     },
     {
-      "id": 37,
-      "kickoff": "2026-06-21T23:00:00+07:00",
+      "id": 1267477631,
+      "kickoff": "2026-06-21T16:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -882,8 +1055,8 @@
       "stats": null
     },
     {
-      "id": 38,
-      "kickoff": "2026-06-22T02:00:00+07:00",
+      "id": 1267475929,
+      "kickoff": "2026-06-21T19:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -902,8 +1075,8 @@
       "stats": null
     },
     {
-      "id": 39,
-      "kickoff": "2026-06-22T05:00:00+07:00",
+      "id": 1267478482,
+      "kickoff": "2026-06-21T22:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -922,8 +1095,8 @@
       "stats": null
     },
     {
-      "id": 40,
-      "kickoff": "2026-06-22T08:00:00+07:00",
+      "id": 1267476780,
+      "kickoff": "2026-06-22T01:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -942,8 +1115,8 @@
       "stats": null
     },
     {
-      "id": 41,
-      "kickoff": "2026-06-23T00:00:00+07:00",
+      "id": 1267479333,
+      "kickoff": "2026-06-22T17:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -962,8 +1135,8 @@
       "stats": null
     },
     {
-      "id": 42,
-      "kickoff": "2026-06-23T04:00:00+07:00",
+      "id": 1309704251,
+      "kickoff": "2026-06-22T21:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -982,8 +1155,8 @@
       "stats": null
     },
     {
-      "id": 43,
-      "kickoff": "2026-06-23T07:00:00+07:00",
+      "id": 1267481035,
+      "kickoff": "2026-06-23T00:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1002,8 +1175,8 @@
       "stats": null
     },
     {
-      "id": 44,
-      "kickoff": "2026-06-23T10:00:00+07:00",
+      "id": 1267480184,
+      "kickoff": "2026-06-23T03:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1022,8 +1195,8 @@
       "stats": null
     },
     {
-      "id": 45,
-      "kickoff": "2026-06-24T00:00:00+07:00",
+      "id": 1267483588,
+      "kickoff": "2026-06-23T17:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1042,8 +1215,8 @@
       "stats": null
     },
     {
-      "id": 46,
-      "kickoff": "2026-06-24T03:00:00+07:00",
+      "id": 1267481886,
+      "kickoff": "2026-06-23T20:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1062,8 +1235,8 @@
       "stats": null
     },
     {
-      "id": 47,
-      "kickoff": "2026-06-24T06:00:00+07:00",
+      "id": 1267482737,
+      "kickoff": "2026-06-23T23:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1082,8 +1255,8 @@
       "stats": null
     },
     {
-      "id": 48,
-      "kickoff": "2026-06-24T09:00:00+07:00",
+      "id": 1309696592,
+      "kickoff": "2026-06-24T02:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1102,8 +1275,8 @@
       "stats": null
     },
     {
-      "id": 49,
-      "kickoff": "2026-06-25T02:00:00+07:00",
+      "id": 1267486992,
+      "kickoff": "2026-06-24T19:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1122,8 +1295,8 @@
       "stats": null
     },
     {
-      "id": 50,
-      "kickoff": "2026-06-25T02:00:00+07:00",
+      "id": 1309697443,
+      "kickoff": "2026-06-24T19:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1142,28 +1315,8 @@
       "stats": null
     },
     {
-      "id": 51,
-      "kickoff": "2026-06-25T05:00:00+07:00",
-      "group": null,
-      "venue": null,
-      "status": "NS",
-      "home": {
-        "name": "Skotlandia",
-        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-        "goals": null
-      },
-      "away": {
-        "name": "Brasil",
-        "flag": "🇧🇷",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null
-    },
-    {
-      "id": 52,
-      "kickoff": "2026-06-25T05:00:00+07:00",
+      "id": 1267484439,
+      "kickoff": "2026-06-24T22:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1182,8 +1335,28 @@
       "stats": null
     },
     {
-      "id": 53,
-      "kickoff": "2026-06-25T08:00:00+07:00",
+      "id": 1267485290,
+      "kickoff": "2026-06-24T22:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Skotlandia",
+        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "goals": null
+      },
+      "away": {
+        "name": "Brasil",
+        "flag": "🇧🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1309698294,
+      "kickoff": "2026-06-25T01:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1202,8 +1375,8 @@
       "stats": null
     },
     {
-      "id": 54,
-      "kickoff": "2026-06-25T08:00:00+07:00",
+      "id": 1267486141,
+      "kickoff": "2026-06-25T01:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1222,28 +1395,8 @@
       "stats": null
     },
     {
-      "id": 55,
-      "kickoff": "2026-06-26T03:00:00+07:00",
-      "group": null,
-      "venue": null,
-      "status": "NS",
-      "home": {
-        "name": "Curacao",
-        "flag": "🇨🇼",
-        "goals": null
-      },
-      "away": {
-        "name": "Pantai Gading",
-        "flag": "🇨🇮",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null
-    },
-    {
-      "id": 56,
-      "kickoff": "2026-06-26T03:00:00+07:00",
+      "id": 1267488694,
+      "kickoff": "2026-06-25T20:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1262,8 +1415,28 @@
       "stats": null
     },
     {
-      "id": 57,
-      "kickoff": "2026-06-26T06:00:00+07:00",
+      "id": 1267487843,
+      "kickoff": "2026-06-25T20:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Curacao",
+        "flag": "🇨🇼",
+        "goals": null
+      },
+      "away": {
+        "name": "Pantai Gading",
+        "flag": "🇨🇮",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1309699145,
+      "kickoff": "2026-06-25T23:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1282,8 +1455,8 @@
       "stats": null
     },
     {
-      "id": 58,
-      "kickoff": "2026-06-26T06:00:00+07:00",
+      "id": 1267490396,
+      "kickoff": "2026-06-25T23:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1302,28 +1475,8 @@
       "stats": null
     },
     {
-      "id": 59,
-      "kickoff": "2026-06-26T09:00:00+07:00",
-      "group": null,
-      "venue": null,
-      "status": "NS",
-      "home": {
-        "name": "Turki",
-        "flag": "🇹🇷",
-        "goals": null
-      },
-      "away": {
-        "name": "Amerika Serikat",
-        "flag": "🇺🇸",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null
-    },
-    {
-      "id": 60,
-      "kickoff": "2026-06-26T09:00:00+07:00",
+      "id": 1267489545,
+      "kickoff": "2026-06-26T02:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1342,19 +1495,19 @@
       "stats": null
     },
     {
-      "id": 61,
-      "kickoff": "2026-06-27T02:00:00+07:00",
+      "id": 1309699996,
+      "kickoff": "2026-06-26T02:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
       "home": {
-        "name": "Norwegia",
-        "flag": "🇳🇴",
+        "name": "Turki",
+        "flag": "🇹🇷",
         "goals": null
       },
       "away": {
-        "name": "Prancis",
-        "flag": "🇫🇷",
+        "name": "Amerika Serikat",
+        "flag": "🇺🇸",
         "goals": null
       },
       "penalty": null,
@@ -1362,8 +1515,8 @@
       "stats": null
     },
     {
-      "id": 62,
-      "kickoff": "2026-06-27T02:00:00+07:00",
+      "id": 1309752758,
+      "kickoff": "2026-06-26T19:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1382,8 +1535,28 @@
       "stats": null
     },
     {
-      "id": 63,
-      "kickoff": "2026-06-27T07:00:00+07:00",
+      "id": 1267493800,
+      "kickoff": "2026-06-26T19:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Norwegia",
+        "flag": "🇳🇴",
+        "goals": null
+      },
+      "away": {
+        "name": "Prancis",
+        "flag": "🇫🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1267491247,
+      "kickoff": "2026-06-27T00:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1402,8 +1575,8 @@
       "stats": null
     },
     {
-      "id": 64,
-      "kickoff": "2026-06-27T07:00:00+07:00",
+      "id": 1267494651,
+      "kickoff": "2026-06-27T00:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1422,8 +1595,8 @@
       "stats": null
     },
     {
-      "id": 65,
-      "kickoff": "2026-06-27T10:00:00+07:00",
+      "id": 1267492098,
+      "kickoff": "2026-06-27T03:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1442,8 +1615,8 @@
       "stats": null
     },
     {
-      "id": 66,
-      "kickoff": "2026-06-27T10:00:00+07:00",
+      "id": 1267492949,
+      "kickoff": "2026-06-27T03:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1462,28 +1635,8 @@
       "stats": null
     },
     {
-      "id": 67,
-      "kickoff": "2026-06-28T04:00:00+07:00",
-      "group": null,
-      "venue": null,
-      "status": "NS",
-      "home": {
-        "name": "Panama",
-        "flag": "🇵🇦",
-        "goals": null
-      },
-      "away": {
-        "name": "Inggris",
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null
-    },
-    {
-      "id": 68,
-      "kickoff": "2026-06-28T04:00:00+07:00",
+      "id": 1267497204,
+      "kickoff": "2026-06-27T21:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1502,19 +1655,19 @@
       "stats": null
     },
     {
-      "id": 69,
-      "kickoff": "2026-06-28T06:30:00+07:00",
+      "id": 1267498906,
+      "kickoff": "2026-06-27T21:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
       "home": {
-        "name": "Kolombia",
-        "flag": "🇨🇴",
+        "name": "Panama",
+        "flag": "🇵🇦",
         "goals": null
       },
       "away": {
-        "name": "Portugal",
-        "flag": "🇵🇹",
+        "name": "Inggris",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
         "goals": null
       },
       "penalty": null,
@@ -1522,8 +1675,8 @@
       "stats": null
     },
     {
-      "id": 70,
-      "kickoff": "2026-06-28T06:30:00+07:00",
+      "id": 1309700847,
+      "kickoff": "2026-06-27T23:30:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1542,8 +1695,28 @@
       "stats": null
     },
     {
-      "id": 71,
-      "kickoff": "2026-06-28T09:00:00+07:00",
+      "id": 1267496353,
+      "kickoff": "2026-06-27T23:30:00.000Z",
+      "group": null,
+      "venue": null,
+      "status": "NS",
+      "home": {
+        "name": "Kolombia",
+        "flag": "🇨🇴",
+        "goals": null
+      },
+      "away": {
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1267495502,
+      "kickoff": "2026-06-28T02:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
@@ -1562,8 +1735,8 @@
       "stats": null
     },
     {
-      "id": 72,
-      "kickoff": "2026-06-28T09:00:00+07:00",
+      "id": 1267498055,
+      "kickoff": "2026-06-28T02:00:00.000Z",
       "group": null,
       "venue": null,
       "status": "NS",
