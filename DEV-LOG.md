@@ -2,6 +2,28 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-17 — M6: Live score display
+
+- `schema/results.schema.json`: tambah field opsional `clock` (integer|null) ke
+  definisi match — backward-compatible, tidak breaking.
+- `scripts/fetch-results.mjs`:
+  - Tambah `const LIVE = new Set(["1H","HT","2H","ET","BT","P"])`.
+  - `hlMapFixture` kini baca `match.state?.clock ?? null` dan emit field `clock`.
+  - `apfMapFixture` emit `clock: null` (APF tidak dipakai untuk live saat ini).
+  - Loop utama: laga LIVE update skor (`home.goals`/`away.goals`) + `clock` dari
+    `hlMapFixture` tanpa call `/events` atau `/statistics` (hemat kuota, events
+    belum final). Pertahankan `events`/`stats` dari data sebelumnya jika ada.
+    Laga NS tetap goals null, clock null. Laga FINAL+frozen tetap skip.
+- `index.html`:
+  - Badge LIVE kini kontekstual: `🔴 67'` (1H/2H dengan clock), `⏸ HT`, `⚽ ET`,
+    `⏸ BT`, `🎯 PEN`, fallback animated dot untuk status live lain.
+  - Skor laga live tampil dalam `var(--cyan)` agar beda visual dari laga FT (lime).
+  - `goals == null` → tampilkan `– – –` (belum ada skor masuk).
+  - Footer diperbarui: sebut live score + interval 5 menit.
+- `.github/workflows/fetch-results.yml`: ganti cron `*/30` → `*/5` untuk update
+  live score. 288 run/hari × ~10 detik ≈ 48 menit/hari → dalam free tier 2000 mnt/bulan.
+- `npm test`: 14/14 hijau — standings.mjs tidak berubah.
+
 ## 2026-06-17 — M5: Deploy ke GitHub Pages
 
 - `.github/workflows/deploy-pages.yml`: trigger `push` ke `main` + `workflow_run`
