@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-16T20:23:53.923Z",
+  "updatedAt": "2026-06-16T22:22:46.154Z",
   "source": "highlightly league 1635 season 2026",
   "matches": [
     {
@@ -979,42 +979,88 @@
       "kickoff": "2026-06-16T19:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "1H",
+      "status": "FT",
       "home": {
         "name": "Prancis",
         "flag": "🇫🇷",
-        "goals": 0
+        "goals": 3
       },
       "away": {
         "name": "Senegal",
         "flag": "🇸🇳",
-        "goals": 0
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": 59
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Mbappe",
+          "minute": "66"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "B. Barcola",
+          "minute": "82"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "I. Mbaye",
+          "minute": "90+5"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Mbappe",
+          "minute": "90+6"
+        }
+      ],
+      "stats": {
+        "possession": [
+          54,
+          46
+        ],
+        "shots": [
+          9,
+          5
+        ],
+        "sot": [
+          8,
+          2
+        ],
+        "fouls": [
+          5,
+          9
+        ],
+        "offsides": [
+          1,
+          3
+        ]
+      },
+      "clock": 90
     },
     {
       "id": 1309703400,
       "kickoff": "2026-06-16T22:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "1H",
       "home": {
         "name": "Irak",
         "flag": "🇮🇶",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Norwegia",
         "flag": "🇳🇴",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": 21
     },
     {
       "id": 1267464015,
