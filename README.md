@@ -1,14 +1,25 @@
 # PoC — Hasil Piala Dunia 2026 (results-only, WIB)
 
+## 🌐 Live
+
+**https://marinpettersen.github.io/JadwalPildunApp/**
+
+> Diperbarui otomatis tiap 30 menit via GitHub Actions.
+> GitHub Pages harus diaktifkan di **Settings → Pages → Source: GitHub Actions**.
+
 Pipeline statis & hemat: **GitHub Action terjadwal → `results.json` → frontend statis**.
 Skor **hanya** ditampilkan saat laga sudah selesai (`FT/AET/PEN`). Laga yang sedang berlangsung ditandai **LIVE** tanpa skor, laga yang belum mulai tampil sebagai jadwal (jam WIB).
 
 ```
 .
-├─ .github/workflows/fetch-results.yml   # cron tiap 30 menit + commit results.json
+├─ .github/workflows/
+│   ├─ fetch-results.yml    # cron tiap 30 menit → commit results.json
+│   └─ deploy-pages.yml     # deploy ke GitHub Pages (triggered by push + fetch workflow)
 ├─ scripts/fetch-results.mjs             # fetcher (Node 20, zero-dependency)
-├─ results.json                          # data (seed: 72 laga, 4 sudah selesai)
+├─ src/standings.mjs                     # computeStandings() + topScorers() — diimpor frontend
+├─ results.json                          # data (seed: 72 laga)
 ├─ index.html                            # frontend: baca results.json
+├─ .nojekyll                             # cegah GitHub Pages proses via Jekyll
 └─ package.json
 ```
 
@@ -37,7 +48,8 @@ Buka alamat yang muncul. **Jangan** buka `index.html` lewat `file://` — browse
    - `PROVIDER` — isi `highlightly`
    - `HIGHLIGHTLY_HOST` — *(opsional)* default: `football-highlights-api.p.rapidapi.com`
 4. Tab **Actions** → jalankan workflow *Fetch World Cup results* manual untuk tes.
-5. *(Opsional)* **Settings → Pages** → Deploy from branch `main` `/root`.
+5. **Settings → Pages → Source: GitHub Actions** → simpan.
+   Deploy otomatis berjalan tiap kali `results.json` diperbarui atau ada push ke `main`.
 
 ### Provider alternatif: API-Football v3
 

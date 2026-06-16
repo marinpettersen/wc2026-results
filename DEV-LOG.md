@@ -2,6 +2,23 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-17 — M5: Deploy ke GitHub Pages
+
+- `.github/workflows/deploy-pages.yml`: trigger `push` ke `main` + `workflow_run`
+  dari "Fetch World Cup results" (completed). Urutan step: checkout main →
+  setup-node 20 → npm ci → npm test → rm node_modules → configure-pages →
+  upload-pages-artifact → deploy-pages. Concurrency group `pages` dengan
+  cancel-in-progress supaya deploy lama dibatalkan kalau ada yang lebih baru.
+- Tidak ada perubahan ke `fetch-results.yml`: `workflow_run` di sisi deploy
+  sudah cukup — ia men-trigger deploy setiap kali fetch workflow selesai,
+  termasuk run yang push dengan `[skip ci]` (push trigger tidak berlaku,
+  workflow_run tidak terpengaruh flag skip ci).
+- `.nojekyll` di root: cegah GitHub Pages memproses folder lewat Jekyll
+  (penting untuk `src/*.mjs` yang perlu disajikan dengan MIME type yang benar).
+- README: tambah section "Live" dengan URL `https://marinpettersen.github.io/JadwalPildunApp/`,
+  instruksi aktifkan Pages (Settings → Pages → Source: GitHub Actions),
+  update file tree.
+
 ## 2026-06-16 — Flag CDN: ganti emoji dengan <img> dari flagcdn.com
 
 - `scripts/fetch-results.mjs`: TEAMS map dapat field ke-3 (ISO code 2-huruf),
