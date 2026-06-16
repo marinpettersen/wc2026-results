@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-16T22:22:46.154Z",
+  "updatedAt": "2026-06-16T23:54:09.412Z",
   "source": "highlightly league 1635 season 2026",
   "matches": [
     {
@@ -1050,17 +1050,17 @@
       "home": {
         "name": "Irak",
         "flag": "🇮🇶",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "name": "Norwegia",
         "flag": "🇳🇴",
-        "goals": 0
+        "goals": 3
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": 21
+      "clock": 90
     },
     {
       "id": 1267464015,
