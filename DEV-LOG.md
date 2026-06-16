@@ -2,6 +2,19 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-16 — Flag CDN: ganti emoji dengan <img> dari flagcdn.com
+
+- `scripts/fetch-results.mjs`: TEAMS map dapat field ke-3 (ISO code 2-huruf),
+  contoh `"Mexico":["Meksiko","🇲🇽","mx"]`. Ditambah ~20 tim WC2026 potensial
+  (Jamaica, Venezuela, Honduras, Italia, dll.) supaya mapping tidak kosong saat
+  grup terisi. `team()` fallback kini `[name,"🏳️",null]`.
+- `index.html`: tambah `FLAG_CODE` map (nama ID → ISO) dan helper `flagImg(name)`
+  yang mengembalikan `<img>` dari `https://flagcdn.com/24x18/{kode}.png` atau
+  `<span>` teks nama sebagai fallback. Semua 4 titik render bendera (kartu laga
+  home/away, tabel klasemen, top skor) diganti dari emoji ke `flagImg()`.
+  CSS media query diperbarui: `img.flag{width:20px}` di mobile.
+- `npm test` tetap 14/14 hijau — `standings.mjs` tidak berubah.
+
 ## 2026-06-15 — M3: Vitest unit tests untuk standings & top scorers
 
 - Install Vitest ^4.1.8 sebagai devDependency; script `npm test` → `vitest run`.

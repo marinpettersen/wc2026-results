@@ -22,36 +22,56 @@ const SEASON   = process.env.WC_SEASON || "2026";
 
 const FINAL = new Set(["FT", "AET", "PEN"]);
 
-// name (EN dari API) → [label Indonesia, bendera]. Berlaku untuk semua adapter.
+// name (EN dari API) → [label Indonesia, emoji, kode ISO 2-huruf]. Berlaku untuk semua adapter.
 const TEAMS = {
-  "Mexico":["Meksiko","🇲🇽"], "South Africa":["Afrika Selatan","🇿🇦"],
-  "South Korea":["Korea Selatan","🇰🇷"], "Korea Republic":["Korea Selatan","🇰🇷"],
-  "Czech Republic":["Ceko","🇨🇿"], "Czechia":["Ceko","🇨🇿"],
-  "Canada":["Kanada","🇨🇦"],
-  "Bosnia and Herzegovina":["Bosnia & Herzegovina","🇧🇦"],
-  "Bosnia & Herzegovina":["Bosnia & Herzegovina","🇧🇦"],   // alias Highlightly
-  "USA":["Amerika Serikat","🇺🇸"], "United States":["Amerika Serikat","🇺🇸"],
-  "Paraguay":["Paraguay","🇵🇾"], "Qatar":["Qatar","🇶🇦"],
-  "Switzerland":["Swiss","🇨🇭"], "Brazil":["Brasil","🇧🇷"], "Morocco":["Maroko","🇲🇦"],
-  "Haiti":["Haiti","🇭🇹"], "Scotland":["Skotlandia","🏴󠁧󠁢󠁳󠁣󠁴󠁿"], "Australia":["Australia","🇦🇺"],
-  "Turkey":["Turki","🇹🇷"], "Türkiye":["Turki","🇹🇷"], "Germany":["Jerman","🇩🇪"],
-  "Curacao":["Curacao","🇨🇼"], "Curaçao":["Curacao","🇨🇼"], "Netherlands":["Belanda","🇳🇱"],
-  "Japan":["Jepang","🇯🇵"],
-  "Ivory Coast":["Pantai Gading","🇨🇮"], "Côte d'Ivoire":["Pantai Gading","🇨🇮"],
-  "Ecuador":["Ekuador","🇪🇨"], "Sweden":["Swedia","🇸🇪"], "Tunisia":["Tunisia","🇹🇳"],
-  "Spain":["Spanyol","🇪🇸"],
-  "Cape Verde":["Tanjung Verde","🇨🇻"], "Cabo Verde":["Tanjung Verde","🇨🇻"],
-  "Belgium":["Belgia","🇧🇪"], "Egypt":["Mesir","🇪🇬"], "Saudi Arabia":["Arab Saudi","🇸🇦"],
-  "Uruguay":["Uruguay","🇺🇾"], "Iran":["Iran","🇮🇷"], "New Zealand":["Selandia Baru","🇳🇿"],
-  "France":["Prancis","🇫🇷"], "Senegal":["Senegal","🇸🇳"], "Iraq":["Irak","🇮🇶"],
-  "Norway":["Norwegia","🇳🇴"], "Argentina":["Argentina","🇦🇷"], "Algeria":["Aljazair","🇩🇿"],
-  "Austria":["Austria","🇦🇹"], "Jordan":["Yordania","🇯🇴"], "Portugal":["Portugal","🇵🇹"],
-  "DR Congo":["Kongo","🇨🇩"], "Congo DR":["Kongo","🇨🇩"],
-  "England":["Inggris","🏴󠁧󠁢󠁥󠁮󠁧󠁿"],
-  "Croatia":["Kroasia","🇭🇷"], "Ghana":["Ghana","🇬🇭"], "Panama":["Panama","🇵🇦"],
-  "Uzbekistan":["Uzbekistan","🇺🇿"], "Colombia":["Kolombia","🇨🇴"],
+  "Mexico":["Meksiko","🇲🇽","mx"], "South Africa":["Afrika Selatan","🇿🇦","za"],
+  "South Korea":["Korea Selatan","🇰🇷","kr"], "Korea Republic":["Korea Selatan","🇰🇷","kr"],
+  "Czech Republic":["Ceko","🇨🇿","cz"], "Czechia":["Ceko","🇨🇿","cz"],
+  "Canada":["Kanada","🇨🇦","ca"],
+  "Bosnia and Herzegovina":["Bosnia & Herzegovina","🇧🇦","ba"],
+  "Bosnia & Herzegovina":["Bosnia & Herzegovina","🇧🇦","ba"],   // alias Highlightly
+  "USA":["Amerika Serikat","🇺🇸","us"], "United States":["Amerika Serikat","🇺🇸","us"],
+  "Paraguay":["Paraguay","🇵🇾","py"], "Qatar":["Qatar","🇶🇦","qa"],
+  "Switzerland":["Swiss","🇨🇭","ch"], "Brazil":["Brasil","🇧🇷","br"], "Morocco":["Maroko","🇲🇦","ma"],
+  "Haiti":["Haiti","🇭🇹","ht"], "Scotland":["Skotlandia","🏴󠁧󠁢󠁳󠁣󠁴󠁿","gb-sct"], "Australia":["Australia","🇦🇺","au"],
+  "Turkey":["Turki","🇹🇷","tr"], "Türkiye":["Turki","🇹🇷","tr"], "Germany":["Jerman","🇩🇪","de"],
+  "Curacao":["Curacao","🇨🇼","cw"], "Curaçao":["Curacao","🇨🇼","cw"], "Netherlands":["Belanda","🇳🇱","nl"],
+  "Japan":["Jepang","🇯🇵","jp"],
+  "Ivory Coast":["Pantai Gading","🇨🇮","ci"], "Côte d'Ivoire":["Pantai Gading","🇨🇮","ci"],
+  "Ecuador":["Ekuador","🇪🇨","ec"], "Sweden":["Swedia","🇸🇪","se"], "Tunisia":["Tunisia","🇹🇳","tn"],
+  "Spain":["Spanyol","🇪🇸","es"],
+  "Cape Verde":["Tanjung Verde","🇨🇻","cv"], "Cabo Verde":["Tanjung Verde","🇨🇻","cv"],
+  "Belgium":["Belgia","🇧🇪","be"], "Egypt":["Mesir","🇪🇬","eg"], "Saudi Arabia":["Arab Saudi","🇸🇦","sa"],
+  "Uruguay":["Uruguay","🇺🇾","uy"], "Iran":["Iran","🇮🇷","ir"], "New Zealand":["Selandia Baru","🇳🇿","nz"],
+  "France":["Prancis","🇫🇷","fr"], "Senegal":["Senegal","🇸🇳","sn"], "Iraq":["Irak","🇮🇶","iq"],
+  "Norway":["Norwegia","🇳🇴","no"], "Argentina":["Argentina","🇦🇷","ar"], "Algeria":["Aljazair","🇩🇿","dz"],
+  "Austria":["Austria","🇦🇹","at"], "Jordan":["Yordania","🇯🇴","jo"], "Portugal":["Portugal","🇵🇹","pt"],
+  "DR Congo":["Kongo","🇨🇩","cd"], "Congo DR":["Kongo","🇨🇩","cd"],
+  "England":["Inggris","🏴󠁧󠁢󠁥󠁮󠁧󠁿","gb-eng"],
+  "Croatia":["Kroasia","🇭🇷","hr"], "Ghana":["Ghana","🇬🇭","gh"], "Panama":["Panama","🇵🇦","pa"],
+  "Uzbekistan":["Uzbekistan","🇺🇿","uz"], "Colombia":["Kolombia","🇨🇴","co"],
+  // tim potensial WC2026 lain
+  "Jamaica":["Jamaika","🇯🇲","jm"], "Venezuela":["Venezuela","🇻🇪","ve"],
+  "Honduras":["Honduras","🇭🇳","hn"], "Costa Rica":["Kosta Rika","🇨🇷","cr"],
+  "Chile":["Cile","🇨🇱","cl"], "Peru":["Peru","🇵🇪","pe"],
+  "Nigeria":["Nigeria","🇳🇬","ng"], "Cameroon":["Kamerun","🇨🇲","cm"],
+  "Mali":["Mali","🇲🇱","ml"], "South Korea":["Korea Selatan","🇰🇷","kr"],
+  "Serbia":["Serbia","🇷🇸","rs"], "Ukraine":["Ukraina","🇺🇦","ua"],
+  "Poland":["Polandia","🇵🇱","pl"], "Romania":["Rumania","🇷🇴","ro"],
+  "Hungary":["Hungaria","🇭🇺","hu"], "Denmark":["Denmark","🇩🇰","dk"],
+  "Wales":["Wales","🏴󠁧󠁢󠁷󠁬󠁳󠁿","gb-wls"], "Greece":["Yunani","🇬🇷","gr"],
+  "Slovenia":["Slovenia","🇸🇮","si"], "Slovakia":["Slovakia","🇸🇰","sk"],
+  "Iceland":["Islandia","🇮🇸","is"], "Finland":["Finlandia","🇫🇮","fi"],
+  "Italy":["Italia","🇮🇹","it"], "Belgium":["Belgia","🇧🇪","be"],
+  "China PR":["Tiongkok","🇨🇳","cn"], "China":["Tiongkok","🇨🇳","cn"],
+  "Indonesia":["Indonesia","🇮🇩","id"],
+  "United Arab Emirates":["UEA","🇦🇪","ae"], "UAE":["UEA","🇦🇪","ae"],
+  "Bahrain":["Bahrain","🇧🇭","bh"], "Kuwait":["Kuwait","🇰🇼","kw"],
+  "Israel":["Israel","🇮🇱","il"],
+  "Tanzania":["Tanzania","🇹🇿","tz"], "Zambia":["Zambia","🇿🇲","zm"],
+  "Angola":["Angola","🇦🇴","ao"], "Uganda":["Uganda","🇺🇬","ug"],
 };
-const team = name => TEAMS[name] || [name, "🏳️"];
+const team = name => TEAMS[name] || [name, "🏳️", null];
 
 // ============================================================
 // ADAPTER A — API-Football v3
@@ -206,11 +226,17 @@ function hlMapFixture(match) {
   const status = HL_STATUS[desc] ?? "1H";
   const [homeGoals, awayGoals] = hlParseScore(match.state?.score?.current);
   const [homePen, awayPen]     = hlParseScore(match.state?.score?.penalties);
+
+  // HL round: "Group A" → "A" | "Group Stage - 1" (tanpa huruf A-L) → null
+  const roundStr  = match.round ?? null;
+  const grpMatch  = roundStr?.match(/\bGroup\s+([A-L])\b/i);
+  const group     = grpMatch ? grpMatch[1].toUpperCase() : null;
+
   return {
     id:      match.id,
     kickoff: match.date,
-    group:   null,                         // Highlightly tidak menyediakan info grup
-    venue:   match.venue?.name ?? null,
+    group,
+    venue:   null,                         // /matches tidak mengembalikan venue
     status,
     home: { name: hl, flag: hf, goals: homeGoals },
     away: { name: al, flag: af, goals: awayGoals },

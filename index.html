@@ -76,7 +76,9 @@
   .team{display:flex;align-items:center;gap:9px;min-width:0}
   .team.home{justify-content:flex-end;text-align:right}
   .team.away{justify-content:flex-start}
-  .flag{font-size:24px;line-height:1;flex:none}
+  .flag{flex:none;line-height:1;vertical-align:middle}
+  img.flag{width:24px;height:auto;border-radius:2px;display:inline-block;vertical-align:middle}
+  span.flag{font-size:24px}
   .tname{font-size:14px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .win{color:var(--lime)}
   .mid{text-align:center;min-width:54px}
@@ -117,7 +119,7 @@
 
   @media(max-width:540px){
     .match-main{grid-template-columns:64px 1fr;gap:10px}.timecol{padding-right:9px}
-    .time{font-size:18px}.flag{font-size:20px}.tname{font-size:12px}.teams{gap:5px}.score{font-size:18px}
+    .time{font-size:18px}img.flag{width:20px}span.flag{font-size:20px}.tname{font-size:12px}.teams{gap:5px}.score{font-size:18px}
     .day-count{display:none}.goals{gap:8px 10px}
   }
 
@@ -199,6 +201,35 @@ const hourWIB = iso => Number(new Intl.DateTimeFormat("en-GB",{timeZone:TZ,hour:
 function tod(iso){const h=hourWIB(iso);
   if(h<5)return["dini","Dini hari"];if(h<11)return["pagi","Pagi"];if(h<18)return["siang","Siang"];return["malam","Malam"];}
 
+// nama Indonesia → kode ISO 2-huruf untuk flagcdn.com (gb-sct / gb-eng = subdivisi)
+const FLAG_CODE={
+  "Meksiko":"mx","Afrika Selatan":"za","Korea Selatan":"kr","Ceko":"cz",
+  "Kanada":"ca","Bosnia & Herzegovina":"ba","Amerika Serikat":"us","Paraguay":"py",
+  "Qatar":"qa","Swiss":"ch","Brasil":"br","Maroko":"ma","Haiti":"ht",
+  "Skotlandia":"gb-sct","Australia":"au","Turki":"tr","Jerman":"de",
+  "Curacao":"cw","Belanda":"nl","Jepang":"jp","Pantai Gading":"ci",
+  "Ekuador":"ec","Swedia":"se","Tunisia":"tn","Spanyol":"es",
+  "Tanjung Verde":"cv","Belgia":"be","Mesir":"eg","Arab Saudi":"sa",
+  "Uruguay":"uy","Iran":"ir","Selandia Baru":"nz","Prancis":"fr",
+  "Senegal":"sn","Irak":"iq","Norwegia":"no","Argentina":"ar",
+  "Aljazair":"dz","Austria":"at","Yordania":"jo","Portugal":"pt",
+  "Kongo":"cd","Inggris":"gb-eng","Kroasia":"hr","Ghana":"gh",
+  "Panama":"pa","Uzbekistan":"uz","Kolombia":"co",
+  "Jamaika":"jm","Venezuela":"ve","Honduras":"hn","Kosta Rika":"cr",
+  "Cile":"cl","Peru":"pe","Nigeria":"ng","Kamerun":"cm","Mali":"ml",
+  "Serbia":"rs","Ukraina":"ua","Polandia":"pl","Rumania":"ro",
+  "Hungaria":"hu","Denmark":"dk","Wales":"gb-wls","Yunani":"gr",
+  "Slovenia":"si","Slovakia":"sk","Islandia":"is","Finlandia":"fi",
+  "Italia":"it","Tiongkok":"cn","Indonesia":"id","UEA":"ae",
+  "Bahrain":"bh","Kuwait":"kw","Israel":"il","Tanzania":"tz",
+  "Zambia":"zm","Angola":"ao","Uganda":"ug",
+};
+function flagImg(name){
+  const code=FLAG_CODE[name];
+  if(!code)return`<span class="flag" title="${name}">${name}</span>`;
+  return`<img class="flag" src="https://flagcdn.com/24x18/${code}.png" width="24" height="18" style="border-radius:2px;vertical-align:middle" alt="${name}" loading="lazy">`;
+}
+
 const qEl=document.getElementById("q");
 const listEl=document.getElementById("list");
 const stateEl=document.getElementById("state");
@@ -274,7 +305,7 @@ function renderKlasmen(){
         </tr></thead>
         <tbody>${rows.map((t,i)=>`<tr>
           <td class="pos tl">${i+1}</td>
-          <td class="tl"><div class="tim-cell"><span>${t.flag}</span><span>${t.name}</span></div></td>
+          <td class="tl"><div class="tim-cell">${flagImg(t.name)}<span>${t.name}</span></div></td>
           <td>${t.M}</td>
           <td class="col-hide">${t.W}</td><td class="col-hide">${t.D}</td><td class="col-hide">${t.L}</td>
           <td class="col-hide">${t.GF}</td><td class="col-hide">${t.GA}</td>
@@ -303,7 +334,7 @@ function renderTopSkor(){
     el.innerHTML=`<div class="scorer-rank${i<3?" top":""}">${i+1}</div>
       <div class="scorer-info">
         <div class="scorer-name">${s.player}</div>
-        <div class="scorer-team">${s.flag} ${s.team}</div>
+        <div class="scorer-team">${flagImg(s.team)} ${s.team}</div>
       </div>
       <div class="scorer-goals">
         <div class="n">${s.goals}</div>
@@ -355,9 +386,9 @@ function render(){
       el.innerHTML=`<div class="match-main">
         <div class="timecol"><div class="time">${fmtTime(m.kickoff)}</div><div class="wib">WIB</div>${badge}</div>
         <div class="teams">
-          <div class="team home"><span class="tname ${hCls}">${m.home.name}</span><span class="flag">${m.home.flag}</span></div>
+          <div class="team home"><span class="tname ${hCls}">${m.home.name}</span>${flagImg(m.home.name)}</div>
           ${mid}
-          <div class="team away"><span class="flag">${m.away.flag}</span><span class="tname ${aCls}">${m.away.name}</span></div>
+          <div class="team away">${flagImg(m.away.name)}<span class="tname ${aCls}">${m.away.name}</span></div>
         </div></div>
         ${b==="finished"?`<button class="detail-toggle">Statistik &amp; gol <span class="chev">▾</span></button><div class="detail">${detailHTML(m)}</div>`:""}`;
       if(b==="finished"){el.querySelector(".detail-toggle").addEventListener("click",()=>el.classList.toggle("open"));}
