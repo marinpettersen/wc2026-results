@@ -377,8 +377,23 @@ function render(){
         const pen=m.penalty?`<span class="pen">pen ${m.penalty.home}-${m.penalty.away}</span>`:"";
         mid=`<div class="mid"><div class="score">${m.home.goals}–${m.away.goals}</div>${pen}</div>`;
       }else if(b==="live"){
-        badge=`<span class="livebadge"><span class="livedot"></span>LIVE</span>`;
-        mid=`<div class="mid"><span class="live-q">• • •</span></div>`; // skor sengaja disembunyikan
+        const st=m.status;
+        if(st==="1H"||st==="2H"){
+          badge=`<span class="livebadge">🔴 ${m.clock!=null?m.clock+"'":"LIVE"}</span>`;
+        }else if(st==="HT"){
+          badge=`<span class="livebadge">⏸ HT</span>`;
+        }else if(st==="ET"){
+          badge=`<span class="livebadge">⚽ ET</span>`;
+        }else if(st==="BT"){
+          badge=`<span class="livebadge">⏸ BT</span>`;
+        }else if(st==="P"){
+          badge=`<span class="livebadge">🎯 PEN</span>`;
+        }else{
+          badge=`<span class="livebadge"><span class="livedot"></span>LIVE</span>`;
+        }
+        mid=(m.home.goals!=null&&m.away.goals!=null)
+          ?`<div class="mid"><div class="score" style="color:var(--cyan)">${m.home.goals}–${m.away.goals}</div></div>`
+          :`<div class="mid"><span class="live-q">– – –</span></div>`;
       }else{
         const[c,l]=tod(m.kickoff);badge=`<span class="tod ${c}">${l}</span>`;
         mid=`<div class="mid"><span class="vs">VS</span></div>`;
@@ -413,7 +428,7 @@ function setFacts(){
   }
   document.getElementById("footer").innerHTML=
     `<b>Cara kerja:</b> GitHub Action mengambil hasil laga yang sudah selesai dan menulis <code style="color:var(--cyan)">results.json</code>; halaman ini membacanya.
-     Skor hanya muncul saat status laga <b>FT/AET/PEN</b>. Laga berlangsung ditandai <b style="color:var(--red)">LIVE</b> tanpa skor.`;
+     Skor muncul saat laga <b>FT/AET/PEN</b> (final) atau sedang berlangsung (<b style="color:var(--cyan)">LIVE</b>, skor dalam warna cyan). GitHub Action memperbarui data setiap 5 menit.`;
 }
 
 fetch("results.json",{cache:"no-store"})

@@ -21,6 +21,7 @@ const PROVIDER = (process.env.PROVIDER || "apifootball").toLowerCase();
 const SEASON   = process.env.WC_SEASON || "2026";
 
 const FINAL = new Set(["FT", "AET", "PEN"]);
+const LIVE  = new Set(["1H", "HT", "2H", "ET", "BT", "P"]);
 
 // name (EN dari API) → [label Indonesia, emoji, kode ISO 2-huruf]. Berlaku untuk semua adapter.
 const TEAMS = {
@@ -108,6 +109,7 @@ function apfMapFixture(fx) {
       ? `${fx.fixture.venue.name}${fx.fixture.venue.city ? ", " + fx.fixture.venue.city : ""}`
       : null,
     status: fx.fixture.status.short,
+    clock: null,
     home: { name: hl, flag: hf, goals: fx.goals.home },
     away: { name: al, flag: af, goals: fx.goals.away },
     penalty: (pen && pen.home != null) ? { home: pen.home, away: pen.away } : null,
@@ -224,6 +226,7 @@ function hlMapFixture(match) {
   const [al, af] = team(match.awayTeam.name);
   const desc   = match.state?.description ?? "";
   const status = HL_STATUS[desc] ?? "1H";
+  const clock  = match.state?.clock ?? null;
   const [homeGoals, awayGoals] = hlParseScore(match.state?.score?.current);
   const [homePen, awayPen]     = hlParseScore(match.state?.score?.penalties);
 
@@ -238,6 +241,7 @@ function hlMapFixture(match) {
     group,
     venue:   null,                         // /matches tidak mengembalikan venue
     status,
+    clock,
     home: { name: hl, flag: hf, goals: homeGoals },
     away: { name: al, flag: af, goals: awayGoals },
     penalty: homePen !== null ? { home: homePen, away: awayPen } : null,
@@ -429,6 +433,13 @@ async function main() {
         enriched++;
       } catch (err) {
         console.warn(`  enrich gagal utk ${base.id}: ${err.message} (skor tetap disimpan)`);
+      }
+    } else if (LIVE.has(base.status)) {
+      // Laga live: skor + clock sudah diisi hlMapFixture; tidak call /events atau /statistics
+      // Pertahankan events/stats dari data sebelumnya jika ada (biasanya kosong)
+      if (prev) {
+        base.events = prev.events ?? [];
+        base.stats  = prev.stats  ?? null;
       }
     }
 

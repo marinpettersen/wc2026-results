@@ -52,6 +52,9 @@
         },
         "stats": {
           "anyOf": [{ "$ref": "#/definitions/stats" }, { "type": "null" }]
+        },
+        "clock": {
+          "anyOf": [{ "type": "integer", "minimum": 0 }, { "type": "null" }]
         }
       }
     },

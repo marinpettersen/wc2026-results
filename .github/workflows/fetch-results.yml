@@ -2,9 +2,9 @@ name: Fetch World Cup results
 
 on:
   schedule:
-    # Tiap 30 menit (waktu UTC). GitHub cron minimal interval ~5 menit.
-    # Selama turnamen ini lebih dari cukup karena kita cuma ambil laga yang SUDAH selesai.
-    - cron: "*/30 * * * *"
+    # Tiap 5 menit — untuk update live score saat turnamen berlangsung.
+    # 288 run/hari × ~10 detik/run ≈ 48 menit/hari, masih dalam free tier 2000 mnt/bulan.
+    - cron: "*/5 * * * *"
   workflow_dispatch: {}        # bisa dijalankan manual dari tab Actions
 
 # Diperlukan agar bisa git push hasil update results.json
