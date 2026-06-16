@@ -16,6 +16,9 @@ concurrency:
   group: fetch-results
   cancel-in-progress: false
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
@@ -26,10 +29,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Fetch results
         env:
+          HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
+          PROVIDER: ${{ secrets.PROVIDER }}
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           # Opsional override:
           # WC_LEAGUE_ID: "1"
