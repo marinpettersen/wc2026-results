@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-14T14:24:29.314Z",
+  "updatedAt": "2026-06-16T19:50:24.673Z",
   "source": "highlightly league 1635 season 2026",
   "matches": [
     {
@@ -479,176 +479,515 @@
       "kickoff": "2026-06-14T17:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Jerman",
         "flag": "🇩🇪",
-        "goals": null
+        "goals": 7
       },
       "away": {
         "name": "Curacao",
         "flag": "🇨🇼",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "F. Nmecha",
+          "minute": "6"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "L. Comenencia",
+          "minute": "21"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "N. Schlotterbeck",
+          "minute": "38"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Havertz",
+          "minute": "45+5",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "J. Musiala",
+          "minute": "47"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "N. Brown",
+          "minute": "68"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "D. Undav",
+          "minute": "78"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Havertz",
+          "minute": "88"
+        }
+      ],
+      "stats": {
+        "possession": [
+          65,
+          35
+        ],
+        "shots": [
+          18,
+          8
+        ],
+        "sot": [
+          12,
+          2
+        ],
+        "fouls": [
+          18,
+          11
+        ],
+        "offsides": [
+          0,
+          1
+        ]
+      }
     },
     {
       "id": 1267459760,
       "kickoff": "2026-06-14T20:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Belanda",
         "flag": "🇳🇱",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Jepang",
         "flag": "🇯🇵",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "V. van Dijk",
+          "minute": "51"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "K. Nakamura",
+          "minute": "57"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "C. Summerville",
+          "minute": "64"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "D. Kamada",
+          "minute": "88"
+        }
+      ],
+      "stats": {
+        "possession": [
+          60,
+          40
+        ],
+        "shots": [
+          9,
+          9
+        ],
+        "sot": [
+          6,
+          3
+        ],
+        "fouls": [
+          7,
+          7
+        ],
+        "offsides": [
+          1,
+          0
+        ]
+      }
     },
     {
       "id": 1267458909,
       "kickoff": "2026-06-14T23:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Pantai Gading",
         "flag": "🇨🇮",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Ekuador",
         "flag": "🇪🇨",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Diallo",
+          "minute": "90"
+        }
+      ],
+      "stats": {
+        "possession": [
+          48,
+          52
+        ],
+        "shots": [
+          12,
+          9
+        ],
+        "sot": [
+          4,
+          1
+        ],
+        "fouls": [
+          10,
+          13
+        ],
+        "offsides": [
+          0,
+          0
+        ]
+      }
     },
     {
       "id": 1309691486,
       "kickoff": "2026-06-15T02:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Swedia",
         "flag": "🇸🇪",
-        "goals": null
+        "goals": 5
       },
       "away": {
         "name": "Tunisia",
         "flag": "🇹🇳",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Y. Ayari",
+          "minute": "7"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Isak",
+          "minute": "30"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "O. Rekik",
+          "minute": "43"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "V. Gyokeres",
+          "minute": "59"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Svanberg",
+          "minute": "84"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Y. Ayari",
+          "minute": "90+6"
+        }
+      ],
+      "stats": {
+        "possession": [
+          49,
+          51
+        ],
+        "shots": [
+          10,
+          5
+        ],
+        "sot": [
+          7,
+          2
+        ],
+        "fouls": [
+          10,
+          8
+        ],
+        "offsides": [
+          3,
+          6
+        ]
+      }
     },
     {
       "id": 1267463164,
       "kickoff": "2026-06-15T16:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Spanyol",
         "flag": "🇪🇸",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Tanjung Verde",
         "flag": "🇨🇻",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
-      "stats": null
+      "stats": {
+        "possession": [
+          74,
+          26
+        ],
+        "shots": [
+          19,
+          4
+        ],
+        "sot": [
+          7,
+          1
+        ],
+        "fouls": [
+          10,
+          1
+        ],
+        "offsides": [
+          2,
+          3
+        ]
+      }
     },
     {
       "id": 1267460611,
       "kickoff": "2026-06-15T19:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Belgia",
         "flag": "🇧🇪",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Mesir",
         "flag": "🇪🇬",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "E. Ashour",
+          "minute": "19"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Hany",
+          "minute": "66",
+          "tag": "b.d."
+        }
+      ],
+      "stats": {
+        "possession": [
+          54,
+          46
+        ],
+        "shots": [
+          10,
+          6
+        ],
+        "sot": [
+          3,
+          3
+        ],
+        "fouls": [
+          15,
+          15
+        ],
+        "offsides": [
+          0,
+          1
+        ]
+      }
     },
     {
       "id": 1267462313,
       "kickoff": "2026-06-15T22:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Arab Saudi",
         "flag": "🇸🇦",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Uruguay",
         "flag": "🇺🇾",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Al Amri",
+          "minute": "41"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Araujo",
+          "minute": "80"
+        }
+      ],
+      "stats": {
+        "possession": [
+          33,
+          67
+        ],
+        "shots": [
+          6,
+          20
+        ],
+        "sot": [
+          3,
+          10
+        ],
+        "fouls": [
+          11,
+          6
+        ],
+        "offsides": [
+          0,
+          6
+        ]
+      }
     },
     {
       "id": 1267461462,
       "kickoff": "2026-06-16T01:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Iran",
         "flag": "🇮🇷",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Selandia Baru",
         "flag": "🇳🇿",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "E. Just",
+          "minute": "7"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "R. Rezaeian",
+          "minute": "32"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "E. Just",
+          "minute": "54"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Mohebi",
+          "minute": "64"
+        }
+      ],
+      "stats": {
+        "possession": [
+          48,
+          52
+        ],
+        "shots": [
+          12,
+          12
+        ],
+        "sot": [
+          4,
+          8
+        ],
+        "fouls": [
+          10,
+          8
+        ],
+        "offsides": [
+          2,
+          0
+        ]
+      }
     },
     {
       "id": 1267465717,
       "kickoff": "2026-06-16T19:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "1H",
       "home": {
         "name": "Prancis",
         "flag": "🇫🇷",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Senegal",
         "flag": "🇸🇳",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
