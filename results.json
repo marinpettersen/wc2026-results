@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-17T05:10:38.015Z",
+  "updatedAt": "2026-06-17T05:28:00.572Z",
   "source": "highlightly league 1635 season 2026",
   "matches": [
     {
@@ -1191,12 +1191,12 @@
       "away": {
         "name": "Yordania",
         "flag": "🇯🇴",
-        "goals": 0
+        "goals": 1
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": 45,
+      "clock": 62,
       "referee": null
     },
     {
