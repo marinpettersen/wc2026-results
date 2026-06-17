@@ -110,6 +110,7 @@ function apfMapFixture(fx) {
       : null,
     status: fx.fixture.status.short,
     clock: null,
+    referee: null,
     home: { name: hl, flag: hf, goals: fx.goals.home },
     away: { name: al, flag: af, goals: fx.goals.away },
     penalty: (pen && pen.home != null) ? { home: pen.home, away: pen.away } : null,
@@ -235,11 +236,18 @@ function hlMapFixture(match) {
   const grpMatch  = roundStr?.match(/\bGroup\s+([A-L])\b/i);
   const group     = grpMatch ? grpMatch[1].toUpperCase() : null;
 
+  const venueRaw = match.venue;
+  const venue    = venueRaw?.name
+    ? `${venueRaw.name}${venueRaw.city ? ", " + venueRaw.city : ""}`
+    : null;
+  const referee  = match.referee?.name ?? null;
+
   return {
     id:      match.id,
     kickoff: match.date,
     group,
-    venue:   null,                         // /matches tidak mengembalikan venue
+    venue,
+    referee,
     status,
     clock,
     home: { name: hl, flag: hf, goals: homeGoals },

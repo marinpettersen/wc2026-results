@@ -267,6 +267,7 @@ function goalsHTML(m){
 }
 function detailHTML(m){
   let s = m.venue?`<div class="venue">${m.venue}${m.group?" · Grup "+m.group:""}</div>`:"";
+  if(m.referee)s+=`<div class="venue">🟨 ${m.referee}</div>`;
   s += goalsHTML(m);
   if(m.stats){const t=m.stats;
     s+=statBar("Penguasaan bola %",t.possession[0],t.possession[1]);

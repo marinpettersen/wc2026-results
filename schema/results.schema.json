@@ -55,6 +55,9 @@
         },
         "clock": {
           "anyOf": [{ "type": "integer", "minimum": 0 }, { "type": "null" }]
+        },
+        "referee": {
+          "anyOf": [{ "type": "string" }, { "type": "null" }]
         }
       }
     },

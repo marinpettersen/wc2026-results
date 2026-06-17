@@ -2,6 +2,18 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-17 — Feat: venue + referee dari detail endpoint
+
+- `scripts/fetch-results.mjs` — `hlMapFixture`: baca `match.venue?.name` +
+  `match.venue?.city` → field `venue` (sebelumnya selalu null untuk HL list).
+  Baca `match.referee?.name` → field `referee` (baru). Untuk list endpoint,
+  kedua field undefined → null secara alami. Untuk detail endpoint (`/matches/{id}`
+  yang sudah di-fetch sejak fix NS post-kickoff), field terisi otomatis tanpa
+  call API tambahan. `apfMapFixture` emit `referee: null` untuk konsistensi.
+- `schema/results.schema.json`: tambah field opsional `referee: string|null`.
+- `index.html`: `detailHTML` tampilkan `🟨 {referee}` di bawah venue, hanya
+  kalau `m.referee` truthy.
+
 ## 2026-06-17 — Fix: verify NS post-kickoff via detail endpoint
 
 - `scripts/fetch-results.mjs`: endpoint list Highlightly lambat update status live.
