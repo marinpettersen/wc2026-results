@@ -382,13 +382,19 @@ const HL = {
     return arr[0] ?? null;
   },
   async fetchEnrich(id, homeId, awayId) {
-    const [evRaw, stRaw] = await Promise.all([
+    const [evRaw, stRaw, detailRaw] = await Promise.all([
       hlApi(`events/${id}`),
       hlApi(`statistics/${id}`),
+      hlApi(`matches/${id}`),
     ]);
+    const detailArr = Array.isArray(detailRaw) ? detailRaw : (Array.isArray(detailRaw?.data) ? detailRaw.data : []);
+    const detail    = detailArr[0] ?? null;
+    const venueRaw  = detail?.venue;
     return {
-      events: hlMapEvents(evRaw, homeId),
-      stats:  hlMapStats(stRaw, homeId, awayId),
+      events:  hlMapEvents(evRaw, homeId),
+      stats:   hlMapStats(stRaw, homeId, awayId),
+      venue:   venueRaw?.name ? `${venueRaw.name}${venueRaw.city ? ", " + venueRaw.city : ""}` : null,
+      referee: detail?.referee?.name ?? null,
     };
   },
 };
@@ -451,9 +457,11 @@ async function main() {
 
     if (FINAL.has(base.status)) {
       try {
-        const { events, stats } = await A.fetchEnrich(base.id, base._homeId, base._awayId);
-        base.events = events;
-        base.stats  = stats;
+        const { events, stats, venue, referee } = await A.fetchEnrich(base.id, base._homeId, base._awayId);
+        base.events   = events;
+        base.stats    = stats;
+        if (venue)   base.venue   = venue;
+        if (referee) base.referee = referee;
         enriched++;
       } catch (err) {
         console.warn(`  enrich gagal utk ${base.id}: ${err.message} (skor tetap disimpan)`);

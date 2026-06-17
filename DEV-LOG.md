@@ -2,6 +2,17 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-17 — Fix: venue + referee untuk laga FT via fetchEnrich
+
+- `HL.fetchEnrich`: tambah `hlApi("matches/{id}")` paralel bersama `/events` dan
+  `/statistics` (satu `Promise.all` — tidak tambah latency). Parse venue + referee
+  dari detail, return sebagai `{ events, stats, venue, referee }`.
+- `main()`: destructure `venue` dan `referee` dari hasil `fetchEnrich`, update
+  `base.venue` dan `base.referee` bila ada (override null dari list endpoint).
+  Try/catch yang ada sudah cukup — jika enrich gagal, venue+referee tetap null.
+- Kuota tambahan: 1 call `/matches/{id}` per laga baru final, maks ~104 call
+  seumur turnamen. Jalur NS post-kickoff (fetchDetail) tidak berubah.
+
 ## 2026-06-17 — Feat: venue + referee dari detail endpoint
 
 - `scripts/fetch-results.mjs` — `hlMapFixture`: baca `match.venue?.name` +
