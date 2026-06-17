@@ -21,38 +21,7 @@
         "goals": 0
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "J. Quinones",
-          "minute": "9"
-        },
-        {
-          "team": "away",
-          "type": "redcard",
-          "player": "Y. Sithole",
-          "minute": "49"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "R. Jimenez",
-          "minute": "67"
-        },
-        {
-          "team": "away",
-          "type": "redcard",
-          "player": "T. Zwane",
-          "minute": "84"
-        },
-        {
-          "team": "home",
-          "type": "redcard",
-          "player": "C. Montes",
-          "minute": "90+2"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           60,
@@ -93,26 +62,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "L. Krejci",
-          "minute": "59"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "Hwang In-Beom",
-          "minute": "67"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "Oh Hyeon-Gyu",
-          "minute": "80"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           62,
@@ -153,20 +103,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "J. Lukic",
-          "minute": "21"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "C. Larin",
-          "minute": "78"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           61,
@@ -207,39 +144,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "D. Bobadilla",
-          "minute": "7",
-          "tag": "b.d."
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "F. Balogun",
-          "minute": "31"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "F. Balogun",
-          "minute": "45+5"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "Mauricio",
-          "minute": "73"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "G. Reyna",
-          "minute": "90+8"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           65,
@@ -280,21 +185,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "B. Embolo",
-          "minute": "17",
-          "tag": "pen"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "B. Khoukhi",
-          "minute": "90+4"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           32,
@@ -335,20 +226,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "I. Saibari",
-          "minute": "21"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "Vinicius Junior",
-          "minute": "32"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           51,
@@ -389,14 +267,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "J. McGinn",
-          "minute": "28"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           54,
@@ -437,20 +308,7 @@
         "goals": 0
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "N. Irankunda",
-          "minute": "27"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "C. Metcalfe",
-          "minute": "75"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           28,
@@ -491,57 +349,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "F. Nmecha",
-          "minute": "6"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "L. Comenencia",
-          "minute": "21"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "N. Schlotterbeck",
-          "minute": "38"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "K. Havertz",
-          "minute": "45+5",
-          "tag": "pen"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "J. Musiala",
-          "minute": "47"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "N. Brown",
-          "minute": "68"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "D. Undav",
-          "minute": "78"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "K. Havertz",
-          "minute": "88"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           65,
@@ -582,32 +390,7 @@
         "goals": 2
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "V. van Dijk",
-          "minute": "51"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "K. Nakamura",
-          "minute": "57"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "C. Summerville",
-          "minute": "64"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "D. Kamada",
-          "minute": "88"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           60,
@@ -648,14 +431,7 @@
         "goals": 0
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "A. Diallo",
-          "minute": "90"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           48,
@@ -696,44 +472,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "Y. Ayari",
-          "minute": "7"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "A. Isak",
-          "minute": "30"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "O. Rekik",
-          "minute": "43"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "V. Gyokeres",
-          "minute": "59"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "M. Svanberg",
-          "minute": "84"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "Y. Ayari",
-          "minute": "90+6"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           49,
@@ -817,21 +556,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "E. Ashour",
-          "minute": "19"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "M. Hany",
-          "minute": "66",
-          "tag": "b.d."
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           54,
@@ -872,20 +597,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "A. Al Amri",
-          "minute": "41"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "M. Araujo",
-          "minute": "80"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           33,
@@ -926,32 +638,7 @@
         "goals": 2
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "E. Just",
-          "minute": "7"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "R. Rezaeian",
-          "minute": "32"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "E. Just",
-          "minute": "54"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "M. Mohebi",
-          "minute": "64"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           48,
@@ -992,32 +679,7 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "K. Mbappe",
-          "minute": "66"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "B. Barcola",
-          "minute": "82"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "I. Mbaye",
-          "minute": "90+5"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "K. Mbappe",
-          "minute": "90+6"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           54,
@@ -1059,39 +721,7 @@
         "goals": 4
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "E. Haaland",
-          "minute": "29"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "A. Hussein",
-          "minute": "39"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "E. Haaland",
-          "minute": "43"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "L. Ostigard",
-          "minute": "76"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "A. Hussein",
-          "minute": "90+6",
-          "tag": "b.d."
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           39,
@@ -1133,26 +763,7 @@
         "goals": 0
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "L. Messi",
-          "minute": "17"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "L. Messi",
-          "minute": "60"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "L. Messi",
-          "minute": "76"
-        }
-      ],
+      "events": [],
       "stats": {
         "possession": [
           48,

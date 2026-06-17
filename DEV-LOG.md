@@ -2,6 +2,15 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-17 — Data: unfreeze 18 laga FT agar venue+referee terisi ulang
+
+- `results.json`: 18 laga FT dengan `venue === null` dan `events.length > 0`
+  di-unfreeze dengan mengosongkan `events = []`. Field lain (skor, stats, dll.)
+  tidak diubah.
+- `isFrozen()` kini return false untuk laga ini → Action berikutnya memanggil
+  `fetchEnrich` yang sekarang juga fetch `/matches/{id}` paralel → venue +
+  referee terisi dari API.
+
 ## 2026-06-17 — Fix: venue + referee untuk laga FT via fetchEnrich
 
 - `HL.fetchEnrich`: tambah `hlApi("matches/{id}")` paralel bersama `/events` dan
