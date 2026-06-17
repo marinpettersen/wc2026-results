@@ -2,6 +2,21 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-17 — Fix: mobile UI (nama tim, tab scroll, header, wasit, klasemen)
+
+- `.seg`: tambah `overflow-x:auto`, `scroll-snap-type:x mandatory`, `scrollbar-width:none`
+  + `::-webkit-scrollbar{display:none}`. Button: `flex-shrink:0`, `scroll-snap-align:start`.
+  Tab bar kini scrollable horizontal di mobile tanpa scrollbar terlihat.
+- Mobile `@media(max-width:540px)`: `header{padding-top:24px}`, `h1` override ke
+  `clamp(38px,12vw,52px)`. Header tidak lagi mendominasi layar kecil.
+- `.tname` mobile: `font-size:11px`, `white-space:normal`, `overflow:visible` —
+  nama tim boleh wrap 2 baris, tidak lagi terpotong "Afrika S...".
+- Ikon wasit: pisahkan class `.referee` (tanpa `::before`) dari `.venue` (tetap pakai
+  `::before{content:"📍 "}`). `detailHTML` kini emit `<div class="referee">🟨 …</div>`.
+  Sebelumnya `::before` CSS menambah 📍 ganda di baris wasit.
+- Pesan klasemen kosong: ganti ke "Klasemen grup akan tersedia setelah babak
+  penyisihan berjalan. Data sedang dikumpulkan."
+
 ## 2026-06-17 — Data: unfreeze 18 laga FT agar venue+referee terisi ulang
 
 - `results.json`: 18 laga FT dengan `venue === null` dan `events.length > 0`
