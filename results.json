@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-17T03:47:34.735Z",
+  "updatedAt": "2026-06-17T05:10:38.015Z",
   "source": "highlightly league 1635 season 2026",
   "matches": [
     {
@@ -797,7 +797,8 @@
           3
         ]
       },
-      "clock": 90
+      "clock": 90,
+      "referee": null
     },
     {
       "id": 1267460611,
@@ -1181,21 +1182,22 @@
       "kickoff": "2026-06-17T04:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "1H",
       "home": {
         "name": "Austria",
         "flag": "🇦🇹",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Yordania",
         "flag": "🇯🇴",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": 45,
+      "referee": null
     },
     {
       "id": 1309692337,
@@ -1216,7 +1218,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267466568,
@@ -1237,7 +1240,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267467419,
@@ -1258,7 +1262,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267468270,
@@ -1279,7 +1284,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309693188,
@@ -1300,7 +1306,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309694039,
@@ -1321,7 +1328,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267469121,
@@ -1342,7 +1350,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267469972,
@@ -1363,7 +1372,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267472525,
@@ -1384,7 +1394,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267471674,
@@ -1405,7 +1416,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267470823,
@@ -1426,7 +1438,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309694890,
@@ -1447,7 +1460,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309695741,
@@ -1468,7 +1482,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267474227,
@@ -1489,7 +1504,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267473376,
@@ -1510,7 +1526,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267475078,
@@ -1531,7 +1548,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267477631,
@@ -1552,7 +1570,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267475929,
@@ -1573,7 +1592,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267478482,
@@ -1594,7 +1614,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267476780,
@@ -1615,7 +1636,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267479333,
@@ -1636,7 +1658,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309704251,
@@ -1657,7 +1680,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267481035,
@@ -1678,7 +1702,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267480184,
@@ -1699,7 +1724,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267483588,
@@ -1720,7 +1746,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267481886,
@@ -1741,7 +1768,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267482737,
@@ -1762,7 +1790,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309696592,
@@ -1783,7 +1812,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267486992,
@@ -1804,7 +1834,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309697443,
@@ -1825,7 +1856,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267484439,
@@ -1846,7 +1878,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267485290,
@@ -1867,7 +1900,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309698294,
@@ -1888,7 +1922,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267486141,
@@ -1909,7 +1944,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267488694,
@@ -1930,7 +1966,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267487843,
@@ -1951,7 +1988,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309699145,
@@ -1972,7 +2010,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267490396,
@@ -1993,7 +2032,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267489545,
@@ -2014,7 +2054,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309699996,
@@ -2035,7 +2076,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309752758,
@@ -2056,7 +2098,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267493800,
@@ -2077,7 +2120,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267491247,
@@ -2098,7 +2142,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267494651,
@@ -2119,7 +2164,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267492098,
@@ -2140,7 +2186,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267492949,
@@ -2161,7 +2208,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267497204,
@@ -2182,7 +2230,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267498906,
@@ -2203,7 +2252,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1309700847,
@@ -2224,7 +2274,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267496353,
@@ -2245,7 +2296,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267495502,
@@ -2266,7 +2318,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     },
     {
       "id": 1267498055,
@@ -2287,7 +2340,8 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null
+      "clock": null,
+      "referee": null
     }
   ]
 }
