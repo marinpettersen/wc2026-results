@@ -31,7 +31,17 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Smart scheduling check
+        id: should_fetch
+        run: |
+          if node scripts/should-fetch.mjs; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Fetch results
+        if: steps.should_fetch.outputs.skip == 'false' || github.event_name == 'workflow_dispatch'
         env:
           HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
           PROVIDER: ${{ secrets.PROVIDER }}
@@ -42,6 +52,7 @@ jobs:
         run: node scripts/fetch-results.mjs
 
       - name: Validasi results.json
+        if: steps.should_fetch.outputs.skip == 'false' || github.event_name == 'workflow_dispatch'
         run: node scripts/validate.mjs
 
       - name: Commit jika ada perubahan

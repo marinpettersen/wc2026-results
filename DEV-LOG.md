@@ -2,6 +2,18 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-18 — Feat: smart scheduling (hemat kuota API)
+
+- `scripts/should-fetch.mjs`: cek apakah ada laga yang kickoff-nya dalam window
+  aktif (dari −10 menit sampai +120 menit dari sekarang) berdasarkan `results.json`.
+  Exit 0 = skip (tidak ada laga aktif), exit 1 = jalankan fetcher.
+  Zero-dep, Node 20. Fallback: kalau `results.json` tidak ada / kosong → jalankan fetcher.
+- `fetch-results.yml`: tambah step "Smart scheduling check" sebelum fetch.
+  Jika skip=true, langkahi step Fetch + Validasi. `workflow_dispatch` selalu jalan
+  (bypass smart scheduling).
+- Cron tetap `*/5`. Kuota berkurang drastis di luar jam pertandingan — hanya terpakai
+  saat ada laga ±window aktif.
+
 ## 2026-06-17 — Feat: standings dari API Highlightly
 
 - Fetcher: tambah `hlFetchStandings()` — GET `/standings?leagueId=1635&season=2026`,
