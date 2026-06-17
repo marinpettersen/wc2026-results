@@ -349,7 +349,11 @@ function hlMapStats(raw, homeId, awayId) {
 async function hlFetchStandings() {
   console.log(`[highlightly] standings: leagueId=${HL_LEAGUE} season=${SEASON} …`);
   const json = await hlApi(`standings?leagueId=${HL_LEAGUE}&season=${SEASON}`);
-  const groups = Array.isArray(json?.data) ? json.data : (Array.isArray(json) ? json : []);
+  const groups = Array.isArray(json?.groups) ? json.groups : [];
+  if (!groups.length) {
+    console.warn("  ! standings: response kosong atau struktur tak dikenal.");
+    return null;
+  }
   const validGroup = /^Group [A-L]$/;
   const filtered = groups
     .filter(g => validGroup.test(g.name))
@@ -371,7 +375,7 @@ async function hlFetchStandings() {
         };
       }),
     }));
-  console.log(`  standings: ${filtered.length} grup difilter.`);
+  console.log(`  standings: ${filtered.length} grup lolos filter.`);
   return filtered.length ? filtered : null;
 }
 
