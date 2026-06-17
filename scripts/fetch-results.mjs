@@ -367,6 +367,12 @@ const HL = {
     return all;
   },
   mapFixture: hlMapFixture,
+  async fetchDetail(id) {
+    // Endpoint detail: GET /matches/{id} → array langsung (bukan {data:[]})
+    const raw = await hlApi(`matches/${id}`);
+    const arr = Array.isArray(raw) ? raw : (Array.isArray(raw?.data) ? raw.data : []);
+    return arr[0] ?? null;
+  },
   async fetchEnrich(id, homeId, awayId) {
     const [evRaw, stRaw] = await Promise.all([
       hlApi(`events/${id}`),
@@ -419,6 +425,16 @@ async function main() {
     } catch (err) {
       console.warn(`  skip fixture (map error): ${err.message}`);
       continue;
+    }
+
+    // NS + kickoff sudah lewat → endpoint list lambat update; verify via detail
+    if (base.status === "NS" && new Date(base.kickoff) < new Date() && A.fetchDetail) {
+      try {
+        const detail = await A.fetchDetail(base.id);
+        if (detail) base = A.mapFixture(detail);
+      } catch (err) {
+        console.warn(`  detail gagal utk ${base.id}: ${err.message} (pakai data list)`);
+      }
     }
 
     const prev = byId.get(base.id);

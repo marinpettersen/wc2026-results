@@ -2,6 +2,19 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-17 — Fix: verify NS post-kickoff via detail endpoint
+
+- `scripts/fetch-results.mjs`: endpoint list Highlightly lambat update status live.
+  Setelah `hlMapFixture` map fixture dari list, jika `status === "NS"` dan
+  `kickoff < now`, fetch `GET /matches/{id}` untuk dapat state terbaru.
+  Respons detail adalah array langsung (bukan `{data:[]}`); re-map via `hlMapFixture`
+  yang sudah handle status/clock/score. Fallback ke data list jika fetch gagal.
+- HL adapter: tambah method `fetchDetail(id)` — normalize respons array/object,
+  return objek match pertama atau null.
+- Estimasi call tambahan: maks ~4–6 laga/hari (NS yang kickoff-nya baru lewat),
+  jauh di bawah limit 100/hari.
+- APF adapter tidak punya `fetchDetail` → logika di-skip untuk provider itu.
+
 ## 2026-06-17 — M6: Live score display
 
 - `schema/results.schema.json`: tambah field opsional `clock` (integer|null) ke
