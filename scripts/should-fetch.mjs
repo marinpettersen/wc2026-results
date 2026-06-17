@@ -5,7 +5,7 @@
 import { readFileSync } from "node:fs";
 
 const WINDOW_BEFORE = 10 * 60_000;   // 10 menit sebelum kickoff
-const WINDOW_AFTER  = 120 * 60_000;  // 120 menit setelah kickoff
+const WINDOW_AFTER  = 150 * 60_000;  // 150 menit setelah kickoff (90' + 30' AET + 30' buffer)
 
 const now = Date.now();
 
@@ -30,9 +30,9 @@ const active = matches.some(m => {
 });
 
 if (active) {
-  console.log("should-fetch: ada laga dalam window aktif — jalankan fetcher.");
+  console.log("Ada laga aktif, fetch diperlukan.");
   process.exit(1);
 } else {
-  console.log("should-fetch: tidak ada laga dalam window — skip, hemat kuota.");
+  console.log("Tidak ada laga aktif, skip.");
   process.exit(0);
 }

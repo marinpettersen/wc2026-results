@@ -5,6 +5,7 @@
   "type": "module",
   "description": "PoC: GitHub Action -> results.json -> frontend statis (results-only, jam WIB)",
   "scripts": {
+    "gate": "node scripts/should-fetch.mjs",
     "fetch": "node scripts/fetch-results.mjs",
     "validate": "node scripts/validate.mjs",
     "check:coverage": "node scripts/check-coverage.mjs",

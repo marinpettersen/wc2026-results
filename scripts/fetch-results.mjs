@@ -451,6 +451,25 @@ async function main() {
   const existing = await loadExisting();
   const byId = new Map(existing.matches.map(m => [m.id, m]));
 
+  // Freeze per-hari: hitung tanggal di mana SEMUA laga sudah frozen
+  const dateMatches = new Map(); // UTC date string → [match, ...]
+  for (const m of byId.values()) {
+    if (!m.kickoff) continue;
+    const d = m.kickoff.slice(0, 10); // YYYY-MM-DD dalam UTC
+    if (!dateMatches.has(d)) dateMatches.set(d, []);
+    dateMatches.get(d).push(m);
+  }
+  const frozenDates = new Set();
+  for (const [d, ms] of dateMatches) {
+    if (ms.length > 0 && ms.every(m => isFrozen(m))) frozenDates.add(d);
+  }
+  if (frozenDates.size > 0) {
+    const skippable = [...dateMatches.entries()]
+      .filter(([d]) => frozenDates.has(d))
+      .reduce((sum, [, ms]) => sum + ms.length, 0);
+    console.log(`[${PROVIDER}] skip ${skippable} laga dari ${frozenDates.size} hari beku.`);
+  }
+
   if (!A.key) {
     console.log(`${A.keyEnv} kosong → pakai results.json yang ada (seed). Tidak ada perubahan.`);
     return;
@@ -480,6 +499,9 @@ async function main() {
       console.warn(`  skip fixture (map error): ${err.message}`);
       continue;
     }
+
+    // Skip laga dari hari yang sudah sepenuhnya beku
+    if (base.kickoff && frozenDates.has(base.kickoff.slice(0, 10))) continue;
 
     // NS + kickoff sudah lewat → endpoint list lambat update; verify via detail
     if (base.status === "NS" && new Date(base.kickoff) < new Date() && A.fetchDetail) {

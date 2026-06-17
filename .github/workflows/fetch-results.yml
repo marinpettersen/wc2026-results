@@ -31,17 +31,15 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Smart scheduling check
-        id: should_fetch
+      - name: Cek apakah perlu fetch
+        id: gate
         run: |
-          if node scripts/should-fetch.mjs; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "skip=false" >> "$GITHUB_OUTPUT"
-          fi
+          node scripts/should-fetch.mjs
+          echo "should_fetch=$?" >> "$GITHUB_OUTPUT"
+        continue-on-error: true
 
       - name: Fetch results
-        if: steps.should_fetch.outputs.skip == 'false' || github.event_name == 'workflow_dispatch'
+        if: steps.gate.outputs.should_fetch == '1' || github.event_name == 'workflow_dispatch'
         env:
           HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
           PROVIDER: ${{ secrets.PROVIDER }}
@@ -52,10 +50,11 @@ jobs:
         run: node scripts/fetch-results.mjs
 
       - name: Validasi results.json
-        if: steps.should_fetch.outputs.skip == 'false' || github.event_name == 'workflow_dispatch'
+        if: steps.gate.outputs.should_fetch == '1' || github.event_name == 'workflow_dispatch'
         run: node scripts/validate.mjs
 
       - name: Commit jika ada perubahan
+        if: steps.gate.outputs.should_fetch == '1' || github.event_name == 'workflow_dispatch'
         run: |
           if [[ -n "$(git status --porcelain results.json)" ]]; then
             git config user.name  "github-actions[bot]"

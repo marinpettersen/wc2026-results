@@ -2,17 +2,29 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
-## 2026-06-18 — Feat: smart scheduling (hemat kuota API)
+## 2026-06-18 — Feat: tiga optimasi smart scheduling (hemat ~80% kuota)
 
-- `scripts/should-fetch.mjs`: cek apakah ada laga yang kickoff-nya dalam window
-  aktif (dari −10 menit sampai +120 menit dari sekarang) berdasarkan `results.json`.
-  Exit 0 = skip (tidak ada laga aktif), exit 1 = jalankan fetcher.
-  Zero-dep, Node 20. Fallback: kalau `results.json` tidak ada / kosong → jalankan fetcher.
-- `fetch-results.yml`: tambah step "Smart scheduling check" sebelum fetch.
-  Jika skip=true, langkahi step Fetch + Validasi. `workflow_dispatch` selalu jalan
-  (bypass smart scheduling).
-- Cron tetap `*/5`. Kuota berkurang drastis di luar jam pertandingan — hanya terpakai
-  saat ada laga ±window aktif.
+Estimasi: hemat ~80% kuota — hanya fetch saat ada laga aktif (~28% dari total durasi turnamen).
+
+### 1. should-fetch.mjs — gate script
+- Window diperlebar: −10 menit s/d +150 menit (90' regular + 30' AET + 30' buffer).
+- Log message disesuaikan: "Ada laga aktif, fetch diperlukan." / "Tidak ada laga aktif, skip."
+- Script `"gate"` ditambahkan di `package.json`.
+- Handle error graceful: results.json tidak ada / parse error → exit 1 (safe default).
+
+### 2. Freeze per-hari di fetch-results.mjs
+- Setelah `loadExisting()`, hitung `frozenDates`: Set tanggal UTC (YYYY-MM-DD) di mana
+  SEMUA laga pada tanggal itu sudah frozen (`isFrozen()` = true).
+- Saat loop fixtures: jika `dateOf(base.kickoff)` ada di `frozenDates` → skip (continue).
+- Log di awal: `[provider] skip X laga dari Y hari beku.`
+- Layer tambahan di atas per-laga freeze — tidak mengubah `isFrozen()` yang sudah ada.
+
+### 3. fetch-results.yml — gate step restructure
+- Step "Cek apakah perlu fetch" (`id: gate`) dengan `continue-on-error: true`,
+  capture exit code via `$?` ke `GITHUB_OUTPUT`.
+- Kondisi `if: steps.gate.outputs.should_fetch == '1' || github.event_name == 'workflow_dispatch'`
+  pada tiga step: Fetch results, Validasi results.json, Commit jika ada perubahan.
+- `workflow_dispatch` selalu bypass gate (manual run tetap jalan).
 
 ## 2026-06-17 — Feat: standings dari API Highlightly
 
