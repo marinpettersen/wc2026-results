@@ -346,9 +346,39 @@ function hlMapStats(raw, homeId, awayId) {
   };
 }
 
+async function hlFetchStandings() {
+  console.log(`[highlightly] standings: leagueId=${HL_LEAGUE} season=${SEASON} …`);
+  const json = await hlApi(`standings?leagueId=${HL_LEAGUE}&season=${SEASON}`);
+  const groups = Array.isArray(json?.data) ? json.data : (Array.isArray(json) ? json : []);
+  const validGroup = /^Group [A-L]$/;
+  const filtered = groups
+    .filter(g => validGroup.test(g.name))
+    .map(g => ({
+      name: g.name,
+      standings: (g.standings || []).map(s => {
+        const [label, flag] = team(s.team?.name ?? "");
+        return {
+          name: label,
+          flag,
+          position: s.position,
+          games: s.total?.games ?? 0,
+          wins: s.total?.wins ?? 0,
+          draws: s.total?.draws ?? 0,
+          losses: s.total?.loses ?? 0,
+          gf: s.total?.scoredGoals ?? 0,
+          ga: s.total?.receivedGoals ?? 0,
+          points: s.points ?? 0,
+        };
+      }),
+    }));
+  console.log(`  standings: ${filtered.length} grup difilter.`);
+  return filtered.length ? filtered : null;
+}
+
 const HL = {
   key: HL_KEY,
   keyEnv: "HIGHLIGHTLY_KEY",
+  fetchStandings: hlFetchStandings,
   async fetchFixtures() {
     console.log(`[highlightly] fixtures: leagueId=${HL_LEAGUE} season=${SEASON} …`);
     // WC 2026 punya 104 laga (72 grup + 32 fase gugur) — gunakan pagination
@@ -423,10 +453,16 @@ async function main() {
   }
 
   let fixtures = [];
+  let standingsData = null;
   try {
-    fixtures = await A.fetchFixtures();
+    const [fx, st] = await Promise.all([
+      A.fetchFixtures(),
+      A.fetchStandings ? A.fetchStandings() : Promise.resolve(null),
+    ]);
+    fixtures = fx;
+    standingsData = st;
   } catch (err) {
-    console.error("Gagal ambil fixtures:", err.message, "→ keep seed.");
+    console.error("Gagal ambil fixtures/standings:", err.message, "→ keep seed.");
     return;
   }
   console.log(`  dapat ${fixtures.length} fixtures.`);
@@ -492,6 +528,7 @@ async function main() {
     source: PROVIDER === "highlightly"
       ? `highlightly league ${HL_LEAGUE} season ${SEASON}`
       : `api-football league ${APF_LEAGUE} season ${SEASON}`,
+    standings: standingsData || null,
     matches,
   };
   await writeFile(OUT, JSON.stringify(out, null, 2));

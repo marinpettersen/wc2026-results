@@ -131,6 +131,12 @@
   }
 
   /* Klasemen */
+  .stab-bar{display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-bottom:14px;
+    background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:3px}
+  .stab-bar::-webkit-scrollbar{display:none}
+  .stab-bar button{background:none;border:none;color:var(--muted);font-family:inherit;font-size:12px;font-weight:700;
+    padding:6px 12px;border-radius:7px;cursor:pointer;white-space:nowrap;flex-shrink:0}
+  .stab-bar button.on{background:var(--surface-hi);color:var(--text)}
   .standings-wrap{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 14px;margin-bottom:20px}
   .standings-group-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--lime);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
   .standings-table{width:100%;border-collapse:collapse;font-size:13px}
@@ -142,6 +148,9 @@
   .standings-table .pos{color:var(--muted);font-weight:700;width:24px}
   .standings-table .tim-cell{display:flex;align-items:center;gap:8px;white-space:nowrap}
   .standings-table .pts{font-weight:900;color:var(--lime)}
+  .standings-table tr.qualify td{background:rgba(198,255,61,.06)}
+  .standings-table tr.qualify .pts{font-weight:900;color:var(--lime)}
+  .standings-table tr.last td{color:var(--muted2)}
   .gd-pos{color:var(--lime)}.gd-neg{color:var(--magenta)}.gd-zero{color:var(--muted)}
   @media(max-width:540px){.col-hide{display:none}}
 
@@ -293,36 +302,58 @@ function gdClass(n){return n>0?"gd-pos":n<0?"gd-neg":"gd-zero";}
 
 function renderKlasmen(){
   listEl.innerHTML="";stateEl.style.display="none";
-  const standings=computeStandings(DATA.matches);
-  const grupKeys=Object.keys(standings);
-  if(!grupKeys.length){
+  const standings=DATA.standings;
+  if(!standings||!standings.length){
     stateEl.style.display="block";
     stateEl.innerHTML=`<p>Klasemen grup akan tersedia setelah babak penyisihan berjalan.</p>
       <p style="margin-top:8px;font-size:12px">Data sedang dikumpulkan.</p>`;
     return;
   }
-  grupKeys.forEach(g=>{
-    const rows=standings[g];
+  const sorted=[...standings].sort((a,b)=>a.name.localeCompare(b.name));
+  let activeIdx=0;
+  const tabBar=document.createElement("div");tabBar.className="stab-bar";
+  const container=document.createElement("div");
+  sorted.forEach((g,i)=>{
+    const btn=document.createElement("button");
+    btn.textContent=g.name.replace("Group ","Grup ");
+    if(i===0)btn.classList.add("on");
+    btn.addEventListener("click",()=>{
+      activeIdx=i;
+      [...tabBar.children].forEach((b,j)=>b.classList.toggle("on",j===i));
+      showGroup(i);
+    });
+    tabBar.appendChild(btn);
+  });
+  function showGroup(idx){
+    const g=sorted[idx];
+    const rows=g.standings||[];
+    container.innerHTML="";
     const wrap=document.createElement("div");wrap.className="standings-wrap";
-    wrap.innerHTML=`<div class="standings-group-title">Grup ${g}</div>
+    wrap.innerHTML=`<div class="standings-group-title">${g.name.replace("Group ","Grup ")}</div>
       <table class="standings-table">
         <thead><tr>
           <th class="pos tl">#</th><th class="tl">Tim</th>
-          <th>M</th><th class="col-hide">M</th><th class="col-hide">S</th><th class="col-hide">K</th>
-          <th class="col-hide">GF</th><th class="col-hide">GA</th><th>SG</th><th class="pts">Pts</th>
+          <th>M</th><th class="col-hide">W</th><th class="col-hide">S</th><th class="col-hide">K</th>
+          <th>GD</th><th>Pts</th>
         </tr></thead>
-        <tbody>${rows.map((t,i)=>`<tr>
-          <td class="pos tl">${i+1}</td>
+        <tbody>${rows.map((t,i)=>{
+          const gd=t.gf-t.ga;
+          const isLast=i===rows.length-1;
+          const cls=i<2?"qualify":(isLast?"last":"");
+          return`<tr class="${cls}">
+          <td class="pos tl">${t.position??i+1}</td>
           <td class="tl"><div class="tim-cell">${flagImg(t.name)}<span>${t.name}</span></div></td>
-          <td>${t.M}</td>
-          <td class="col-hide">${t.W}</td><td class="col-hide">${t.D}</td><td class="col-hide">${t.L}</td>
-          <td class="col-hide">${t.GF}</td><td class="col-hide">${t.GA}</td>
-          <td class="${gdClass(t.GD)}">${t.GD>0?"+":""}${t.GD}</td>
-          <td class="pts">${t.P}</td>
-        </tr>`).join("")}</tbody>
+          <td>${t.games}</td>
+          <td class="col-hide">${t.wins}</td><td class="col-hide">${t.draws}</td><td class="col-hide">${t.losses}</td>
+          <td class="${gdClass(gd)}">${gd>0?"+":""}${gd}</td>
+          <td class="pts">${t.points}</td>
+        </tr>`;}).join("")}</tbody>
       </table>`;
-    listEl.appendChild(wrap);
-  });
+    container.appendChild(wrap);
+  }
+  listEl.appendChild(tabBar);
+  listEl.appendChild(container);
+  showGroup(0);
 }
 
 function renderTopSkor(){

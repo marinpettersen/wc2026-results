@@ -2,6 +2,19 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-17 — Feat: standings dari API Highlightly
+
+- Fetcher: tambah `hlFetchStandings()` — GET `/standings?leagueId=1635&season=2026`,
+  filter hanya grup `/^Group [A-L]$/`, map field tim via `TEAMS`.
+- `main()`: fetch standings paralel dengan fixtures via `Promise.all`.
+  APF adapter tidak punya `fetchStandings` → resolve(null).
+- `results.json`: tambah field root `standings: [...] | null`.
+- Frontend tab Klasemen: render dari `DATA.standings` (bukan `computeStandings`).
+  Layout tab horizontal per grup (Grup A–L), tabel dengan kolom
+  `# | Tim | M | W | S | K | GD | Pts`. Mobile: sembunyikan W/S/K via `.col-hide`.
+  Row 1-2 highlight qualify (lime subtle bg). Fallback pesan jika standings null.
+- Kuota: +1 call standings per run (total ~2 call/run).
+
 ## 2026-06-17 — Fix: mobile UI (nama tim, tab scroll, header, wasit, klasemen)
 
 - `.seg`: tambah `overflow-x:auto`, `scroll-snap-type:x mandatory`, `scrollbar-width:none`
