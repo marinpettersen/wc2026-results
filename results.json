@@ -1,8 +1,646 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-17T13:59:16.899Z",
+  "updatedAt": "2026-06-18T00:16:18.237Z",
   "source": "highlightly league 1635 season 2026",
+  "standings": [
+    {
+      "name": "Group A",
+      "standings": [
+        {
+          "name": "Meksiko",
+          "flag": "🇲🇽",
+          "position": 1,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 2,
+          "ga": 0,
+          "points": 3
+        },
+        {
+          "name": "Korea Selatan",
+          "flag": "🇰🇷",
+          "position": 2,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 2,
+          "ga": 1,
+          "points": 3
+        },
+        {
+          "name": "Ceko",
+          "flag": "🇨🇿",
+          "position": 3,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 2,
+          "points": 0
+        },
+        {
+          "name": "Afrika Selatan",
+          "flag": "🇿🇦",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 0,
+          "ga": 2,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "name": "Group B",
+      "standings": [
+        {
+          "name": "Swiss",
+          "flag": "🇨🇭",
+          "position": 1,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        },
+        {
+          "name": "Kanada",
+          "flag": "🇨🇦",
+          "position": 2,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        },
+        {
+          "name": "Qatar",
+          "flag": "🇶🇦",
+          "position": 3,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        },
+        {
+          "name": "Bosnia & Herzegovina",
+          "flag": "🇧🇦",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "name": "Group C",
+      "standings": [
+        {
+          "name": "Skotlandia",
+          "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+          "position": 1,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 1,
+          "ga": 0,
+          "points": 3
+        },
+        {
+          "name": "Maroko",
+          "flag": "🇲🇦",
+          "position": 2,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        },
+        {
+          "name": "Brasil",
+          "flag": "🇧🇷",
+          "position": 3,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        },
+        {
+          "name": "Haiti",
+          "flag": "🇭🇹",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 0,
+          "ga": 1,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "name": "Group D",
+      "standings": [
+        {
+          "name": "Amerika Serikat",
+          "flag": "🇺🇸",
+          "position": 1,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 4,
+          "ga": 1,
+          "points": 3
+        },
+        {
+          "name": "Australia",
+          "flag": "🇦🇺",
+          "position": 2,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 2,
+          "ga": 0,
+          "points": 3
+        },
+        {
+          "name": "Turki",
+          "flag": "🇹🇷",
+          "position": 3,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 0,
+          "ga": 2,
+          "points": 0
+        },
+        {
+          "name": "Paraguay",
+          "flag": "🇵🇾",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 4,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "name": "Group E",
+      "standings": [
+        {
+          "name": "Jerman",
+          "flag": "🇩🇪",
+          "position": 1,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 7,
+          "ga": 1,
+          "points": 3
+        },
+        {
+          "name": "Pantai Gading",
+          "flag": "🇨🇮",
+          "position": 2,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 1,
+          "ga": 0,
+          "points": 3
+        },
+        {
+          "name": "Ekuador",
+          "flag": "🇪🇨",
+          "position": 3,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 0,
+          "ga": 1,
+          "points": 0
+        },
+        {
+          "name": "Curacao",
+          "flag": "🇨🇼",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 7,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "name": "Group F",
+      "standings": [
+        {
+          "name": "Swedia",
+          "flag": "🇸🇪",
+          "position": 1,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 5,
+          "ga": 1,
+          "points": 3
+        },
+        {
+          "name": "Jepang",
+          "flag": "🇯🇵",
+          "position": 2,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 2,
+          "ga": 2,
+          "points": 1
+        },
+        {
+          "name": "Belanda",
+          "flag": "🇳🇱",
+          "position": 3,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 2,
+          "ga": 2,
+          "points": 1
+        },
+        {
+          "name": "Tunisia",
+          "flag": "🇹🇳",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 5,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "name": "Group G",
+      "standings": [
+        {
+          "name": "Selandia Baru",
+          "flag": "🇳🇿",
+          "position": 1,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 2,
+          "ga": 2,
+          "points": 1
+        },
+        {
+          "name": "Iran",
+          "flag": "🇮🇷",
+          "position": 2,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 2,
+          "ga": 2,
+          "points": 1
+        },
+        {
+          "name": "Belgia",
+          "flag": "🇧🇪",
+          "position": 3,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        },
+        {
+          "name": "Mesir",
+          "flag": "🇪🇬",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "name": "Group H",
+      "standings": [
+        {
+          "name": "Uruguay",
+          "flag": "🇺🇾",
+          "position": 1,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        },
+        {
+          "name": "Arab Saudi",
+          "flag": "🇸🇦",
+          "position": 2,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        },
+        {
+          "name": "Spanyol",
+          "flag": "🇪🇸",
+          "position": 3,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "points": 1
+        },
+        {
+          "name": "Tanjung Verde",
+          "flag": "🇨🇻",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "name": "Group I",
+      "standings": [
+        {
+          "name": "Norwegia",
+          "flag": "🇳🇴",
+          "position": 1,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 4,
+          "ga": 1,
+          "points": 3
+        },
+        {
+          "name": "Prancis",
+          "flag": "🇫🇷",
+          "position": 2,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 3,
+          "ga": 1,
+          "points": 3
+        },
+        {
+          "name": "Senegal",
+          "flag": "🇸🇳",
+          "position": 3,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 3,
+          "points": 0
+        },
+        {
+          "name": "Irak",
+          "flag": "🇮🇶",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 4,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "name": "Group J",
+      "standings": [
+        {
+          "name": "Argentina",
+          "flag": "🇦🇷",
+          "position": 1,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 3,
+          "ga": 0,
+          "points": 3
+        },
+        {
+          "name": "Austria",
+          "flag": "🇦🇹",
+          "position": 2,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 3,
+          "ga": 1,
+          "points": 3
+        },
+        {
+          "name": "Yordania",
+          "flag": "🇯🇴",
+          "position": 3,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 3,
+          "points": 0
+        },
+        {
+          "name": "Aljazair",
+          "flag": "🇩🇿",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 0,
+          "ga": 3,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "name": "Group K",
+      "standings": [
+        {
+          "name": "Kongo",
+          "flag": "🇨🇩",
+          "position": 1,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        },
+        {
+          "name": "Portugal",
+          "flag": "🇵🇹",
+          "position": 2,
+          "games": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "gf": 1,
+          "ga": 1,
+          "points": 1
+        },
+        {
+          "name": "Uzbekistan",
+          "flag": "🇺🇿",
+          "position": 3,
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "points": 0
+        },
+        {
+          "name": "Kolombia",
+          "flag": "🇨🇴",
+          "position": 4,
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "name": "Group L",
+      "standings": [
+        {
+          "name": "Inggris",
+          "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "position": 1,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 4,
+          "ga": 2,
+          "points": 3
+        },
+        {
+          "name": "Ghana",
+          "flag": "🇬🇭",
+          "position": 2,
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "points": 0
+        },
+        {
+          "name": "Panama",
+          "flag": "🇵🇦",
+          "position": 3,
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "gf": 0,
+          "ga": 0,
+          "points": 0
+        },
+        {
+          "name": "Kroasia",
+          "flag": "🇭🇷",
+          "position": 4,
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "gf": 2,
+          "ga": 4,
+          "points": 0
+        }
+      ]
+    }
+  ],
   "matches": [
     {
       "id": 1267453803,
@@ -1285,21 +1923,55 @@
       "kickoff": "2026-06-17T17:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Portugal",
         "flag": "🇵🇹",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Kongo",
         "flag": "🇨🇩",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "J. Neves",
+          "minute": "6"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "Y. Wissa",
+          "minute": "45+5"
+        }
+      ],
+      "stats": {
+        "possession": [
+          75,
+          25
+        ],
+        "shots": [
+          5,
+          5
+        ],
+        "sot": [
+          1,
+          2
+        ],
+        "fouls": [
+          9,
+          10
+        ],
+        "offsides": [
+          3,
+          2
+        ]
+      },
+      "clock": 90,
       "referee": null
     },
     {
@@ -1307,21 +1979,80 @@
       "kickoff": "2026-06-17T20:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "FT",
       "home": {
         "name": "Inggris",
         "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "goals": null
+        "goals": 4
       },
       "away": {
         "name": "Kroasia",
         "flag": "🇭🇷",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "H. Kane",
+          "minute": "12",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Baturina",
+          "minute": "36"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "H. Kane",
+          "minute": "42"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "P. Musa",
+          "minute": "45+5"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "J. Bellingham",
+          "minute": "47"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Rashford",
+          "minute": "85"
+        }
+      ],
+      "stats": {
+        "possession": [
+          52,
+          48
+        ],
+        "shots": [
+          17,
+          8
+        ],
+        "sot": [
+          11,
+          5
+        ],
+        "fouls": [
+          10,
+          12
+        ],
+        "offsides": [
+          0,
+          1
+        ]
+      },
+      "clock": 90,
       "referee": null
     },
     {
@@ -1329,21 +2060,21 @@
       "kickoff": "2026-06-17T23:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "1H",
       "home": {
         "name": "Ghana",
         "flag": "🇬🇭",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Panama",
         "flag": "🇵🇦",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null,
+      "clock": 54,
       "referee": null
     },
     {
