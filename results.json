@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-18T00:16:18.237Z",
+  "updatedAt": "2026-06-18T16:18:16.189Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -538,9 +538,21 @@
       "name": "Group K",
       "standings": [
         {
+          "name": "Kolombia",
+          "flag": "🇨🇴",
+          "position": 1,
+          "games": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "gf": 3,
+          "ga": 1,
+          "points": 3
+        },
+        {
           "name": "Kongo",
           "flag": "🇨🇩",
-          "position": 1,
+          "position": 2,
           "games": 1,
           "wins": 0,
           "draws": 1,
@@ -552,7 +564,7 @@
         {
           "name": "Portugal",
           "flag": "🇵🇹",
-          "position": 2,
+          "position": 3,
           "games": 1,
           "wins": 0,
           "draws": 1,
@@ -564,25 +576,13 @@
         {
           "name": "Uzbekistan",
           "flag": "🇺🇿",
-          "position": 3,
-          "games": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "points": 0
-        },
-        {
-          "name": "Kolombia",
-          "flag": "🇨🇴",
           "position": 4,
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 3,
           "points": 0
         }
       ]
@@ -606,24 +606,24 @@
           "name": "Ghana",
           "flag": "🇬🇭",
           "position": 2,
-          "games": 0,
-          "wins": 0,
+          "games": 1,
+          "wins": 1,
           "draws": 0,
           "losses": 0,
-          "gf": 0,
+          "gf": 1,
           "ga": 0,
-          "points": 0
+          "points": 3
         },
         {
           "name": "Panama",
           "flag": "🇵🇦",
           "position": 3,
-          "games": 0,
+          "games": 1,
           "wins": 0,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "gf": 0,
-          "ga": 0,
+          "ga": 1,
           "points": 0
         },
         {
@@ -2059,12 +2059,12 @@
       "id": 1267467419,
       "kickoff": "2026-06-17T23:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "1H",
+      "venue": "Toronto Stadium, Toronto, ON",
+      "status": "FT",
       "home": {
         "name": "Ghana",
         "flag": "🇬🇭",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "name": "Panama",
@@ -2072,53 +2072,127 @@
         "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": 54,
-      "referee": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "C. Yirenkyi",
+          "minute": "90+5"
+        }
+      ],
+      "stats": {
+        "possession": [
+          38,
+          62
+        ],
+        "shots": [
+          6,
+          9
+        ],
+        "sot": [
+          2,
+          4
+        ],
+        "fouls": [
+          9,
+          11
+        ],
+        "offsides": [
+          4,
+          1
+        ]
+      },
+      "clock": 90,
+      "referee": "Nyberg, Glenn"
     },
     {
       "id": 1267468270,
       "kickoff": "2026-06-18T02:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "Mexico City Stadium, Mexico City",
+      "status": "FT",
       "home": {
         "name": "Uzbekistan",
         "flag": "🇺🇿",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Kolombia",
         "flag": "🇨🇴",
-        "goals": null
+        "goals": 3
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "D. Munoz",
+          "minute": "40"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Fayzullaev",
+          "minute": "60"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "L. Diaz",
+          "minute": "65"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "J. Campaz",
+          "minute": "90+9"
+        }
+      ],
+      "stats": {
+        "possession": [
+          39,
+          61
+        ],
+        "shots": [
+          6,
+          11
+        ],
+        "sot": [
+          2,
+          4
+        ],
+        "fouls": [
+          14,
+          11
+        ],
+        "offsides": [
+          0,
+          3
+        ]
+      },
+      "clock": 90,
+      "referee": "Taylor, Anthony"
     },
     {
       "id": 1309693188,
       "kickoff": "2026-06-18T16:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "1H",
       "home": {
         "name": "Ceko",
         "flag": "🇨🇿",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Afrika Selatan",
         "flag": "🇿🇦",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null,
+      "clock": 18,
       "referee": null
     },
     {
