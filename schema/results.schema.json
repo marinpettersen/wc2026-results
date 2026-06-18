@@ -18,7 +18,7 @@
       "type": "object",
       "required": ["id", "kickoff", "status", "home", "away", "penalty", "events", "stats"],
       "properties": {
-        "id": { "type": "integer", "minimum": 1 },
+        "id": { "anyOf": [{ "type": "integer" }, { "type": "string" }] },
         "kickoff": { "type": "string" },
         "group": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
         "venue": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
@@ -58,7 +58,14 @@
         },
         "referee": {
           "anyOf": [{ "type": "string" }, { "type": "null" }]
-        }
+        },
+        "broadcaster": {
+          "anyOf": [{ "type": "string" }, { "type": "null" }]
+        },
+        "round": {
+          "anyOf": [{ "type": "string" }, { "type": "null" }]
+        },
+        "_tbd": { "type": "boolean" }
       }
     },
     "team": {

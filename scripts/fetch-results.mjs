@@ -490,6 +490,11 @@ async function main() {
   }
   console.log(`  dapat ${fixtures.length} fixtures.`);
 
+  // Kumpulkan ID laga _tbd (fase gugur manual) agar tidak ditimpa oleh API
+  const tbdIds = new Set(
+    [...byId.values()].filter(m => m._tbd).map(m => m.id)
+  );
+
   let updated = 0, enriched = 0;
   for (const fx of fixtures) {
     let base;

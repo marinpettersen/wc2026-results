@@ -2,6 +2,36 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-19 — Feat: UI layout baru, laga fase gugur, broadcaster
+
+### 1. UI — Layout card laga rata tengah
+- `.match-main`: ganti `grid-template-columns: 84px 1fr` → `flex-direction: column`.
+  Waktu + badge status kini di baris atas (rata tengah), tim di baris bawah.
+- `.timecol`: `border-right` dihapus → `border-bottom`. Elemen waktu dan WIB
+  kini `display:inline` agar satu baris. Badge (tod/ft/livebadge) inline di
+  sebelah kanan via `margin-left:8px`.
+- Mobile: hapus override `grid-template-columns:64px 1fr` yang tak relevan lagi.
+- Tambah label round (Round of 32, dll.) di bawah badge untuk laga fase gugur.
+
+### 2. Data — Laga fase gugur + broadcaster
+- `scripts/seed-knockout.mjs`: baca `results.json`, append 32 laga fase gugur
+  (16 Round of 32, 8 Round of 16, 4 Quarter Final, 2 Semi Final, Third Place,
+  Final) dengan `_tbd: true`, `status: "NS"`, tim "TBD". Waktu WIB dikonversi
+  ke UTC saat simpan. Skip jika laga sudah ada (cek `kickoff+round`).
+- Field `broadcaster: "TVRI Sport"` ditambahkan ke semua 72 laga fase grup.
+  Laga fase gugur: `broadcaster: null`.
+- Total laga: 72 grup + 32 fase gugur = 104.
+
+### 3. Frontend — Badge broadcaster + laga TBD
+- Badge `📺 TVRI Sport` (lime, 9px) tampil di bawah badge status untuk laga
+  yang punya `broadcaster !== null`.
+- Laga fase gugur tampil di tab "Akan datang" dengan nama tim TBD dan venue.
+
+### 4. Fetcher — Skip laga _tbd
+- `fetch-results.mjs`: kumpulkan `tbdIds` dari laga `_tbd: true`. Laga ini
+  tidak akan ditimpa oleh API (ID string `ko-*` vs ID numerik dari Highlightly).
+- `npm test`: 14/14 hijau.
+
 ## 2026-06-18 — Feat: tiga optimasi smart scheduling (hemat ~80% kuota)
 
 Estimasi: hemat ~80% kuota — hanya fetch saat ada laga aktif (~28% dari total durasi turnamen).
