@@ -59,11 +59,11 @@ function roundSlug(round) {
 async function main() {
   const data = JSON.parse(await readFile(OUT, "utf8"));
 
-  // Tambah broadcaster ke semua laga grup yang sudah ada
+  // Pastikan semua laga punya field broadcaster (default null)
   let broadcasterAdded = 0;
   for (const m of data.matches) {
     if (m.broadcaster === undefined) {
-      m.broadcaster = m.round ? null : "TVRI Sport";
+      m.broadcaster = null;
       broadcasterAdded++;
     }
   }

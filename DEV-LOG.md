@@ -2,6 +2,25 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-19 — Fix: own goal kolom salah + hapus broadcaster hardcode
+
+### 1. Own goal tampil di kolom yang salah
+- **Akar masalah**: API Highlightly mengembalikan `e.team.id` = tim yang diuntungkan
+  (bukan pemain OG) untuk event "Own Goal". `hlMapEvents` membalik lagi via
+  `isHome ? "away" : "home"` → **double-flip**, sehingga `team` field kembali
+  menunjuk tim pemain (bukan tim penerima gol).
+- **Fix fetcher** (`hlMapEvents`): untuk "Own Goal", gunakan `isHome ? "home" : "away"`
+  (tanpa flip) — sama seperti gol biasa, karena API sudah mengarahkan ke tim yang benar.
+- **Fix data**: 4 event b.d. di `results.json` di-flip manual:
+  - D. Bobadilla (away→home), M. Hany (away→home),
+    A. Hussein (home→away), Y. Al Arab (away→home).
+- Frontend (`goalsHTML`) tidak berubah — sudah benar selama `team` field akurat.
+
+### 2. Broadcaster "TVRI Sport" dihapus
+- `seed-knockout.mjs`: default broadcaster diubah dari `"TVRI Sport"` → `null`.
+- `results.json`: 72 laga fase grup di-reset ke `broadcaster: null`.
+- Badge 📺 tidak tampil sampai data siaran akurat tersedia dan diisi manual.
+
 ## 2026-06-19 — Feat: UI layout baru, laga fase gugur, broadcaster
 
 ### 1. UI — Layout card laga rata tengah

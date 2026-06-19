@@ -1,646 +1,9 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-19T04:44:25.629Z",
+  "updatedAt": "2026-06-17T14:57:42.324Z",
   "source": "highlightly league 1635 season 2026",
-  "standings": [
-    {
-      "name": "Group A",
-      "standings": [
-        {
-          "name": "Meksiko",
-          "flag": "🇲🇽",
-          "position": 1,
-          "games": 2,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "gf": 3,
-          "ga": 0,
-          "points": 6
-        },
-        {
-          "name": "Korea Selatan",
-          "flag": "🇰🇷",
-          "position": 2,
-          "games": 2,
-          "wins": 1,
-          "draws": 0,
-          "losses": 1,
-          "gf": 2,
-          "ga": 2,
-          "points": 3
-        },
-        {
-          "name": "Ceko",
-          "flag": "🇨🇿",
-          "position": 3,
-          "games": 2,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "gf": 2,
-          "ga": 3,
-          "points": 1
-        },
-        {
-          "name": "Afrika Selatan",
-          "flag": "🇿🇦",
-          "position": 4,
-          "games": 2,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "gf": 1,
-          "ga": 3,
-          "points": 1
-        }
-      ]
-    },
-    {
-      "name": "Group B",
-      "standings": [
-        {
-          "name": "Kanada",
-          "flag": "🇨🇦",
-          "position": 1,
-          "games": 2,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "gf": 7,
-          "ga": 1,
-          "points": 4
-        },
-        {
-          "name": "Swiss",
-          "flag": "🇨🇭",
-          "position": 2,
-          "games": 2,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "gf": 5,
-          "ga": 2,
-          "points": 4
-        },
-        {
-          "name": "Bosnia & Herzegovina",
-          "flag": "🇧🇦",
-          "position": 3,
-          "games": 2,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "gf": 2,
-          "ga": 5,
-          "points": 1
-        },
-        {
-          "name": "Qatar",
-          "flag": "🇶🇦",
-          "position": 4,
-          "games": 2,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "gf": 1,
-          "ga": 7,
-          "points": 1
-        }
-      ]
-    },
-    {
-      "name": "Group C",
-      "standings": [
-        {
-          "name": "Skotlandia",
-          "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-          "position": 1,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 1,
-          "ga": 0,
-          "points": 3
-        },
-        {
-          "name": "Maroko",
-          "flag": "🇲🇦",
-          "position": 2,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        },
-        {
-          "name": "Brasil",
-          "flag": "🇧🇷",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        },
-        {
-          "name": "Haiti",
-          "flag": "🇭🇹",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 0,
-          "ga": 1,
-          "points": 0
-        }
-      ]
-    },
-    {
-      "name": "Group D",
-      "standings": [
-        {
-          "name": "Amerika Serikat",
-          "flag": "🇺🇸",
-          "position": 1,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 4,
-          "ga": 1,
-          "points": 3
-        },
-        {
-          "name": "Australia",
-          "flag": "🇦🇺",
-          "position": 2,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 2,
-          "ga": 0,
-          "points": 3
-        },
-        {
-          "name": "Turki",
-          "flag": "🇹🇷",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 0,
-          "ga": 2,
-          "points": 0
-        },
-        {
-          "name": "Paraguay",
-          "flag": "🇵🇾",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 1,
-          "ga": 4,
-          "points": 0
-        }
-      ]
-    },
-    {
-      "name": "Group E",
-      "standings": [
-        {
-          "name": "Jerman",
-          "flag": "🇩🇪",
-          "position": 1,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 7,
-          "ga": 1,
-          "points": 3
-        },
-        {
-          "name": "Pantai Gading",
-          "flag": "🇨🇮",
-          "position": 2,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 1,
-          "ga": 0,
-          "points": 3
-        },
-        {
-          "name": "Ekuador",
-          "flag": "🇪🇨",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 0,
-          "ga": 1,
-          "points": 0
-        },
-        {
-          "name": "Curacao",
-          "flag": "🇨🇼",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 1,
-          "ga": 7,
-          "points": 0
-        }
-      ]
-    },
-    {
-      "name": "Group F",
-      "standings": [
-        {
-          "name": "Swedia",
-          "flag": "🇸🇪",
-          "position": 1,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 5,
-          "ga": 1,
-          "points": 3
-        },
-        {
-          "name": "Jepang",
-          "flag": "🇯🇵",
-          "position": 2,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 2,
-          "ga": 2,
-          "points": 1
-        },
-        {
-          "name": "Belanda",
-          "flag": "🇳🇱",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 2,
-          "ga": 2,
-          "points": 1
-        },
-        {
-          "name": "Tunisia",
-          "flag": "🇹🇳",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 1,
-          "ga": 5,
-          "points": 0
-        }
-      ]
-    },
-    {
-      "name": "Group G",
-      "standings": [
-        {
-          "name": "Selandia Baru",
-          "flag": "🇳🇿",
-          "position": 1,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 2,
-          "ga": 2,
-          "points": 1
-        },
-        {
-          "name": "Iran",
-          "flag": "🇮🇷",
-          "position": 2,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 2,
-          "ga": 2,
-          "points": 1
-        },
-        {
-          "name": "Belgia",
-          "flag": "🇧🇪",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        },
-        {
-          "name": "Mesir",
-          "flag": "🇪🇬",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        }
-      ]
-    },
-    {
-      "name": "Group H",
-      "standings": [
-        {
-          "name": "Uruguay",
-          "flag": "🇺🇾",
-          "position": 1,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        },
-        {
-          "name": "Arab Saudi",
-          "flag": "🇸🇦",
-          "position": 2,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        },
-        {
-          "name": "Spanyol",
-          "flag": "🇪🇸",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "points": 1
-        },
-        {
-          "name": "Tanjung Verde",
-          "flag": "🇨🇻",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
-          "points": 1
-        }
-      ]
-    },
-    {
-      "name": "Group I",
-      "standings": [
-        {
-          "name": "Norwegia",
-          "flag": "🇳🇴",
-          "position": 1,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 4,
-          "ga": 1,
-          "points": 3
-        },
-        {
-          "name": "Prancis",
-          "flag": "🇫🇷",
-          "position": 2,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 3,
-          "ga": 1,
-          "points": 3
-        },
-        {
-          "name": "Senegal",
-          "flag": "🇸🇳",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 1,
-          "ga": 3,
-          "points": 0
-        },
-        {
-          "name": "Irak",
-          "flag": "🇮🇶",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 1,
-          "ga": 4,
-          "points": 0
-        }
-      ]
-    },
-    {
-      "name": "Group J",
-      "standings": [
-        {
-          "name": "Argentina",
-          "flag": "🇦🇷",
-          "position": 1,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 3,
-          "ga": 0,
-          "points": 3
-        },
-        {
-          "name": "Austria",
-          "flag": "🇦🇹",
-          "position": 2,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 3,
-          "ga": 1,
-          "points": 3
-        },
-        {
-          "name": "Yordania",
-          "flag": "🇯🇴",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 1,
-          "ga": 3,
-          "points": 0
-        },
-        {
-          "name": "Aljazair",
-          "flag": "🇩🇿",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 0,
-          "ga": 3,
-          "points": 0
-        }
-      ]
-    },
-    {
-      "name": "Group K",
-      "standings": [
-        {
-          "name": "Kolombia",
-          "flag": "🇨🇴",
-          "position": 1,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 3,
-          "ga": 1,
-          "points": 3
-        },
-        {
-          "name": "Kongo",
-          "flag": "🇨🇩",
-          "position": 2,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        },
-        {
-          "name": "Portugal",
-          "flag": "🇵🇹",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        },
-        {
-          "name": "Uzbekistan",
-          "flag": "🇺🇿",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 1,
-          "ga": 3,
-          "points": 0
-        }
-      ]
-    },
-    {
-      "name": "Group L",
-      "standings": [
-        {
-          "name": "Inggris",
-          "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-          "position": 1,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 4,
-          "ga": 2,
-          "points": 3
-        },
-        {
-          "name": "Ghana",
-          "flag": "🇬🇭",
-          "position": 2,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 1,
-          "ga": 0,
-          "points": 3
-        },
-        {
-          "name": "Panama",
-          "flag": "🇵🇦",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 0,
-          "ga": 1,
-          "points": 0
-        },
-        {
-          "name": "Kroasia",
-          "flag": "🇭🇷",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 2,
-          "ga": 4,
-          "points": 0
-        }
-      ]
-    }
-  ],
+  "standings": null,
   "matches": [
     {
       "id": 1267453803,
@@ -715,7 +78,7 @@
       },
       "referee": "Pereira Sampaio, Wilton",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309688933,
@@ -778,7 +141,7 @@
       },
       "referee": "Omar, Amin Mohamed",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309689784,
@@ -835,7 +198,7 @@
       },
       "referee": "Tello Figueroa, Facundo",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267454654,
@@ -911,7 +274,7 @@
       },
       "referee": "Makkelie, Danny",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267457207,
@@ -969,7 +332,7 @@
       },
       "referee": "Martinez Sorto, Hector Said",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267455505,
@@ -1026,7 +389,7 @@
       },
       "referee": "Vincic, Slavko",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267456356,
@@ -1077,7 +440,7 @@
       },
       "referee": "Ghorbal, Mustapha",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309690635,
@@ -1134,7 +497,7 @@
       },
       "referee": "Valenzuela Saez, Jesus",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267458058,
@@ -1228,7 +591,7 @@
       },
       "referee": "Jayed, Jalal",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267459760,
@@ -1297,7 +660,7 @@
       },
       "referee": "Elfath, Ismail",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267458909,
@@ -1348,7 +711,7 @@
       },
       "referee": "Letexier, Francois",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309691486,
@@ -1429,7 +792,7 @@
       },
       "referee": "Falcon Perez, Yael",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267463164,
@@ -1473,7 +836,7 @@
       },
       "clock": 90,
       "referee": "Mohammad Tumah Makhadmeh, Adham",
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267460611,
@@ -1531,7 +894,7 @@
       },
       "referee": "Abatti Abel, Ramon",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267462313,
@@ -1588,7 +951,7 @@
       },
       "referee": "Mariani, Maurizio",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267461462,
@@ -1657,7 +1020,7 @@
       },
       "referee": "Ramos Palazuelos, Cesar",
       "clock": 90,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267465717,
@@ -1726,7 +1089,7 @@
       },
       "clock": 90,
       "referee": "Faghani, Alireza",
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309703400,
@@ -1802,7 +1165,7 @@
       },
       "clock": 90,
       "referee": "Atcho, Pierre Ghislain",
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267464015,
@@ -1865,7 +1228,7 @@
       },
       "clock": 90,
       "referee": "Marciniak, Szymon",
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267464866,
@@ -1936,551 +1299,191 @@
       },
       "clock": 90,
       "referee": "Dahane, Beida",
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309692337,
       "kickoff": "2026-06-17T17:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "FT",
+      "status": "NS",
       "home": {
         "name": "Portugal",
         "flag": "🇵🇹",
-        "goals": 1
+        "goals": null
       },
       "away": {
         "name": "Kongo",
         "flag": "🇨🇩",
-        "goals": 1
+        "goals": null
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "J. Neves",
-          "minute": "6"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "Y. Wissa",
-          "minute": "45+5"
-        }
-      ],
-      "stats": {
-        "possession": [
-          75,
-          25
-        ],
-        "shots": [
-          5,
-          5
-        ],
-        "sot": [
-          1,
-          2
-        ],
-        "fouls": [
-          9,
-          10
-        ],
-        "offsides": [
-          3,
-          2
-        ]
-      },
-      "clock": 90,
+      "events": [],
+      "stats": null,
+      "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267466568,
       "kickoff": "2026-06-17T20:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "FT",
+      "status": "NS",
       "home": {
         "name": "Inggris",
         "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "goals": 4
+        "goals": null
       },
       "away": {
         "name": "Kroasia",
         "flag": "🇭🇷",
-        "goals": 2
+        "goals": null
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "H. Kane",
-          "minute": "12",
-          "tag": "pen"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "M. Baturina",
-          "minute": "36"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "H. Kane",
-          "minute": "42"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "P. Musa",
-          "minute": "45+5"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "J. Bellingham",
-          "minute": "47"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "M. Rashford",
-          "minute": "85"
-        }
-      ],
-      "stats": {
-        "possession": [
-          52,
-          48
-        ],
-        "shots": [
-          17,
-          8
-        ],
-        "sot": [
-          11,
-          5
-        ],
-        "fouls": [
-          10,
-          12
-        ],
-        "offsides": [
-          0,
-          1
-        ]
-      },
-      "clock": 90,
+      "events": [],
+      "stats": null,
+      "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267467419,
       "kickoff": "2026-06-17T23:00:00.000Z",
       "group": null,
-      "venue": "Toronto Stadium, Toronto, ON",
-      "status": "FT",
+      "venue": null,
+      "status": "NS",
       "home": {
         "name": "Ghana",
         "flag": "🇬🇭",
-        "goals": 1
+        "goals": null
       },
       "away": {
         "name": "Panama",
         "flag": "🇵🇦",
-        "goals": 0
+        "goals": null
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "C. Yirenkyi",
-          "minute": "90+5"
-        }
-      ],
-      "stats": {
-        "possession": [
-          38,
-          62
-        ],
-        "shots": [
-          6,
-          9
-        ],
-        "sot": [
-          2,
-          4
-        ],
-        "fouls": [
-          9,
-          11
-        ],
-        "offsides": [
-          4,
-          1
-        ]
-      },
-      "clock": 90,
-      "referee": "Nyberg, Glenn",
-      "broadcaster": "TVRI Sport"
+      "events": [],
+      "stats": null,
+      "clock": null,
+      "referee": null,
+      "broadcaster": null
     },
     {
       "id": 1267468270,
       "kickoff": "2026-06-18T02:00:00.000Z",
       "group": null,
-      "venue": "Mexico City Stadium, Mexico City",
-      "status": "FT",
+      "venue": null,
+      "status": "NS",
       "home": {
         "name": "Uzbekistan",
         "flag": "🇺🇿",
-        "goals": 1
+        "goals": null
       },
       "away": {
         "name": "Kolombia",
         "flag": "🇨🇴",
-        "goals": 3
+        "goals": null
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "D. Munoz",
-          "minute": "40"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "A. Fayzullaev",
-          "minute": "60"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "L. Diaz",
-          "minute": "65"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "J. Campaz",
-          "minute": "90+9"
-        }
-      ],
-      "stats": {
-        "possession": [
-          39,
-          61
-        ],
-        "shots": [
-          6,
-          11
-        ],
-        "sot": [
-          2,
-          4
-        ],
-        "fouls": [
-          14,
-          11
-        ],
-        "offsides": [
-          0,
-          3
-        ]
-      },
-      "clock": 90,
-      "referee": "Taylor, Anthony",
-      "broadcaster": "TVRI Sport"
+      "events": [],
+      "stats": null,
+      "clock": null,
+      "referee": null,
+      "broadcaster": null
     },
     {
       "id": 1309693188,
       "kickoff": "2026-06-18T16:00:00.000Z",
       "group": null,
-      "venue": "Atlanta Stadium, Atlanta, GA",
-      "status": "FT",
+      "venue": null,
+      "status": "NS",
       "home": {
         "name": "Ceko",
         "flag": "🇨🇿",
-        "goals": 1
+        "goals": null
       },
       "away": {
         "name": "Afrika Selatan",
         "flag": "🇿🇦",
-        "goals": 1
+        "goals": null
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "M. Sadilek",
-          "minute": "6"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "T. Mokoena",
-          "minute": "83",
-          "tag": "pen"
-        }
-      ],
-      "stats": {
-        "possession": [
-          38,
-          62
-        ],
-        "shots": [
-          11,
-          9
-        ],
-        "sot": [
-          3,
-          4
-        ],
-        "fouls": [
-          12,
-          10
-        ],
-        "offsides": [
-          2,
-          3
-        ]
-      },
-      "clock": 90,
-      "referee": "Penso, Tori",
-      "broadcaster": "TVRI Sport"
+      "events": [],
+      "stats": null,
+      "clock": null,
+      "referee": null,
+      "broadcaster": null
     },
     {
       "id": 1309694039,
       "kickoff": "2026-06-18T19:00:00.000Z",
       "group": null,
-      "venue": "Los Angeles Stadium, Inglewood, CA",
-      "status": "FT",
+      "venue": null,
+      "status": "NS",
       "home": {
         "name": "Swiss",
         "flag": "🇨🇭",
-        "goals": 4
+        "goals": null
       },
       "away": {
         "name": "Bosnia & Herzegovina",
         "flag": "🇧🇦",
-        "goals": 1
+        "goals": null
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "J. Manzambi",
-          "minute": "74"
-        },
-        {
-          "team": "away",
-          "type": "redcard",
-          "player": "T. Muharemovic",
-          "minute": "80"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "R. Vargas",
-          "minute": "84"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "J. Manzambi",
-          "minute": "90"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "E. Mahmic",
-          "minute": "90+3"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "G. Xhaka",
-          "minute": "90+6",
-          "tag": "pen"
-        }
-      ],
-      "stats": {
-        "possession": [
-          62,
-          38
-        ],
-        "shots": [
-          10,
-          4
-        ],
-        "sot": [
-          7,
-          3
-        ],
-        "fouls": [
-          7,
-          18
-        ],
-        "offsides": [
-          3,
-          1
-        ]
-      },
-      "clock": 90,
-      "referee": "Pinheiro, Joao Pedro",
-      "broadcaster": "TVRI Sport"
+      "events": [],
+      "stats": null,
+      "clock": null,
+      "referee": null,
+      "broadcaster": null
     },
     {
       "id": 1267469121,
       "kickoff": "2026-06-18T22:00:00.000Z",
       "group": null,
-      "venue": "BC Place Vancouver, Vancouver",
-      "status": "FT",
+      "venue": null,
+      "status": "NS",
       "home": {
         "name": "Kanada",
         "flag": "🇨🇦",
-        "goals": 6
+        "goals": null
       },
       "away": {
         "name": "Qatar",
         "flag": "🇶🇦",
-        "goals": 0
+        "goals": null
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "C. Larin",
-          "minute": "16"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "J. David",
-          "minute": "29"
-        },
-        {
-          "team": "away",
-          "type": "redcard",
-          "player": "H. Al Amin",
-          "minute": "33"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "J. David",
-          "minute": "45+3"
-        },
-        {
-          "team": "away",
-          "type": "redcard",
-          "player": "A. O. Madibo",
-          "minute": "53"
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "N. Saliba",
-          "minute": "64"
-        },
-        {
-          "team": "away",
-          "type": "goal",
-          "player": "M. Al Mannai",
-          "minute": "75",
-          "tag": "b.d."
-        },
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "J. David",
-          "minute": "90+2"
-        }
-      ],
-      "stats": {
-        "possession": [
-          79,
-          21
-        ],
-        "shots": [
-          18,
-          1
-        ],
-        "sot": [
-          10,
-          0
-        ],
-        "fouls": [
-          9,
-          10
-        ],
-        "offsides": [
-          1,
-          1
-        ]
-      },
-      "clock": 90,
-      "referee": "Garay, Cristian",
-      "broadcaster": "TVRI Sport"
+      "events": [],
+      "stats": null,
+      "clock": null,
+      "referee": null,
+      "broadcaster": null
     },
     {
       "id": 1267469972,
       "kickoff": "2026-06-19T01:00:00.000Z",
       "group": null,
-      "venue": "Estadio Guadalajara, Zapopan",
-      "status": "FT",
+      "venue": null,
+      "status": "NS",
       "home": {
         "name": "Meksiko",
         "flag": "🇲🇽",
-        "goals": 1
+        "goals": null
       },
       "away": {
         "name": "Korea Selatan",
         "flag": "🇰🇷",
-        "goals": 0
+        "goals": null
       },
       "penalty": null,
-      "events": [
-        {
-          "team": "home",
-          "type": "goal",
-          "player": "L. Romo",
-          "minute": "50"
-        }
-      ],
-      "stats": {
-        "possession": [
-          42,
-          58
-        ],
-        "shots": [
-          7,
-          6
-        ],
-        "sot": [
-          4,
-          2
-        ],
-        "fouls": [
-          9,
-          7
-        ],
-        "offsides": [
-          3,
-          6
-        ]
-      },
-      "clock": 90,
-      "referee": "Tejera, Gustavo",
-      "broadcaster": "TVRI Sport"
+      "events": [],
+      "stats": null,
+      "clock": null,
+      "referee": null,
+      "broadcaster": null
     },
     {
       "id": 1267472525,
@@ -2503,7 +1506,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267471674,
@@ -2526,7 +1529,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267470823,
@@ -2549,7 +1552,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309694890,
@@ -2572,7 +1575,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309695741,
@@ -2595,7 +1598,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267474227,
@@ -2618,7 +1621,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267473376,
@@ -2641,7 +1644,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267475078,
@@ -2664,7 +1667,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267477631,
@@ -2687,7 +1690,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267475929,
@@ -2710,7 +1713,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267478482,
@@ -2733,7 +1736,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267476780,
@@ -2756,7 +1759,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267479333,
@@ -2779,7 +1782,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309704251,
@@ -2802,7 +1805,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267481035,
@@ -2825,7 +1828,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267480184,
@@ -2848,7 +1851,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267483588,
@@ -2871,7 +1874,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267481886,
@@ -2894,7 +1897,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267482737,
@@ -2917,7 +1920,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309696592,
@@ -2940,7 +1943,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267486992,
@@ -2963,7 +1966,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309697443,
@@ -2986,7 +1989,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267484439,
@@ -3009,7 +2012,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267485290,
@@ -3032,7 +2035,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309698294,
@@ -3055,7 +2058,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267486141,
@@ -3078,7 +2081,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267488694,
@@ -3101,7 +2104,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267487843,
@@ -3124,7 +2127,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309699145,
@@ -3147,7 +2150,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267490396,
@@ -3170,7 +2173,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267489545,
@@ -3193,7 +2196,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309699996,
@@ -3216,7 +2219,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309752758,
@@ -3239,7 +2242,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267493800,
@@ -3262,7 +2265,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267491247,
@@ -3285,7 +2288,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267494651,
@@ -3308,7 +2311,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267492098,
@@ -3331,7 +2334,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267492949,
@@ -3354,7 +2357,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267497204,
@@ -3377,7 +2380,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267498906,
@@ -3400,7 +2403,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1309700847,
@@ -3423,7 +2426,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267496353,
@@ -3446,7 +2449,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267495502,
@@ -3469,7 +2472,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": 1267498055,
@@ -3492,7 +2495,7 @@
       "stats": null,
       "clock": null,
       "referee": null,
-      "broadcaster": "TVRI Sport"
+      "broadcaster": null
     },
     {
       "id": "ko-round-of-32-1",

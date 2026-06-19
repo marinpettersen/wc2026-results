@@ -283,9 +283,10 @@ function hlMapEvents(raw, homeId) {
         minute: String(e.time ?? ""),
       });
     } else if (type === "Own Goal") {
-      // Gol bunuh diri: dikreditkan ke tim lawan, diberi tag "b.d."
+      // API Highlightly: e.team.id = tim yang diuntungkan (bukan pemain OG).
+      // Tidak perlu flip — langsung pakai isHome.
       out.push({
-        team:   isHome ? "away" : "home",
+        team:   isHome ? "home" : "away",
         type:   "goal",
         player: e.player || "?",
         minute: String(e.time ?? ""),
