@@ -856,7 +856,7 @@
       "penalty": null,
       "events": [
         {
-          "team": "away",
+          "team": "home",
           "type": "goal",
           "player": "D. Bobadilla",
           "minute": "7",
@@ -1500,7 +1500,7 @@
           "minute": "19"
         },
         {
-          "team": "away",
+          "team": "home",
           "type": "goal",
           "player": "M. Hany",
           "minute": "66",
@@ -1771,7 +1771,7 @@
           "minute": "76"
         },
         {
-          "team": "home",
+          "team": "away",
           "type": "goal",
           "player": "A. Hussein",
           "minute": "90+6",
@@ -1898,7 +1898,7 @@
           "minute": "50"
         },
         {
-          "team": "away",
+          "team": "home",
           "type": "goal",
           "player": "Y. Al Arab",
           "minute": "76",

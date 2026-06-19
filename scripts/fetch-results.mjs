@@ -283,10 +283,9 @@ function hlMapEvents(raw, homeId) {
         minute: String(e.time ?? ""),
       });
     } else if (type === "Own Goal") {
-      // API Highlightly: e.team.id = tim yang diuntungkan (bukan pemain OG).
-      // Tidak perlu flip — langsung pakai isHome.
+      // e.team.id = tim pelaku OG → flip: kredit ke lawan
       out.push({
-        team:   isHome ? "home" : "away",
+        team:   isHome ? "away" : "home",
         type:   "goal",
         player: e.player || "?",
         minute: String(e.time ?? ""),
