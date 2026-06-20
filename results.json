@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-19T05:23:46.230Z",
+  "updatedAt": "2026-06-20T02:35:22.165Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -114,28 +114,28 @@
       "name": "Group C",
       "standings": [
         {
-          "name": "Skotlandia",
-          "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-          "position": 1,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 1,
-          "ga": 0,
-          "points": 3
-        },
-        {
           "name": "Maroko",
           "flag": "🇲🇦",
-          "position": 2,
-          "games": 1,
-          "wins": 0,
+          "position": 1,
+          "games": 2,
+          "wins": 1,
           "draws": 1,
           "losses": 0,
+          "gf": 2,
+          "ga": 1,
+          "points": 4
+        },
+        {
+          "name": "Skotlandia",
+          "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+          "position": 2,
+          "games": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
           "gf": 1,
           "ga": 1,
-          "points": 1
+          "points": 3
         },
         {
           "name": "Brasil",
@@ -170,24 +170,24 @@
           "name": "Amerika Serikat",
           "flag": "🇺🇸",
           "position": 1,
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
-          "gf": 4,
+          "gf": 6,
           "ga": 1,
-          "points": 3
+          "points": 6
         },
         {
           "name": "Australia",
           "flag": "🇦🇺",
           "position": 2,
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "gf": 2,
-          "ga": 0,
+          "ga": 2,
           "points": 3
         },
         {
@@ -2486,69 +2486,172 @@
       "id": 1267472525,
       "kickoff": "2026-06-19T19:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "Seattle Field, Seattle, WA",
+      "status": "FT",
       "home": {
         "name": "Amerika Serikat",
         "flag": "🇺🇸",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Australia",
         "flag": "🇦🇺",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "C. Burgess",
+          "minute": "11",
+          "tag": "b.d."
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Freeman",
+          "minute": "43"
+        }
+      ],
+      "stats": {
+        "possession": [
+          62,
+          38
+        ],
+        "shots": [
+          4,
+          5
+        ],
+        "sot": [
+          2,
+          2
+        ],
+        "fouls": [
+          12,
+          16
+        ],
+        "offsides": [
+          1,
+          0
+        ]
+      },
+      "clock": 90,
+      "referee": "Zwayer, Felix",
       "broadcaster": null
     },
     {
       "id": 1267471674,
       "kickoff": "2026-06-19T22:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "Boston Stadium, Foxborough, MA",
+      "status": "FT",
       "home": {
         "name": "Skotlandia",
         "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Maroko",
         "flag": "🇲🇦",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "I. Saibari",
+          "minute": "2"
+        }
+      ],
+      "stats": {
+        "possession": [
+          41,
+          59
+        ],
+        "shots": [
+          3,
+          8
+        ],
+        "sot": [
+          0,
+          2
+        ],
+        "fouls": [
+          11,
+          8
+        ],
+        "offsides": [
+          1,
+          0
+        ]
+      },
+      "clock": 90,
+      "referee": "Tantashev, Ilgiz",
       "broadcaster": null
     },
     {
       "id": 1267470823,
       "kickoff": "2026-06-20T00:30:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "Philadelphia Stadium, Philadelphia, PA",
+      "status": "FT",
       "home": {
         "name": "Brasil",
         "flag": "🇧🇷",
-        "goals": null
+        "goals": 3
       },
       "away": {
         "name": "Haiti",
         "flag": "🇭🇹",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Cunha",
+          "minute": "23"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Cunha",
+          "minute": "36"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Vinicius Junior",
+          "minute": "45+3"
+        }
+      ],
+      "stats": {
+        "possession": [
+          57,
+          43
+        ],
+        "shots": [
+          7,
+          7
+        ],
+        "sot": [
+          5,
+          3
+        ],
+        "fouls": [
+          12,
+          15
+        ],
+        "offsides": [
+          8,
+          4
+        ]
+      },
+      "clock": 90,
+      "referee": "Hernandez, Alejandro",
       "broadcaster": null
     },
     {
