@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-20T02:35:22.165Z",
+  "updatedAt": "2026-06-20T18:55:38.717Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -114,9 +114,21 @@
       "name": "Group C",
       "standings": [
         {
+          "name": "Brasil",
+          "flag": "🇧🇷",
+          "position": 1,
+          "games": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "gf": 4,
+          "ga": 1,
+          "points": 4
+        },
+        {
           "name": "Maroko",
           "flag": "🇲🇦",
-          "position": 1,
+          "position": 2,
           "games": 2,
           "wins": 1,
           "draws": 1,
@@ -128,7 +140,7 @@
         {
           "name": "Skotlandia",
           "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-          "position": 2,
+          "position": 3,
           "games": 2,
           "wins": 1,
           "draws": 0,
@@ -138,27 +150,15 @@
           "points": 3
         },
         {
-          "name": "Brasil",
-          "flag": "🇧🇷",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        },
-        {
           "name": "Haiti",
           "flag": "🇭🇹",
           "position": 4,
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "gf": 0,
-          "ga": 1,
+          "ga": 4,
           "points": 0
         }
       ]
@@ -191,27 +191,27 @@
           "points": 3
         },
         {
-          "name": "Turki",
-          "flag": "🇹🇷",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 0,
-          "ga": 2,
-          "points": 0
-        },
-        {
           "name": "Paraguay",
           "flag": "🇵🇾",
-          "position": 4,
-          "games": 1,
-          "wins": 0,
+          "position": 3,
+          "games": 2,
+          "wins": 1,
           "draws": 0,
           "losses": 1,
-          "gf": 1,
+          "gf": 2,
           "ga": 4,
+          "points": 3
+        },
+        {
+          "name": "Turki",
+          "flag": "🇹🇷",
+          "position": 4,
+          "games": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "gf": 0,
+          "ga": 3,
           "points": 0
         }
       ]
@@ -2658,23 +2658,57 @@
       "id": 1309694890,
       "kickoff": "2026-06-20T03:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "San Francisco Bay Area Stadium, Santa Clara, CA",
+      "status": "FT",
       "home": {
         "name": "Turki",
         "flag": "🇹🇷",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Paraguay",
         "flag": "🇵🇾",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Galarza",
+          "minute": "2"
+        },
+        {
+          "team": "away",
+          "type": "redcard",
+          "player": "M. Almiron",
+          "minute": "45+3"
+        }
+      ],
+      "stats": {
+        "possession": [
+          78,
+          22
+        ],
+        "shots": [
+          20,
+          5
+        ],
+        "sot": [
+          5,
+          2
+        ],
+        "fouls": [
+          14,
+          15
+        ],
+        "offsides": [
+          2,
+          3
+        ]
+      },
+      "clock": 90,
+      "referee": "Barton Cisneros, Ivan Arcides",
       "broadcaster": null
     },
     {
@@ -2682,21 +2716,21 @@
       "kickoff": "2026-06-20T17:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "1H",
       "home": {
         "name": "Belanda",
         "flag": "🇳🇱",
-        "goals": null
+        "goals": 5
       },
       "away": {
         "name": "Swedia",
         "flag": "🇸🇪",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null,
+      "clock": 90,
       "referee": null,
       "broadcaster": null
     },
