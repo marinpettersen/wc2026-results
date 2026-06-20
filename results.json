@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-20T18:55:38.717Z",
+  "updatedAt": "2026-06-20T19:16:23.413Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -2715,8 +2715,8 @@
       "id": 1309695741,
       "kickoff": "2026-06-20T17:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "1H",
+      "venue": "Houston Stadium, Houston, TX",
+      "status": "FT",
       "home": {
         "name": "Belanda",
         "flag": "🇳🇱",
@@ -2728,10 +2728,68 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "B. Brobbey",
+          "minute": "5"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "B. Brobbey",
+          "minute": "17"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "C. Gakpo",
+          "minute": "47"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "C. Gakpo",
+          "minute": "54"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "A. Elanga",
+          "minute": "59"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "C. Summerville",
+          "minute": "89"
+        }
+      ],
+      "stats": {
+        "possession": [
+          51,
+          49
+        ],
+        "shots": [
+          9,
+          13
+        ],
+        "sot": [
+          7,
+          8
+        ],
+        "fouls": [
+          9,
+          12
+        ],
+        "offsides": [
+          3,
+          3
+        ]
+      },
       "clock": 90,
-      "referee": null,
+      "referee": "Oliver, Michael",
       "broadcaster": null
     },
     {
