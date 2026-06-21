@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-21T10:57:41.565Z",
+  "updatedAt": "2026-06-21T18:34:22.965Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -2972,23 +2972,70 @@
       "id": 1267477631,
       "kickoff": "2026-06-21T16:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "Atlanta Stadium, Atlanta, GA",
+      "status": "FT",
       "home": {
         "name": "Spanyol",
         "flag": "🇪🇸",
-        "goals": null
+        "goals": 4
       },
       "away": {
         "name": "Arab Saudi",
         "flag": "🇸🇦",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Lamine Yamal",
+          "minute": "10"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Oyarzabal",
+          "minute": "21"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Oyarzabal",
+          "minute": "24"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "H. Tambakti",
+          "minute": "49",
+          "tag": "b.d."
+        }
+      ],
+      "stats": {
+        "possession": [
+          67,
+          33
+        ],
+        "shots": [
+          20,
+          2
+        ],
+        "sot": [
+          8,
+          1
+        ],
+        "fouls": [
+          10,
+          2
+        ],
+        "offsides": [
+          2,
+          3
+        ]
+      },
+      "clock": 90,
+      "referee": "Claus, Raphael",
       "broadcaster": null
     },
     {
