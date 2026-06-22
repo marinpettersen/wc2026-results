@@ -467,11 +467,10 @@ function setFacts(){
      <div class="fact"><b>${goals}</b> gol</div>`;
   if(DATA.updatedAt){
     const u=new Intl.DateTimeFormat("id-ID",{timeZone:TZ,dateStyle:"medium",timeStyle:"short"}).format(new Date(DATA.updatedAt));
-    document.getElementById("updated").textContent=`Diperbarui: ${u} WIB · sumber: ${DATA.source||"results.json"}`;
+    document.getElementById("updated").textContent=`Diperbarui: ${u} WIB`;
   }
   document.getElementById("footer").innerHTML=
-    `<b>Cara kerja:</b> GitHub Action mengambil hasil laga yang sudah selesai dan menulis <code style="color:var(--cyan)">results.json</code>; halaman ini membacanya.
-     Skor muncul saat laga <b>FT/AET/PEN</b> (final) atau sedang berlangsung (<b style="color:var(--cyan)">LIVE</b>, skor dalam warna cyan). GitHub Action memperbarui data setiap 5 menit.`;
+    `Data diperbarui otomatis setiap 5 menit. Skor ditampilkan saat pertandingan berlangsung atau selesai.`;
 }
 
 fetch("results.json",{cache:"no-store"})
