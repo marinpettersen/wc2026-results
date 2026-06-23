@@ -2,6 +2,16 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-24 — Fix: should-fetch.mjs gate terlalu ketat
+
+- **Masalah**: gate hanya cek window aktif (kickoff ±10min s/d +150min). Laga yang
+  sudah selesai tapi data masih NS/live di results.json tidak pernah ter-fetch ulang.
+- **Fix**: tambah dua kondisi baru di samping window aktif:
+  1. **Stale**: laga non-final yang kickoff-nya sudah lewat 10min–5jam → wajib fetch.
+  2. **Live**: ada laga berstatus live (1H/HT/2H/ET/BT/P) di data → selalu fetch.
+- Log sekarang menyebutkan alasan spesifik: "ada laga dalam window", "ada laga stale",
+  "ada laga live".
+
 ## 2026-06-19 — Fix: own goal kolom salah + hapus broadcaster hardcode
 
 ### 1. Own goal tampil di kolom yang salah
