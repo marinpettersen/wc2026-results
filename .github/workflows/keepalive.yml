@@ -1,0 +1,34 @@
+name: Keepalive — cegah GitHub menonaktifkan cron
+
+on:
+  schedule:
+    # Sekali sehari jam 00:00 UTC — cukup untuk menjaga repo "aktif"
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-enable fetch workflow jika disabled
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Cek status workflow fetch-results..."
+          STATE=$(gh api repos/${{ github.repository }}/actions/workflows/fetch-results.yml --jq '.state')
+          echo "  state: $STATE"
+          if [ "$STATE" = "disabled_inactivity" ]; then
+            echo "  → Re-enabling workflow..."
+            gh api -X PUT repos/${{ github.repository }}/actions/workflows/fetch-results.yml/enable
+            echo "  ✓ Workflow di-enable kembali."
+          else
+            echo "  ✓ Workflow sudah aktif."
+          fi
+
+      - name: Trigger fetch untuk menjaga cron hidup
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Trigger workflow_dispatch pada fetch-results..."
+          gh workflow run fetch-results.yml --repo ${{ github.repository }}
+          echo "✓ Fetch triggered."
