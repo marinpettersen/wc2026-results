@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-23T08:38:11.351Z",
+  "updatedAt": "2026-06-23T17:37:18.635Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -3490,21 +3490,21 @@
       "kickoff": "2026-06-23T17:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "1H",
       "home": {
         "name": "Portugal",
         "flag": "🇵🇹",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Uzbekistan",
         "flag": "🇺🇿",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null,
+      "clock": 37,
       "referee": null,
       "broadcaster": null
     },
