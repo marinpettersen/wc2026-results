@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-23T17:37:18.635Z",
+  "updatedAt": "2026-06-23T17:41:54.176Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -3494,7 +3494,7 @@
       "home": {
         "name": "Portugal",
         "flag": "🇵🇹",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "name": "Uzbekistan",
@@ -3504,7 +3504,7 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": 37,
+      "clock": 41,
       "referee": null,
       "broadcaster": null
     },
