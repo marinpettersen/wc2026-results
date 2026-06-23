@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-21T18:34:22.965Z",
+  "updatedAt": "2026-06-23T08:38:11.351Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -326,51 +326,51 @@
       "name": "Group G",
       "standings": [
         {
-          "name": "Selandia Baru",
-          "flag": "🇳🇿",
+          "name": "Mesir",
+          "flag": "🇪🇬",
           "position": 1,
-          "games": 1,
-          "wins": 0,
+          "games": 2,
+          "wins": 1,
           "draws": 1,
           "losses": 0,
-          "gf": 2,
+          "gf": 4,
           "ga": 2,
-          "points": 1
+          "points": 4
         },
         {
           "name": "Iran",
           "flag": "🇮🇷",
           "position": 2,
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 1,
+          "draws": 2,
           "losses": 0,
           "gf": 2,
           "ga": 2,
-          "points": 1
+          "points": 2
         },
         {
           "name": "Belgia",
           "flag": "🇧🇪",
           "position": 3,
-          "games": 1,
+          "games": 2,
           "wins": 0,
-          "draws": 1,
+          "draws": 2,
           "losses": 0,
           "gf": 1,
           "ga": 1,
-          "points": 1
+          "points": 2
         },
         {
-          "name": "Mesir",
-          "flag": "🇪🇬",
+          "name": "Selandia Baru",
+          "flag": "🇳🇿",
           "position": 4,
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
+          "losses": 1,
+          "gf": 3,
+          "ga": 5,
           "points": 1
         }
       ]
@@ -379,51 +379,51 @@
       "name": "Group H",
       "standings": [
         {
-          "name": "Uruguay",
-          "flag": "🇺🇾",
-          "position": 1,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        },
-        {
-          "name": "Arab Saudi",
-          "flag": "🇸🇦",
-          "position": 2,
-          "games": 1,
-          "wins": 0,
-          "draws": 1,
-          "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 1
-        },
-        {
           "name": "Spanyol",
           "flag": "🇪🇸",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
+          "position": 1,
+          "games": 2,
+          "wins": 1,
           "draws": 1,
           "losses": 0,
-          "gf": 0,
+          "gf": 4,
           "ga": 0,
-          "points": 1
+          "points": 4
+        },
+        {
+          "name": "Uruguay",
+          "flag": "🇺🇾",
+          "position": 2,
+          "games": 2,
+          "wins": 0,
+          "draws": 2,
+          "losses": 0,
+          "gf": 3,
+          "ga": 3,
+          "points": 2
         },
         {
           "name": "Tanjung Verde",
           "flag": "🇨🇻",
+          "position": 3,
+          "games": 2,
+          "wins": 0,
+          "draws": 2,
+          "losses": 0,
+          "gf": 2,
+          "ga": 2,
+          "points": 2
+        },
+        {
+          "name": "Arab Saudi",
+          "flag": "🇸🇦",
           "position": 4,
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 1,
-          "losses": 0,
-          "gf": 0,
-          "ga": 0,
+          "losses": 1,
+          "gf": 1,
+          "ga": 5,
           "points": 1
         }
       ]
@@ -432,51 +432,51 @@
       "name": "Group I",
       "standings": [
         {
-          "name": "Norwegia",
-          "flag": "🇳🇴",
-          "position": 1,
-          "games": 1,
-          "wins": 1,
-          "draws": 0,
-          "losses": 0,
-          "gf": 4,
-          "ga": 1,
-          "points": 3
-        },
-        {
           "name": "Prancis",
           "flag": "🇫🇷",
-          "position": 2,
-          "games": 1,
-          "wins": 1,
+          "position": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
-          "gf": 3,
+          "gf": 6,
           "ga": 1,
-          "points": 3
+          "points": 6
+        },
+        {
+          "name": "Norwegia",
+          "flag": "🇳🇴",
+          "position": 2,
+          "games": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "gf": 7,
+          "ga": 3,
+          "points": 6
         },
         {
           "name": "Senegal",
           "flag": "🇸🇳",
           "position": 3,
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
-          "gf": 1,
-          "ga": 3,
+          "losses": 2,
+          "gf": 3,
+          "ga": 6,
           "points": 0
         },
         {
           "name": "Irak",
           "flag": "🇮🇶",
           "position": 4,
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "gf": 1,
-          "ga": 4,
+          "ga": 7,
           "points": 0
         }
       ]
@@ -488,48 +488,48 @@
           "name": "Argentina",
           "flag": "🇦🇷",
           "position": 1,
-          "games": 1,
-          "wins": 1,
+          "games": 2,
+          "wins": 2,
           "draws": 0,
           "losses": 0,
-          "gf": 3,
+          "gf": 5,
           "ga": 0,
-          "points": 3
+          "points": 6
         },
         {
           "name": "Austria",
           "flag": "🇦🇹",
           "position": 2,
-          "games": 1,
+          "games": 2,
           "wins": 1,
           "draws": 0,
-          "losses": 0,
+          "losses": 1,
           "gf": 3,
-          "ga": 1,
+          "ga": 3,
+          "points": 3
+        },
+        {
+          "name": "Aljazair",
+          "flag": "🇩🇿",
+          "position": 3,
+          "games": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "gf": 2,
+          "ga": 4,
           "points": 3
         },
         {
           "name": "Yordania",
           "flag": "🇯🇴",
-          "position": 3,
-          "games": 1,
-          "wins": 0,
-          "draws": 0,
-          "losses": 1,
-          "gf": 1,
-          "ga": 3,
-          "points": 0
-        },
-        {
-          "name": "Aljazair",
-          "flag": "🇩🇿",
           "position": 4,
-          "games": 1,
+          "games": 2,
           "wins": 0,
           "draws": 0,
-          "losses": 1,
-          "gf": 0,
-          "ga": 3,
+          "losses": 2,
+          "gf": 2,
+          "ga": 5,
           "points": 0
         }
       ]
@@ -3042,161 +3042,447 @@
       "id": 1267475929,
       "kickoff": "2026-06-21T19:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "Los Angeles Stadium, Inglewood, CA",
+      "status": "FT",
       "home": {
         "name": "Belgia",
         "flag": "🇧🇪",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Iran",
         "flag": "🇮🇷",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "redcard",
+          "player": "N. Ngoy",
+          "minute": "66"
+        }
+      ],
+      "stats": {
+        "possession": [
+          70,
+          30
+        ],
+        "shots": [
+          17,
+          6
+        ],
+        "sot": [
+          7,
+          3
+        ],
+        "fouls": [
+          7,
+          9
+        ],
+        "offsides": [
+          3,
+          4
+        ]
+      },
+      "clock": 90,
+      "referee": "Herrera, Dario",
       "broadcaster": null
     },
     {
       "id": 1267478482,
       "kickoff": "2026-06-21T22:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "Miami Stadium, Miami, FL",
+      "status": "FT",
       "home": {
         "name": "Uruguay",
         "flag": "🇺🇾",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Tanjung Verde",
         "flag": "🇨🇻",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "K. Lenini",
+          "minute": "21"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Araujo",
+          "minute": "44"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Canobbio",
+          "minute": "45+6"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "H. Varela",
+          "minute": "61"
+        }
+      ],
+      "stats": {
+        "possession": [
+          65,
+          35
+        ],
+        "shots": [
+          10,
+          8
+        ],
+        "sot": [
+          2,
+          4
+        ],
+        "fouls": [
+          11,
+          4
+        ],
+        "offsides": [
+          3,
+          0
+        ]
+      },
+      "clock": 90,
+      "referee": "Eskas, Espen Andreas",
       "broadcaster": null
     },
     {
       "id": 1267476780,
       "kickoff": "2026-06-22T01:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "BC Place Vancouver, Vancouver",
+      "status": "FT",
       "home": {
         "name": "Selandia Baru",
         "flag": "🇳🇿",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Mesir",
         "flag": "🇪🇬",
-        "goals": null
+        "goals": 3
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "F. Surman",
+          "minute": "15"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Ziko",
+          "minute": "58"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Salah",
+          "minute": "67"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "Trezeguet",
+          "minute": "82"
+        }
+      ],
+      "stats": {
+        "possession": [
+          44,
+          56
+        ],
+        "shots": [
+          8,
+          13
+        ],
+        "sot": [
+          5,
+          7
+        ],
+        "fouls": [
+          14,
+          8
+        ],
+        "offsides": [
+          3,
+          0
+        ]
+      },
+      "clock": 90,
+      "referee": "Alali, Omar Mohamed Ahmed Hassan",
       "broadcaster": null
     },
     {
       "id": 1267479333,
       "kickoff": "2026-06-22T17:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "Dallas Stadium, Arlington, TX",
+      "status": "FT",
       "home": {
         "name": "Argentina",
         "flag": "🇦🇷",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Austria",
         "flag": "🇦🇹",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "L. Messi",
+          "minute": "38"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "L. Messi",
+          "minute": "90+5"
+        }
+      ],
+      "stats": {
+        "possession": [
+          54,
+          46
+        ],
+        "shots": [
+          9,
+          6
+        ],
+        "sot": [
+          5,
+          1
+        ],
+        "fouls": [
+          13,
+          13
+        ],
+        "offsides": [
+          2,
+          0
+        ]
+      },
+      "clock": 90,
+      "referee": "Omar, Amin Mohamed",
       "broadcaster": null
     },
     {
       "id": 1309704251,
       "kickoff": "2026-06-22T21:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "Philadelphia Stadium, Philadelphia, PA",
+      "status": "FT",
       "home": {
         "name": "Prancis",
         "flag": "🇫🇷",
-        "goals": null
+        "goals": 3
       },
       "away": {
         "name": "Irak",
         "flag": "🇮🇶",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Kylian Mbappé",
+          "minute": "14"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Kylian Mbappé",
+          "minute": "54"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Ousmane Dembélé",
+          "minute": "66"
+        }
+      ],
+      "stats": {
+        "possession": [
+          56,
+          44
+        ],
+        "shots": [
+          15,
+          3
+        ],
+        "sot": [
+          5,
+          0
+        ],
+        "fouls": [
+          8,
+          4
+        ],
+        "offsides": [
+          1,
+          0
+        ]
+      },
+      "clock": 90,
+      "referee": "Fischer, Drew",
       "broadcaster": null
     },
     {
       "id": 1267481035,
       "kickoff": "2026-06-23T00:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "New York New Jersey Stadium, East Rutherford, NJ",
+      "status": "FT",
       "home": {
         "name": "Norwegia",
         "flag": "🇳🇴",
-        "goals": null
+        "goals": 3
       },
       "away": {
         "name": "Senegal",
         "flag": "🇸🇳",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Pedersen",
+          "minute": "43"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "E. Haaland",
+          "minute": "48"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "I. Sarr",
+          "minute": "53"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "E. Haaland",
+          "minute": "58"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "I. Sarr",
+          "minute": "90+3"
+        }
+      ],
+      "stats": {
+        "possession": [
+          42,
+          58
+        ],
+        "shots": [
+          10,
+          11
+        ],
+        "sot": [
+          7,
+          4
+        ],
+        "fouls": [
+          13,
+          5
+        ],
+        "offsides": [
+          0,
+          4
+        ]
+      },
+      "clock": 90,
+      "referee": "Pereira Sampaio, Wilton",
       "broadcaster": null
     },
     {
       "id": 1267480184,
       "kickoff": "2026-06-23T03:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "NS",
+      "venue": "San Francisco Bay Area Stadium, Santa Clara, CA",
+      "status": "FT",
       "home": {
         "name": "Yordania",
         "flag": "🇯🇴",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Aljazair",
         "flag": "🇩🇿",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "N. Al Rashdan",
+          "minute": "36"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "N. Benbouali",
+          "minute": "69"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "A. Gouiri",
+          "minute": "82"
+        }
+      ],
+      "stats": {
+        "possession": [
+          28,
+          72
+        ],
+        "shots": [
+          8,
+          12
+        ],
+        "sot": [
+          4,
+          8
+        ],
+        "fouls": [
+          11,
+          6
+        ],
+        "offsides": [
+          1,
+          0
+        ]
+      },
+      "clock": 90,
+      "referee": "Vincic, Slavko",
       "broadcaster": null
     },
     {
