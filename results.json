@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-23T17:41:54.176Z",
+  "updatedAt": "2026-06-23T18:01:19.415Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -3504,7 +3504,7 @@
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": 41,
+      "clock": 45,
       "referee": null,
       "broadcaster": null
     },
