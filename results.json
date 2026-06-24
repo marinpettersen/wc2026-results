@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-24T01:51:33.033Z",
+  "updatedAt": "2026-06-24T03:34:42.263Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -3661,21 +3661,21 @@
       "kickoff": "2026-06-24T02:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "1H",
       "home": {
         "name": "Kolombia",
         "flag": "🇨🇴",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Kongo",
         "flag": "🇨🇩",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null,
+      "clock": 73,
       "referee": null,
       "broadcaster": null
     },
