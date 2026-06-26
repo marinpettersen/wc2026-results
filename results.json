@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-26T03:40:23.676Z",
+  "updatedAt": "2026-06-26T09:20:46.854Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -170,49 +170,49 @@
           "name": "Amerika Serikat",
           "flag": "🇺🇸",
           "position": 1,
-          "games": 2,
+          "games": 3,
           "wins": 2,
           "draws": 0,
-          "losses": 0,
-          "gf": 6,
-          "ga": 1,
+          "losses": 1,
+          "gf": 8,
+          "ga": 4,
           "points": 6
         },
         {
           "name": "Australia",
           "flag": "🇦🇺",
           "position": 2,
-          "games": 2,
+          "games": 3,
           "wins": 1,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "gf": 2,
           "ga": 2,
-          "points": 3
+          "points": 4
         },
         {
           "name": "Paraguay",
           "flag": "🇵🇾",
           "position": 3,
-          "games": 2,
+          "games": 3,
           "wins": 1,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
           "gf": 2,
           "ga": 4,
-          "points": 3
+          "points": 4
         },
         {
           "name": "Turki",
           "flag": "🇹🇷",
           "position": 4,
-          "games": 2,
-          "wins": 0,
+          "games": 3,
+          "wins": 1,
           "draws": 0,
           "losses": 2,
-          "gf": 0,
-          "ga": 3,
-          "points": 0
+          "gf": 3,
+          "ga": 5,
+          "points": 3
         }
       ]
     },
@@ -4350,8 +4350,8 @@
       "id": 1267489545,
       "kickoff": "2026-06-26T02:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "1H",
+      "venue": "San Francisco Bay Area Stadium, Santa Clara, CA",
+      "status": "FT",
       "home": {
         "name": "Paraguay",
         "flag": "🇵🇾",
@@ -4364,21 +4364,42 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null,
-      "clock": 77,
-      "referee": null,
+      "stats": {
+        "possession": [
+          44,
+          56
+        ],
+        "shots": [
+          6,
+          9
+        ],
+        "sot": [
+          2,
+          5
+        ],
+        "fouls": [
+          9,
+          6
+        ],
+        "offsides": [
+          0,
+          0
+        ]
+      },
+      "clock": 90,
+      "referee": "Turpin, Clement",
       "broadcaster": null
     },
     {
       "id": 1309699996,
       "kickoff": "2026-06-26T02:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "1H",
+      "venue": "Los Angeles Stadium, Inglewood, CA",
+      "status": "FT",
       "home": {
         "name": "Turki",
         "flag": "🇹🇷",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "name": "Amerika Serikat",
@@ -4386,10 +4407,62 @@
         "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": 77,
-      "referee": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "A. Trusty",
+          "minute": "3"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Guler",
+          "minute": "10"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "B. Yilmaz",
+          "minute": "31"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "S. Berhalter",
+          "minute": "49"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Ayhan",
+          "minute": "90+8"
+        }
+      ],
+      "stats": {
+        "possession": [
+          48,
+          52
+        ],
+        "shots": [
+          7,
+          13
+        ],
+        "sot": [
+          3,
+          7
+        ],
+        "fouls": [
+          13,
+          13
+        ],
+        "offsides": [
+          2,
+          5
+        ]
+      },
+      "clock": 90,
+      "referee": "Ghorbal, Mustapha",
       "broadcaster": null
     },
     {
@@ -4741,6 +4814,28 @@
       "_tbd": true
     },
     {
+      "id": 1329555528,
+      "kickoff": "2026-06-29T17:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Brasil",
+        "flag": "🇧🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Jepang",
+        "flag": "🇯🇵",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
       "id": "ko-round-of-32-3",
       "kickoff": "2026-06-29T20:30:00.000Z",
       "group": null,
@@ -4789,6 +4884,28 @@
       "referee": null,
       "broadcaster": null,
       "_tbd": true
+    },
+    {
+      "id": 1329556379,
+      "kickoff": "2026-06-30T01:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Belanda",
+        "flag": "🇳🇱",
+        "goals": null
+      },
+      "away": {
+        "name": "Maroko",
+        "flag": "🇲🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
     },
     {
       "id": "ko-round-of-32-5",
@@ -4939,6 +5056,28 @@
       "referee": null,
       "broadcaster": null,
       "_tbd": true
+    },
+    {
+      "id": 1329761470,
+      "kickoff": "2026-07-02T00:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Amerika Serikat",
+        "flag": "🇺🇸",
+        "goals": null
+      },
+      "away": {
+        "name": "Bosnia & Herzegovina",
+        "flag": "🇧🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
     },
     {
       "id": "ko-round-of-32-11",
