@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-26T09:20:46.854Z",
+  "updatedAt": "2026-06-26T20:50:38.165Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -4470,21 +4470,21 @@
       "kickoff": "2026-06-26T19:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "1H",
       "home": {
         "name": "Senegal",
         "flag": "🇸🇳",
-        "goals": null
+        "goals": 4
       },
       "away": {
         "name": "Irak",
         "flag": "🇮🇶",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null,
+      "clock": 82,
       "referee": null,
       "broadcaster": null
     },
@@ -4493,21 +4493,21 @@
       "kickoff": "2026-06-26T19:00:00.000Z",
       "group": null,
       "venue": null,
-      "status": "NS",
+      "status": "1H",
       "home": {
         "name": "Norwegia",
         "flag": "🇳🇴",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Prancis",
         "flag": "🇫🇷",
-        "goals": null
+        "goals": 3
       },
       "penalty": null,
       "events": [],
       "stats": null,
-      "clock": null,
+      "clock": 86,
       "referee": null,
       "broadcaster": null
     },
