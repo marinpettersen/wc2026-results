@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-27T03:26:53.016Z",
+  "updatedAt": "2026-06-27T19:44:50.374Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -326,51 +326,51 @@
       "name": "Group G",
       "standings": [
         {
+          "name": "Belgia",
+          "flag": "🇧🇪",
+          "position": 1,
+          "games": 3,
+          "wins": 1,
+          "draws": 2,
+          "losses": 0,
+          "gf": 6,
+          "ga": 2,
+          "points": 5
+        },
+        {
           "name": "Mesir",
           "flag": "🇪🇬",
-          "position": 1,
-          "games": 2,
+          "position": 2,
+          "games": 3,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 0,
-          "gf": 4,
-          "ga": 2,
-          "points": 4
+          "gf": 5,
+          "ga": 3,
+          "points": 5
         },
         {
           "name": "Iran",
           "flag": "🇮🇷",
-          "position": 2,
-          "games": 2,
-          "wins": 0,
-          "draws": 2,
-          "losses": 0,
-          "gf": 2,
-          "ga": 2,
-          "points": 2
-        },
-        {
-          "name": "Belgia",
-          "flag": "🇧🇪",
           "position": 3,
-          "games": 2,
+          "games": 3,
           "wins": 0,
-          "draws": 2,
+          "draws": 3,
           "losses": 0,
-          "gf": 1,
-          "ga": 1,
-          "points": 2
+          "gf": 3,
+          "ga": 3,
+          "points": 3
         },
         {
           "name": "Selandia Baru",
           "flag": "🇳🇿",
           "position": 4,
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 1,
-          "losses": 1,
-          "gf": 3,
-          "ga": 5,
+          "losses": 2,
+          "gf": 4,
+          "ga": 10,
           "points": 1
         }
       ]
@@ -4726,8 +4726,8 @@
       "id": 1267492098,
       "kickoff": "2026-06-27T03:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "1H",
+      "venue": "Seattle Field, Seattle, WA",
+      "status": "FT",
       "home": {
         "name": "Mesir",
         "flag": "🇪🇬",
@@ -4739,33 +4739,125 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": 25,
-      "referee": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Saber",
+          "minute": "5"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "R. Rezaeian",
+          "minute": "14"
+        }
+      ],
+      "stats": {
+        "possession": [
+          61,
+          39
+        ],
+        "shots": [
+          9,
+          10
+        ],
+        "sot": [
+          3,
+          4
+        ],
+        "fouls": [
+          11,
+          16
+        ],
+        "offsides": [
+          0,
+          3
+        ]
+      },
+      "clock": 90,
+      "referee": "Marciniak, Szymon",
       "broadcaster": null
     },
     {
       "id": 1267492949,
       "kickoff": "2026-06-27T03:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "1H",
+      "venue": "BC Place Vancouver, Vancouver",
+      "status": "FT",
       "home": {
         "name": "Selandia Baru",
         "flag": "🇳🇿",
-        "goals": 0
+        "goals": 1
       },
       "away": {
         "name": "Belgia",
         "flag": "🇧🇪",
-        "goals": 0
+        "goals": 5
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": 25,
-      "referee": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "L. Trossard",
+          "minute": "28"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "L. Trossard",
+          "minute": "50"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "K. De Bruyne",
+          "minute": "66"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "E. Just",
+          "minute": "84"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "R. Lukaku",
+          "minute": "86"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "A. Saelemaekers",
+          "minute": "90+4"
+        }
+      ],
+      "stats": {
+        "possession": [
+          46,
+          54
+        ],
+        "shots": [
+          5,
+          23
+        ],
+        "sot": [
+          2,
+          10
+        ],
+        "fouls": [
+          10,
+          7
+        ],
+        "offsides": [
+          1,
+          1
+        ]
+      },
+      "clock": 90,
+      "referee": "Mohammad Tumah Makhadmeh, Adham",
       "broadcaster": null
     },
     {
@@ -5026,6 +5118,28 @@
       "_tbd": true
     },
     {
+      "id": 1331965560,
+      "kickoff": "2026-06-29T20:30:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Jerman",
+        "flag": "🇩🇪",
+        "goals": null
+      },
+      "away": {
+        "name": "Paraguay",
+        "flag": "🇵🇾",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
       "id": "ko-round-of-32-4",
       "kickoff": "2026-06-30T01:00:00.000Z",
       "group": null,
@@ -5098,6 +5212,28 @@
       "_tbd": true
     },
     {
+      "id": 1331636223,
+      "kickoff": "2026-06-30T17:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Pantai Gading",
+        "flag": "🇨🇮",
+        "goals": null
+      },
+      "away": {
+        "name": "Norwegia",
+        "flag": "🇳🇴",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
       "id": "ko-round-of-32-6",
       "kickoff": "2026-06-30T21:00:00.000Z",
       "group": null,
@@ -5121,6 +5257,28 @@
       "referee": null,
       "broadcaster": null,
       "_tbd": true
+    },
+    {
+      "id": 1331966411,
+      "kickoff": "2026-06-30T21:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Prancis",
+        "flag": "🇫🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Swedia",
+        "flag": "🇸🇪",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
     },
     {
       "id": "ko-round-of-32-7",
@@ -5345,6 +5503,28 @@
       "_tbd": true
     },
     {
+      "id": 1331967262,
+      "kickoff": "2026-07-03T18:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Australia",
+        "flag": "🇦🇺",
+        "goals": null
+      },
+      "away": {
+        "name": "Mesir",
+        "flag": "🇪🇬",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
       "id": "ko-round-of-32-15",
       "kickoff": "2026-07-03T22:00:00.000Z",
       "group": null,
@@ -5368,6 +5548,28 @@
       "referee": null,
       "broadcaster": null,
       "_tbd": true
+    },
+    {
+      "id": 1331968113,
+      "kickoff": "2026-07-03T22:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Argentina",
+        "flag": "🇦🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Tanjung Verde",
+        "flag": "🇨🇻",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
     },
     {
       "id": "ko-round-of-32-16",
