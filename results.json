@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-28T03:50:00.268Z",
+  "updatedAt": "2026-06-29T03:54:55.360Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -488,48 +488,48 @@
           "name": "Argentina",
           "flag": "🇦🇷",
           "position": 1,
-          "games": 2,
-          "wins": 2,
+          "games": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
-          "gf": 5,
-          "ga": 0,
-          "points": 6
+          "gf": 8,
+          "ga": 1,
+          "points": 9
         },
         {
           "name": "Austria",
           "flag": "🇦🇹",
           "position": 2,
-          "games": 2,
+          "games": 3,
           "wins": 1,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
-          "gf": 3,
-          "ga": 3,
-          "points": 3
+          "gf": 6,
+          "ga": 6,
+          "points": 4
         },
         {
           "name": "Aljazair",
           "flag": "🇩🇿",
           "position": 3,
-          "games": 2,
+          "games": 3,
           "wins": 1,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
-          "gf": 2,
-          "ga": 4,
-          "points": 3
+          "gf": 5,
+          "ga": 7,
+          "points": 4
         },
         {
           "name": "Yordania",
           "flag": "🇯🇴",
           "position": 4,
-          "games": 2,
+          "games": 3,
           "wins": 0,
           "draws": 0,
-          "losses": 2,
-          "gf": 2,
-          "ga": 5,
+          "losses": 3,
+          "gf": 3,
+          "ga": 8,
           "points": 0
         }
       ]
@@ -5098,31 +5098,89 @@
       "id": 1267495502,
       "kickoff": "2026-06-28T02:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "1H",
+      "venue": "Kansas City Stadium, Kansas City, MO",
+      "status": "FT",
       "home": {
         "name": "Aljazair",
         "flag": "🇩🇿",
-        "goals": 2
+        "goals": 3
       },
       "away": {
         "name": "Austria",
         "flag": "🇦🇹",
-        "goals": 2
+        "goals": 3
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": 87,
-      "referee": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Arnautovic",
+          "minute": "28"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "R. Belghali",
+          "minute": "45"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Sabitzer",
+          "minute": "55"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "R. Mahrez",
+          "minute": "60"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "R. Mahrez",
+          "minute": "90+3"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "S. Kalajdzic",
+          "minute": "90+6"
+        }
+      ],
+      "stats": {
+        "possession": [
+          65,
+          35
+        ],
+        "shots": [
+          10,
+          9
+        ],
+        "sot": [
+          5,
+          3
+        ],
+        "fouls": [
+          3,
+          7
+        ],
+        "offsides": [
+          1,
+          3
+        ]
+      },
+      "clock": 90,
+      "referee": "Tantashev, Ilgiz",
       "broadcaster": null
     },
     {
       "id": 1267498055,
       "kickoff": "2026-06-28T02:00:00.000Z",
       "group": null,
-      "venue": null,
-      "status": "1H",
+      "venue": "Dallas Stadium, Arlington, TX",
+      "status": "FT",
       "home": {
         "name": "Yordania",
         "flag": "🇯🇴",
@@ -5134,10 +5192,57 @@
         "goals": 3
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": 87,
-      "referee": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "G. Lo Celso",
+          "minute": "19"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "L. Martinez",
+          "minute": "31",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Tamari",
+          "minute": "55"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "L. Messi",
+          "minute": "80"
+        }
+      ],
+      "stats": {
+        "possession": [
+          27,
+          73
+        ],
+        "shots": [
+          3,
+          11
+        ],
+        "sot": [
+          1,
+          4
+        ],
+        "fouls": [
+          13,
+          7
+        ],
+        "offsides": [
+          1,
+          3
+        ]
+      },
+      "clock": 90,
+      "referee": "Kovacs, Istvan",
       "broadcaster": null
     },
     {
@@ -5169,23 +5274,51 @@
       "id": 1328691763,
       "kickoff": "2026-06-28T19:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Los Angeles Stadium, Inglewood, CA",
+      "referee": "Pinheiro, Joao Pedro",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Afrika Selatan",
         "flag": "🇿🇦",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Kanada",
         "flag": "🇨🇦",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "S. Eustaquio",
+          "minute": "90+2"
+        }
+      ],
+      "stats": {
+        "possession": [
+          58,
+          42
+        ],
+        "shots": [
+          5,
+          12
+        ],
+        "sot": [
+          1,
+          7
+        ],
+        "fouls": [
+          10,
+          16
+        ],
+        "offsides": [
+          1,
+          0
+        ]
+      }
     },
     {
       "id": "ko-round-of-32-2",
@@ -5448,6 +5581,28 @@
       "_tbd": true
     },
     {
+      "id": 1333778190,
+      "kickoff": "2026-07-01T01:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Meksiko",
+        "flag": "🇲🇽",
+        "goals": null
+      },
+      "away": {
+        "name": "Ekuador",
+        "flag": "🇪🇨",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
       "id": "ko-round-of-32-8",
       "kickoff": "2026-07-01T16:00:00.000Z",
       "group": null,
@@ -5473,6 +5628,28 @@
       "_tbd": true
     },
     {
+      "id": 1333779041,
+      "kickoff": "2026-07-01T16:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Inggris",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "goals": null
+      },
+      "away": {
+        "name": "Kongo",
+        "flag": "🇨🇩",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
       "id": "ko-round-of-32-9",
       "kickoff": "2026-07-01T20:00:00.000Z",
       "group": null,
@@ -5496,6 +5673,28 @@
       "referee": null,
       "broadcaster": null,
       "_tbd": true
+    },
+    {
+      "id": 1333779892,
+      "kickoff": "2026-07-01T20:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Belgia",
+        "flag": "🇧🇪",
+        "goals": null
+      },
+      "away": {
+        "name": "Senegal",
+        "flag": "🇸🇳",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
     },
     {
       "id": "ko-round-of-32-10",
@@ -5570,6 +5769,28 @@
       "_tbd": true
     },
     {
+      "id": 1333782445,
+      "kickoff": "2026-07-02T19:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Spanyol",
+        "flag": "🇪🇸",
+        "goals": null
+      },
+      "away": {
+        "name": "Austria",
+        "flag": "🇦🇹",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
       "id": "ko-round-of-32-12",
       "kickoff": "2026-07-02T23:00:00.000Z",
       "group": null,
@@ -5595,6 +5816,28 @@
       "_tbd": true
     },
     {
+      "id": 1333780743,
+      "kickoff": "2026-07-02T23:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "goals": null
+      },
+      "away": {
+        "name": "Kroasia",
+        "flag": "🇭🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
       "id": "ko-round-of-32-13",
       "kickoff": "2026-07-03T03:00:00.000Z",
       "group": null,
@@ -5618,6 +5861,28 @@
       "referee": null,
       "broadcaster": null,
       "_tbd": true
+    },
+    {
+      "id": 1333783296,
+      "kickoff": "2026-07-03T03:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Swiss",
+        "flag": "🇨🇭",
+        "goals": null
+      },
+      "away": {
+        "name": "Aljazair",
+        "flag": "🇩🇿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
     },
     {
       "id": "ko-round-of-32-14",
@@ -5737,6 +6002,28 @@
       "referee": null,
       "broadcaster": null,
       "_tbd": true
+    },
+    {
+      "id": 1333781594,
+      "kickoff": "2026-07-04T01:30:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Kolombia",
+        "flag": "🇨🇴",
+        "goals": null
+      },
+      "away": {
+        "name": "Ghana",
+        "flag": "🇬🇭",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
     },
     {
       "id": "ko-round-of-16-1",
