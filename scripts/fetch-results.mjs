@@ -465,24 +465,8 @@ async function main() {
   const existing = await loadExisting();
   const byId = new Map(existing.matches.map(m => [m.id, m]));
 
-  // Freeze per-hari: hitung tanggal di mana SEMUA laga sudah frozen
-  const dateMatches = new Map(); // UTC date string → [match, ...]
-  for (const m of byId.values()) {
-    if (!m.kickoff) continue;
-    const d = m.kickoff.slice(0, 10); // YYYY-MM-DD dalam UTC
-    if (!dateMatches.has(d)) dateMatches.set(d, []);
-    dateMatches.get(d).push(m);
-  }
-  const frozenDates = new Set();
-  for (const [d, ms] of dateMatches) {
-    if (ms.length > 0 && ms.every(m => isFrozen(m))) frozenDates.add(d);
-  }
-  if (frozenDates.size > 0) {
-    const skippable = [...dateMatches.entries()]
-      .filter(([d]) => frozenDates.has(d))
-      .reduce((sum, [, ms]) => sum + ms.length, 0);
-    console.log(`[${PROVIDER}] skip ${skippable} laga dari ${frozenDates.size} hari beku.`);
-  }
+  // Catatan: freeze per-hari dihapus (fase gugur bisa berbagi tanggal dengan
+  // laga grup yang sudah frozen → blokir KO baru). Per-fixture freeze sudah cukup.
 
   if (!A.key) {
     console.log(`${A.keyEnv} kosong → pakai results.json yang ada (seed). Tidak ada perubahan.`);
@@ -504,11 +488,6 @@ async function main() {
   }
   console.log(`  dapat ${fixtures.length} fixtures.`);
 
-  // Kumpulkan ID laga _tbd (fase gugur manual) agar tidak ditimpa oleh API
-  const tbdIds = new Set(
-    [...byId.values()].filter(m => m._tbd).map(m => m.id)
-  );
-
   let updated = 0, enriched = 0;
   for (const fx of fixtures) {
     let base;
@@ -519,11 +498,13 @@ async function main() {
       continue;
     }
 
-    // Skip laga dari hari yang sudah sepenuhnya beku
-    if (base.kickoff && frozenDates.has(base.kickoff.slice(0, 10))) continue;
-
-    // NS + kickoff sudah lewat → endpoint list lambat update; verify via detail
-    if (base.status === "NS" && new Date(base.kickoff) < new Date() && A.fetchDetail) {
+    // Endpoint list HL lambat update status — verify via detail untuk:
+    // 1. NS tapi kickoff sudah lewat (belum mulai menurut list, padahal mungkin sudah)
+    // 2. LIVE tapi kickoff > 3 jam lalu (mungkin sudah selesai, status belum sinkron)
+    const kickoffMs = new Date(base.kickoff).getTime();
+    const staleNS   = base.status === "NS" && kickoffMs < Date.now();
+    const staleLive = LIVE.has(base.status) && kickoffMs < Date.now() - 3 * 60 * 60 * 1000;
+    if ((staleNS || staleLive) && A.fetchDetail) {
       try {
         const detail = await A.fetchDetail(base.id);
         if (detail) base = A.mapFixture(detail);
@@ -533,8 +514,16 @@ async function main() {
     }
 
     const prev = byId.get(base.id);
-    // sudah final + sudah beku (punya events) → biarkan, hemat kuota
-    if (prev && isFrozen(prev)) continue;
+    // sudah final + sudah beku (punya events) → skip re-enrich, tapi tetap
+    // propagate field round/venue/referee jika baru terisi dari API
+    if (prev && isFrozen(prev)) {
+      let patched = false;
+      if (base.round  && !prev.round)  { prev.round  = base.round;  patched = true; }
+      if (base.venue  && !prev.venue)  { prev.venue  = base.venue;  patched = true; }
+      if (base.referee && !prev.referee){ prev.referee = base.referee; patched = true; }
+      if (patched) { byId.set(base.id, prev); updated++; }
+      continue;
+    }
 
     if (FINAL.has(base.status)) {
       try {
@@ -561,32 +550,6 @@ async function main() {
     byId.set(base.id, { ...(prev || {}), ...base });
     updated++;
   }
-
-  // Hapus placeholder _tbd yang sudah digantikan data real dari API.
-  // Real KO fixture dikenali dari: ID numerik + field round terisi.
-  // Hapus TBD untuk date+round tertentu hanya jika jumlah real fixture >= jumlah TBD.
-  const realKoCount = new Map(); // "YYYY-MM-DD|round" → jumlah
-  for (const m of byId.values()) {
-    if (!m._tbd && m.round && typeof m.id === "number") {
-      const key = `${m.kickoff.slice(0, 10)}|${m.round}`;
-      realKoCount.set(key, (realKoCount.get(key) || 0) + 1);
-    }
-  }
-  const tbdByKey = new Map(); // "YYYY-MM-DD|round" → [id, ...]
-  for (const [id, m] of byId) {
-    if (m._tbd && m.round) {
-      const key = `${m.kickoff.slice(0, 10)}|${normalizeRound(m.round) || m.round}`;
-      if (!tbdByKey.has(key)) tbdByKey.set(key, []);
-      tbdByKey.get(key).push(id);
-    }
-  }
-  let tbdRemoved = 0;
-  for (const [key, ids] of tbdByKey) {
-    if ((realKoCount.get(key) || 0) >= ids.length) {
-      ids.forEach(id => { byId.delete(id); tbdRemoved++; });
-    }
-  }
-  if (tbdRemoved) console.log(`  hapus ${tbdRemoved} placeholder _tbd (digantikan data real).`);
 
   const matches = [...byId.values()]
     .map(m => { delete m._homeId; delete m._awayId; return m; })

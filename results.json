@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-30T07:45:31.371Z",
+  "updatedAt": "2026-06-30T10:19:44.922Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -1435,7 +1435,7 @@
       "id": 1267463164,
       "kickoff": "2026-06-15T16:00:00.000Z",
       "group": null,
-      "venue": "Atlanta Stadium, Atlanta, GA",
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Spanyol",
@@ -1449,31 +1449,11 @@
       },
       "penalty": null,
       "events": [],
-      "stats": {
-        "possession": [
-          74,
-          26
-        ],
-        "shots": [
-          19,
-          4
-        ],
-        "sot": [
-          7,
-          1
-        ],
-        "fouls": [
-          10,
-          1
-        ],
-        "offsides": [
-          2,
-          3
-        ]
-      },
+      "stats": null,
       "clock": 90,
-      "referee": "Mohammad Tumah Makhadmeh, Adham",
-      "broadcaster": null
+      "referee": null,
+      "broadcaster": null,
+      "round": null
     },
     {
       "id": 1267460611,
@@ -2859,7 +2839,7 @@
       "id": 1267473376,
       "kickoff": "2026-06-21T00:00:00.000Z",
       "group": null,
-      "venue": "Kansas City Stadium, Kansas City, MO",
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Ekuador",
@@ -2873,31 +2853,11 @@
       },
       "penalty": null,
       "events": [],
-      "stats": {
-        "possession": [
-          75,
-          25
-        ],
-        "shots": [
-          25,
-          7
-        ],
-        "sot": [
-          15,
-          3
-        ],
-        "fouls": [
-          7,
-          10
-        ],
-        "offsides": [
-          1,
-          2
-        ]
-      },
+      "stats": null,
       "clock": 90,
-      "referee": "Ma, Ning",
-      "broadcaster": null
+      "referee": null,
+      "broadcaster": null,
+      "round": null
     },
     {
       "id": 1267475078,
@@ -3565,7 +3525,7 @@
       "id": 1267481886,
       "kickoff": "2026-06-23T20:00:00.000Z",
       "group": null,
-      "venue": "Boston Stadium, Foxborough, MA",
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Inggris",
@@ -3579,31 +3539,11 @@
       },
       "penalty": null,
       "events": [],
-      "stats": {
-        "possession": [
-          79,
-          21
-        ],
-        "shots": [
-          13,
-          1
-        ],
-        "sot": [
-          3,
-          1
-        ],
-        "fouls": [
-          14,
-          24
-        ],
-        "offsides": [
-          2,
-          2
-        ]
-      },
+      "stats": null,
       "clock": 90,
-      "referee": "Martinez Sorto, Hector Said",
-      "broadcaster": null
+      "referee": null,
+      "broadcaster": null,
+      "round": null
     },
     {
       "id": 1267482737,
@@ -4350,7 +4290,7 @@
       "id": 1267489545,
       "kickoff": "2026-06-26T02:00:00.000Z",
       "group": null,
-      "venue": "San Francisco Bay Area Stadium, Santa Clara, CA",
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Paraguay",
@@ -4364,31 +4304,11 @@
       },
       "penalty": null,
       "events": [],
-      "stats": {
-        "possession": [
-          44,
-          56
-        ],
-        "shots": [
-          6,
-          9
-        ],
-        "sot": [
-          2,
-          5
-        ],
-        "fouls": [
-          9,
-          6
-        ],
-        "offsides": [
-          0,
-          0
-        ]
-      },
+      "stats": null,
       "clock": 90,
-      "referee": "Turpin, Clement",
-      "broadcaster": null
+      "referee": null,
+      "broadcaster": null,
+      "round": null
     },
     {
       "id": 1309699996,
@@ -4663,7 +4583,8 @@
       },
       "clock": 90,
       "referee": "Letexier, Francois",
-      "broadcaster": null
+      "broadcaster": null,
+      "round": null
     },
     {
       "id": 1267494651,
@@ -5092,7 +5013,8 @@
       },
       "clock": 90,
       "referee": "Faghani, Alireza",
-      "broadcaster": null
+      "broadcaster": null,
+      "round": null
     },
     {
       "id": 1267495502,
@@ -5246,31 +5168,6 @@
       "broadcaster": null
     },
     {
-      "id": "ko-round-of-32-1",
-      "kickoff": "2026-06-28T19:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Los Angeles Stadium, Los Angeles",
-      "status": "NS",
-      "home": {
-        "name": "2A",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "2B",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
       "id": 1328691763,
       "kickoff": "2026-06-28T19:00:00.000Z",
       "group": null,
@@ -5318,32 +5215,8 @@
           1,
           0
         ]
-      }
-    },
-    {
-      "id": "ko-round-of-32-2",
-      "kickoff": "2026-06-29T17:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Houston Stadium, Houston",
-      "status": "NS",
-      "home": {
-        "name": "1C",
-        "flag": "🏳️",
-        "goals": null
       },
-      "away": {
-        "name": "2F",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1329555528,
@@ -5405,32 +5278,8 @@
           1,
           0
         ]
-      }
-    },
-    {
-      "id": "ko-round-of-32-3",
-      "kickoff": "2026-06-29T20:30:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Boston Stadium, Boston",
-      "status": "NS",
-      "home": {
-        "name": "1E",
-        "flag": "🏳️",
-        "goals": null
       },
-      "away": {
-        "name": "3ABCDF",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1331965560,
@@ -5455,32 +5304,8 @@
         "away": 4
       },
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-4",
-      "kickoff": "2026-06-30T01:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Monterrey Stadium, Monterrey",
-      "status": "NS",
-      "home": {
-        "name": "1F",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "2C",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1329556379,
@@ -5505,32 +5330,8 @@
         "away": 3
       },
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-5",
-      "kickoff": "2026-06-30T17:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Dallas Stadium, Dallas",
-      "status": "NS",
-      "home": {
-        "name": "2E",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "2I",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1331636223,
@@ -5552,32 +5353,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-6",
-      "kickoff": "2026-06-30T21:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "New York/NJ Stadium, New Jersey",
-      "status": "NS",
-      "home": {
-        "name": "1I",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "3CDFGH",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1331966411,
@@ -5599,32 +5376,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-7",
-      "kickoff": "2026-07-01T01:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Mexico City Stadium, Mexico City",
-      "status": "NS",
-      "home": {
-        "name": "1A",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "3CEFHI",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1333778190,
@@ -5646,32 +5399,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-8",
-      "kickoff": "2026-07-01T16:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Atlanta Stadium, Atlanta",
-      "status": "NS",
-      "home": {
-        "name": "1L",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "3EHIJK",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1333779041,
@@ -5693,32 +5422,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-9",
-      "kickoff": "2026-07-01T20:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Seattle Stadium, Seattle",
-      "status": "NS",
-      "home": {
-        "name": "1G",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "3AEHIJ",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1333779892,
@@ -5740,32 +5445,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-10",
-      "kickoff": "2026-07-02T00:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "San Francisco Bay Area Stadium, San Francisco",
-      "status": "NS",
-      "home": {
-        "name": "1D",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "3BEFIJ",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1329761470,
@@ -5787,32 +5468,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-11",
-      "kickoff": "2026-07-02T19:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Los Angeles Stadium, Los Angeles",
-      "status": "NS",
-      "home": {
-        "name": "1H",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "2J",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1333782445,
@@ -5834,32 +5491,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-12",
-      "kickoff": "2026-07-02T23:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Toronto Stadium, Toronto",
-      "status": "NS",
-      "home": {
-        "name": "2K",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "2L",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1333780743,
@@ -5881,32 +5514,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-13",
-      "kickoff": "2026-07-03T03:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "BC Place Stadium, Vancouver",
-      "status": "NS",
-      "home": {
-        "name": "1B",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "3EFGIJ",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1333783296,
@@ -5928,32 +5537,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-14",
-      "kickoff": "2026-07-03T18:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Dallas Stadium, Dallas",
-      "status": "NS",
-      "home": {
-        "name": "2D",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "2G",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1331967262,
@@ -5975,32 +5560,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-15",
-      "kickoff": "2026-07-03T22:00:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Miami Stadium, Miami",
-      "status": "NS",
-      "home": {
-        "name": "1J",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "2H",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1331968113,
@@ -6022,32 +5583,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-32-16",
-      "kickoff": "2026-07-04T01:30:00.000Z",
-      "group": null,
-      "round": "Round of 32",
-      "venue": "Kansas City Stadium, Kansas City",
-      "status": "NS",
-      "home": {
-        "name": "1K",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "3DEIJL",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1333781594,
@@ -6069,32 +5606,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-16-1",
-      "kickoff": "2026-07-04T17:00:00.000Z",
-      "group": null,
-      "round": "Round of 16",
-      "venue": "Houston Stadium, Houston",
-      "status": "NS",
-      "home": {
-        "name": "W73",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W75",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 32"
     },
     {
       "id": 1334219008,
@@ -6116,382 +5629,8 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null
-    },
-    {
-      "id": "ko-round-of-16-2",
-      "kickoff": "2026-07-04T21:00:00.000Z",
-      "group": null,
-      "round": "Round of 16",
-      "venue": "Philadelphia Stadium, Philadelphia",
-      "status": "NS",
-      "home": {
-        "name": "W74",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W77",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
       "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-round-of-16-3",
-      "kickoff": "2026-07-05T20:00:00.000Z",
-      "group": null,
-      "round": "Round of 16",
-      "venue": "New York/NJ Stadium, New Jersey",
-      "status": "NS",
-      "home": {
-        "name": "W76",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W78",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-round-of-16-4",
-      "kickoff": "2026-07-06T00:00:00.000Z",
-      "group": null,
-      "round": "Round of 16",
-      "venue": "Mexico City Stadium, Mexico City",
-      "status": "NS",
-      "home": {
-        "name": "W79",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W80",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-round-of-16-5",
-      "kickoff": "2026-07-06T19:00:00.000Z",
-      "group": null,
-      "round": "Round of 16",
-      "venue": "Dallas Stadium, Dallas",
-      "status": "NS",
-      "home": {
-        "name": "W83",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W84",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-round-of-16-6",
-      "kickoff": "2026-07-07T16:00:00.000Z",
-      "group": null,
-      "round": "Round of 16",
-      "venue": "Atlanta Stadium, Atlanta",
-      "status": "NS",
-      "home": {
-        "name": "W86",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W88",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-round-of-16-7",
-      "kickoff": "2026-07-07T19:00:00.000Z",
-      "group": null,
-      "round": "Round of 16",
-      "venue": "Vancouver Stadium, Vancouver",
-      "status": "NS",
-      "home": {
-        "name": "W85",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W87",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-round-of-16-8",
-      "kickoff": "2026-07-08T00:00:00.000Z",
-      "group": null,
-      "round": "Round of 16",
-      "venue": "Seattle Stadium, Seattle",
-      "status": "NS",
-      "home": {
-        "name": "W81",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W82",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-quarter-final-1",
-      "kickoff": "2026-07-09T20:00:00.000Z",
-      "group": null,
-      "round": "Quarter Final",
-      "venue": "Boston Stadium, Boston",
-      "status": "NS",
-      "home": {
-        "name": "W89",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W90",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-quarter-final-2",
-      "kickoff": "2026-07-10T19:00:00.000Z",
-      "group": null,
-      "round": "Quarter Final",
-      "venue": "Los Angeles Stadium, Los Angeles",
-      "status": "NS",
-      "home": {
-        "name": "W93",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W94",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-quarter-final-3",
-      "kickoff": "2026-07-11T21:00:00.000Z",
-      "group": null,
-      "round": "Quarter Final",
-      "venue": "Miami Stadium, Miami",
-      "status": "NS",
-      "home": {
-        "name": "W91",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W92",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-quarter-final-4",
-      "kickoff": "2026-07-12T01:00:00.000Z",
-      "group": null,
-      "round": "Quarter Final",
-      "venue": "Kansas City Stadium, Kansas City",
-      "status": "NS",
-      "home": {
-        "name": "W95",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W96",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-semi-final-1",
-      "kickoff": "2026-07-14T19:00:00.000Z",
-      "group": null,
-      "round": "Semi Final",
-      "venue": "Dallas Stadium, Dallas",
-      "status": "NS",
-      "home": {
-        "name": "W97",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W98",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-semi-final-2",
-      "kickoff": "2026-07-15T19:00:00.000Z",
-      "group": null,
-      "round": "Semi Final",
-      "venue": "Atlanta Stadium, Atlanta",
-      "status": "NS",
-      "home": {
-        "name": "W99",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W100",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-third-place-1",
-      "kickoff": "2026-07-18T21:00:00.000Z",
-      "group": null,
-      "round": "Third Place",
-      "venue": "Miami Stadium, Miami",
-      "status": "NS",
-      "home": {
-        "name": "RU101",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "RU102",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
-    },
-    {
-      "id": "ko-final-1",
-      "kickoff": "2026-07-19T19:00:00.000Z",
-      "group": null,
-      "round": "Final",
-      "venue": "New York/New Jersey Stadium, New Jersey",
-      "status": "NS",
-      "home": {
-        "name": "W101",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "away": {
-        "name": "W102",
-        "flag": "🏳️",
-        "goals": null
-      },
-      "penalty": null,
-      "events": [],
-      "stats": null,
-      "clock": null,
-      "referee": null,
-      "broadcaster": null,
-      "_tbd": true
+      "round": "Round of 16"
     }
   ]
 }

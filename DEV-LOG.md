@@ -2,6 +2,31 @@
 
 Catatan keputusan & progres. Tambah entri terbaru di atas.
 
+## 2026-06-30 — Pivot: drop seed TBD manual, Highlightly API generate bracket fase gugur otomatis
+
+Pivot: drop seed TBD manual, Highlightly API ternyata generate bracket fase gugur
+otomatis dengan tim asli — termasuk hasil penalty shootout.
+
+### Temuan
+- Highlightly API sudah mengembalikan 89 fixture: 72 babak grup + 16 Round of 32 + 1 Round of 16.
+- Round of 32 lengkap dengan tim asli dan hasil untuk 4 laga yang sudah selesai
+  (termasuk Brasil 2-1 Jepang dan Afrika Selatan 0-1 Kanada).
+- Seed manual TBD 32 laga (`ko-*` string ID + `_tbd: true`) tidak diperlukan lagi.
+
+### Perubahan
+- **Hapus `scripts/seed-knockout.mjs`** — tidak relevan.
+- **Hapus 32 entri `ko-*`** dari `results.json` (string ID).
+- **Hapus dead code** di `fetch-results.mjs`:
+  - `tbdIds` set (dikumpulkan tapi tidak pernah dipakai).
+  - TBD cleanup logic (realKoCount/tbdByKey) yang ditambahkan sebelumnya.
+- **Hapus freeze per-hari** — fase gugur bisa berbagi tanggal dengan laga grup frozen
+  (Juni 28 punya 3 laga grup frozen + 2 Round of 32). Per-fixture freeze sudah cukup.
+- **Perbaiki propagasi `round`** untuk match yang sudah frozen: sebelumnya skip total,
+  sekarang tetap update `round`/`venue`/`referee` jika field belum terisi.
+- **Deteksi live stale**: tambah fetchDetail untuk match LIVE yang kickoff-nya > 3 jam
+  lalu — tangani kasus list endpoint lambat update status dari "1H" → "FT/PEN".
+- `npm test`: 14/14 hijau.
+
 ## 2026-06-24 — Fix: should-fetch.mjs gate terlalu ketat
 
 - **Masalah**: gate hanya cek window aktif (kickoff ±10min s/d +150min). Laga yang
