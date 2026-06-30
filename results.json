@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-29T03:54:55.360Z",
+  "updatedAt": "2026-06-30T03:38:34.122Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -5349,23 +5349,63 @@
       "id": 1329555528,
       "kickoff": "2026-06-29T17:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Houston Stadium, Houston, TX",
+      "referee": "Mariani, Maurizio",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Brasil",
         "flag": "🇧🇷",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Jepang",
         "flag": "🇯🇵",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "K. Sano",
+          "minute": "29"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Casemiro",
+          "minute": "56"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "G. Martinelli",
+          "minute": "90+5"
+        }
+      ],
+      "stats": {
+        "possession": [
+          69,
+          31
+        ],
+        "shots": [
+          13,
+          3
+        ],
+        "sot": [
+          7,
+          2
+        ],
+        "fouls": [
+          4,
+          13
+        ],
+        "offsides": [
+          1,
+          0
+        ]
+      }
     },
     {
       "id": "ko-round-of-32-3",
@@ -5398,19 +5438,22 @@
       "group": null,
       "venue": null,
       "referee": null,
-      "status": "NS",
-      "clock": null,
+      "status": "1H",
+      "clock": 120,
       "home": {
         "name": "Jerman",
         "flag": "🇩🇪",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Paraguay",
         "flag": "🇵🇾",
-        "goals": null
+        "goals": 1
       },
-      "penalty": null,
+      "penalty": {
+        "home": 3,
+        "away": 4
+      },
       "events": [],
       "stats": null
     },
@@ -5445,17 +5488,17 @@
       "group": null,
       "venue": null,
       "referee": null,
-      "status": "NS",
-      "clock": null,
+      "status": "1H",
+      "clock": 121,
       "home": {
         "name": "Belanda",
         "flag": "🇳🇱",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Maroko",
         "flag": "🇲🇦",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
       "events": [],
