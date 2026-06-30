@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-30T03:38:34.122Z",
+  "updatedAt": "2026-06-30T07:45:31.371Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -5489,7 +5489,7 @@
       "venue": null,
       "referee": null,
       "status": "1H",
-      "clock": 121,
+      "clock": 120,
       "home": {
         "name": "Belanda",
         "flag": "🇳🇱",
@@ -5500,7 +5500,10 @@
         "flag": "🇲🇦",
         "goals": 1
       },
-      "penalty": null,
+      "penalty": {
+        "home": 2,
+        "away": 3
+      },
       "events": [],
       "stats": null
     },
@@ -6092,6 +6095,28 @@
       "referee": null,
       "broadcaster": null,
       "_tbd": true
+    },
+    {
+      "id": 1334219008,
+      "kickoff": "2026-07-04T17:00:00.000Z",
+      "group": null,
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Kanada",
+        "flag": "🇨🇦",
+        "goals": null
+      },
+      "away": {
+        "name": "Maroko",
+        "flag": "🇲🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
     },
     {
       "id": "ko-round-of-16-2",
