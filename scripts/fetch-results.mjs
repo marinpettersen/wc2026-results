@@ -74,6 +74,18 @@ const TEAMS = {
 };
 const team = name => TEAMS[name] || [name, "🏳️", null];
 
+// Normalisasi nama babak KO → null untuk non-KO (fase gugur saja yang disimpan)
+function normalizeRound(r) {
+  if (!r) return null;
+  if (/round.of.32/i.test(r))  return "Round of 32";
+  if (/round.of.16/i.test(r))  return "Round of 16";
+  if (/quarter/i.test(r))      return "Quarter Final";
+  if (/semi/i.test(r))         return "Semi Final";
+  if (/third|3rd/i.test(r))    return "Third Place";
+  if (/^final$/i.test(r.trim())) return "Final";
+  return null; // babak grup / tidak dikenal → tidak perlu disimpan sebagai round KO
+}
+
 // ============================================================
 // ADAPTER A — API-Football v3
 // https://www.api-sports.io/documentation/football/v3
@@ -242,10 +254,12 @@ function hlMapFixture(match) {
     : null;
   const referee  = match.referee?.name ?? null;
 
+  const round = group ? null : normalizeRound(roundStr);
   return {
     id:      match.id,
     kickoff: match.date,
     group,
+    round,
     venue,
     referee,
     status,
@@ -547,6 +561,32 @@ async function main() {
     byId.set(base.id, { ...(prev || {}), ...base });
     updated++;
   }
+
+  // Hapus placeholder _tbd yang sudah digantikan data real dari API.
+  // Real KO fixture dikenali dari: ID numerik + field round terisi.
+  // Hapus TBD untuk date+round tertentu hanya jika jumlah real fixture >= jumlah TBD.
+  const realKoCount = new Map(); // "YYYY-MM-DD|round" → jumlah
+  for (const m of byId.values()) {
+    if (!m._tbd && m.round && typeof m.id === "number") {
+      const key = `${m.kickoff.slice(0, 10)}|${m.round}`;
+      realKoCount.set(key, (realKoCount.get(key) || 0) + 1);
+    }
+  }
+  const tbdByKey = new Map(); // "YYYY-MM-DD|round" → [id, ...]
+  for (const [id, m] of byId) {
+    if (m._tbd && m.round) {
+      const key = `${m.kickoff.slice(0, 10)}|${normalizeRound(m.round) || m.round}`;
+      if (!tbdByKey.has(key)) tbdByKey.set(key, []);
+      tbdByKey.get(key).push(id);
+    }
+  }
+  let tbdRemoved = 0;
+  for (const [key, ids] of tbdByKey) {
+    if ((realKoCount.get(key) || 0) >= ids.length) {
+      ids.forEach(id => { byId.delete(id); tbdRemoved++; });
+    }
+  }
+  if (tbdRemoved) console.log(`  hapus ${tbdRemoved} placeholder _tbd (digantikan data real).`);
 
   const matches = [...byId.values()]
     .map(m => { delete m._homeId; delete m._awayId; return m; })

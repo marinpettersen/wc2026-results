@@ -192,6 +192,7 @@
       <button data-f="finished">Selesai</button>
       <button data-f="live">Live</button>
       <button data-f="upcoming">Akan datang</button>
+      <button data-f="gugur">Fase Gugur</button>
       <button data-f="klasemen">Klasemen</button>
       <button data-f="topskor">Top Skor</button>
     </div>
@@ -248,6 +249,22 @@ function flagImg(name){
   return`<img class="flag" src="https://flagcdn.com/24x18/${code}.png" width="24" height="18" style="border-radius:2px;vertical-align:middle" alt="${name}" loading="lazy">`;
 }
 
+const ROUND_ID={
+  "Round of 32":"Babak 32 Besar",
+  "Round of 16":"Babak 16 Besar",
+  "Quarter Final":"Perempat Final",
+  "Semi Final":"Semifinal",
+  "Third Place":"Perebutan Tempat Ketiga",
+  "Final":"Final",
+};
+const KO_ROUNDS=new Set(Object.keys(ROUND_ID));
+function isKO(m){return m.round&&KO_ROUNDS.has(m.round);}
+function roundLabel(m){
+  if(m.round&&ROUND_ID[m.round])return ROUND_ID[m.round];
+  if(m.group)return"Grup "+m.group;
+  return m.round||null;
+}
+
 const qEl=document.getElementById("q");
 const listEl=document.getElementById("list");
 const stateEl=document.getElementById("state");
@@ -284,7 +301,8 @@ function goalsHTML(m){
     <div class="goalcol away"><div class="gc-title">${m.away.name} ⚽</div>${col(ga,true)}</div></div>`;
 }
 function detailHTML(m){
-  let s = m.venue?`<div class="venue">${m.venue}${m.group?" · Grup "+m.group:""}</div>`:"";
+  const rl=roundLabel(m);
+  let s = m.venue?`<div class="venue">${m.venue}${rl?" · "+rl:""}</div>`:"";
   if(m.referee)s+=`<div class="referee">🟨 ${m.referee}</div>`;
   s += goalsHTML(m);
   if(m.stats){const t=m.stats;
@@ -390,9 +408,11 @@ function render(){
   if(!DATA) return;
   if(filter==="klasemen"){renderKlasmen();return;}
   if(filter==="topskor"){renderTopSkor();return;}
+  // "gugur" ditangani di filter bawah, tidak perlu return lebih awal
   const q=qEl.value.trim().toLowerCase();
   const rows=DATA.matches.filter(m=>{
-    if(filter!=="all"&&bucket(m)!==filter)return false;
+    if(filter==="gugur"){if(!isKO(m))return false;}
+    else if(filter!=="all"&&bucket(m)!==filter)return false;
     if(q&&!(m.home.name.toLowerCase().includes(q)||m.away.name.toLowerCase().includes(q)))return false;
     return true;
   });
@@ -440,9 +460,10 @@ function render(){
         mid=`<div class="mid"><span class="vs">VS</span></div>`;
       }
       const tvBadge = m.broadcaster ? `<span class="tv">📺 ${m.broadcaster}</span>` : "";
-      const roundLabel = m.round ? `<span style="display:block;font-size:10px;color:var(--muted);margin-top:2px">${m.round}</span>` : "";
+      const rl=roundLabel(m);
+      const roundLabelHtml = rl&&isKO(m) ? `<span style="display:block;font-size:10px;color:var(--violet);font-weight:700;margin-top:2px;letter-spacing:.04em">${rl}</span>` : "";
       el.innerHTML=`<div class="match-main">
-        <div class="timecol"><span class="time">${fmtTime(m.kickoff)}</span><span class="wib">WIB</span>${badge}${tvBadge}${roundLabel}</div>
+        <div class="timecol"><span class="time">${fmtTime(m.kickoff)}</span><span class="wib">WIB</span>${badge}${tvBadge}${roundLabelHtml}</div>
         <div class="teams">
           <div class="team home"><span class="tname ${hCls}">${m.home.name}</span>${flagImg(m.home.name)}</div>
           ${mid}
