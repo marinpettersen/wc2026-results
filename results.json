@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-06-30T10:19:44.922Z",
+  "updatedAt": "2026-07-01T03:53:18.382Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -1435,7 +1435,7 @@
       "id": 1267463164,
       "kickoff": "2026-06-15T16:00:00.000Z",
       "group": null,
-      "venue": null,
+      "venue": "Atlanta Stadium, Atlanta, GA",
       "status": "FT",
       "home": {
         "name": "Spanyol",
@@ -1449,9 +1449,30 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null,
+      "stats": {
+        "possession": [
+          74,
+          26
+        ],
+        "shots": [
+          19,
+          4
+        ],
+        "sot": [
+          7,
+          1
+        ],
+        "fouls": [
+          10,
+          1
+        ],
+        "offsides": [
+          2,
+          3
+        ]
+      },
       "clock": 90,
-      "referee": null,
+      "referee": "Mohammad Tumah Makhadmeh, Adham",
       "broadcaster": null,
       "round": null
     },
@@ -2839,7 +2860,7 @@
       "id": 1267473376,
       "kickoff": "2026-06-21T00:00:00.000Z",
       "group": null,
-      "venue": null,
+      "venue": "Kansas City Stadium, Kansas City, MO",
       "status": "FT",
       "home": {
         "name": "Ekuador",
@@ -2853,9 +2874,30 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null,
+      "stats": {
+        "possession": [
+          75,
+          25
+        ],
+        "shots": [
+          25,
+          7
+        ],
+        "sot": [
+          15,
+          3
+        ],
+        "fouls": [
+          7,
+          10
+        ],
+        "offsides": [
+          1,
+          2
+        ]
+      },
       "clock": 90,
-      "referee": null,
+      "referee": "Ma, Ning",
       "broadcaster": null,
       "round": null
     },
@@ -3525,7 +3567,7 @@
       "id": 1267481886,
       "kickoff": "2026-06-23T20:00:00.000Z",
       "group": null,
-      "venue": null,
+      "venue": "Boston Stadium, Foxborough, MA",
       "status": "FT",
       "home": {
         "name": "Inggris",
@@ -3539,9 +3581,30 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null,
+      "stats": {
+        "possession": [
+          79,
+          21
+        ],
+        "shots": [
+          13,
+          1
+        ],
+        "sot": [
+          3,
+          1
+        ],
+        "fouls": [
+          14,
+          24
+        ],
+        "offsides": [
+          2,
+          2
+        ]
+      },
       "clock": 90,
-      "referee": null,
+      "referee": "Martinez Sorto, Hector Said",
       "broadcaster": null,
       "round": null
     },
@@ -4290,7 +4353,7 @@
       "id": 1267489545,
       "kickoff": "2026-06-26T02:00:00.000Z",
       "group": null,
-      "venue": null,
+      "venue": "San Francisco Bay Area Stadium, Santa Clara, CA",
       "status": "FT",
       "home": {
         "name": "Paraguay",
@@ -4304,9 +4367,30 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null,
+      "stats": {
+        "possession": [
+          44,
+          56
+        ],
+        "shots": [
+          6,
+          9
+        ],
+        "sot": [
+          2,
+          5
+        ],
+        "fouls": [
+          9,
+          6
+        ],
+        "offsides": [
+          0,
+          0
+        ]
+      },
       "clock": 90,
-      "referee": null,
+      "referee": "Turpin, Clement",
       "broadcaster": null,
       "round": null
     },
@@ -5285,8 +5369,8 @@
       "id": 1331965560,
       "kickoff": "2026-06-29T20:30:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
+      "venue": "Boston Stadium, Foxborough, MA",
+      "referee": "Jayed, Jalal",
       "status": "1H",
       "clock": 120,
       "home": {
@@ -5311,8 +5395,8 @@
       "id": 1329556379,
       "kickoff": "2026-06-30T01:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
+      "venue": "Estadio Monterrey, Guadalupe",
+      "referee": "Pereira Sampaio, Wilton",
       "status": "1H",
       "clock": 120,
       "home": {
@@ -5337,46 +5421,126 @@
       "id": 1331636223,
       "kickoff": "2026-06-30T17:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Dallas Stadium, Arlington, TX",
+      "referee": "Valenzuela Saez, Jesus",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Pantai Gading",
         "flag": "🇨🇮",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Norwegia",
         "flag": "🇳🇴",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "A. Nusa",
+          "minute": "39"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Diallo",
+          "minute": "74"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "E. Haaland",
+          "minute": "86"
+        }
+      ],
+      "stats": {
+        "possession": [
+          47,
+          53
+        ],
+        "shots": [
+          14,
+          6
+        ],
+        "sot": [
+          5,
+          4
+        ],
+        "fouls": [
+          6,
+          7
+        ],
+        "offsides": [
+          2,
+          2
+        ]
+      },
       "round": "Round of 32"
     },
     {
       "id": 1331966411,
       "kickoff": "2026-06-30T21:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "New York New Jersey Stadium, East Rutherford, NJ",
+      "referee": "Makkelie, Danny",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Prancis",
         "flag": "🇫🇷",
-        "goals": null
+        "goals": 3
       },
       "away": {
         "name": "Swedia",
         "flag": "🇸🇪",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Mbappe",
+          "minute": "45"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "B. Barcola",
+          "minute": "53"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Mbappe",
+          "minute": "74"
+        }
+      ],
+      "stats": {
+        "possession": [
+          61,
+          39
+        ],
+        "shots": [
+          21,
+          7
+        ],
+        "sot": [
+          12,
+          3
+        ],
+        "fouls": [
+          14,
+          10
+        ],
+        "offsides": [
+          3,
+          1
+        ]
+      },
       "round": "Round of 32"
     },
     {
@@ -5385,17 +5549,17 @@
       "group": null,
       "venue": null,
       "referee": null,
-      "status": "NS",
-      "clock": null,
+      "status": "1H",
+      "clock": 90,
       "home": {
         "name": "Meksiko",
         "flag": "🇲🇽",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Ekuador",
         "flag": "🇪🇨",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
