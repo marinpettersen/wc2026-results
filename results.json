@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-01T17:54:59.683Z",
+  "updatedAt": "2026-07-01T18:02:20.517Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -1435,7 +1435,7 @@
       "id": 1267463164,
       "kickoff": "2026-06-15T16:00:00.000Z",
       "group": null,
-      "venue": "Atlanta Stadium, Atlanta, GA",
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Spanyol",
@@ -1449,30 +1449,9 @@
       },
       "penalty": null,
       "events": [],
-      "stats": {
-        "possession": [
-          74,
-          26
-        ],
-        "shots": [
-          19,
-          4
-        ],
-        "sot": [
-          7,
-          1
-        ],
-        "fouls": [
-          10,
-          1
-        ],
-        "offsides": [
-          2,
-          3
-        ]
-      },
+      "stats": null,
       "clock": 90,
-      "referee": "Mohammad Tumah Makhadmeh, Adham",
+      "referee": null,
       "broadcaster": null,
       "round": null
     },
@@ -2860,7 +2839,7 @@
       "id": 1267473376,
       "kickoff": "2026-06-21T00:00:00.000Z",
       "group": null,
-      "venue": "Kansas City Stadium, Kansas City, MO",
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Ekuador",
@@ -2874,30 +2853,9 @@
       },
       "penalty": null,
       "events": [],
-      "stats": {
-        "possession": [
-          75,
-          25
-        ],
-        "shots": [
-          25,
-          7
-        ],
-        "sot": [
-          15,
-          3
-        ],
-        "fouls": [
-          7,
-          10
-        ],
-        "offsides": [
-          1,
-          2
-        ]
-      },
+      "stats": null,
       "clock": 90,
-      "referee": "Ma, Ning",
+      "referee": null,
       "broadcaster": null,
       "round": null
     },
@@ -3567,7 +3525,7 @@
       "id": 1267481886,
       "kickoff": "2026-06-23T20:00:00.000Z",
       "group": null,
-      "venue": "Boston Stadium, Foxborough, MA",
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Inggris",
@@ -3581,30 +3539,9 @@
       },
       "penalty": null,
       "events": [],
-      "stats": {
-        "possession": [
-          79,
-          21
-        ],
-        "shots": [
-          13,
-          1
-        ],
-        "sot": [
-          3,
-          1
-        ],
-        "fouls": [
-          14,
-          24
-        ],
-        "offsides": [
-          2,
-          2
-        ]
-      },
+      "stats": null,
       "clock": 90,
-      "referee": "Martinez Sorto, Hector Said",
+      "referee": null,
       "broadcaster": null,
       "round": null
     },
@@ -4353,7 +4290,7 @@
       "id": 1267489545,
       "kickoff": "2026-06-26T02:00:00.000Z",
       "group": null,
-      "venue": "San Francisco Bay Area Stadium, Santa Clara, CA",
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Paraguay",
@@ -4367,30 +4304,9 @@
       },
       "penalty": null,
       "events": [],
-      "stats": {
-        "possession": [
-          44,
-          56
-        ],
-        "shots": [
-          6,
-          9
-        ],
-        "sot": [
-          2,
-          5
-        ],
-        "fouls": [
-          9,
-          6
-        ],
-        "offsides": [
-          0,
-          0
-        ]
-      },
+      "stats": null,
       "clock": 90,
-      "referee": "Turpin, Clement",
+      "referee": null,
       "broadcaster": null,
       "round": null
     },
@@ -4629,7 +4545,7 @@
       "id": 1267491247,
       "kickoff": "2026-06-27T00:00:00.000Z",
       "group": null,
-      "venue": "Houston Stadium, Houston, TX",
+      "venue": null,
       "status": "FT",
       "home": {
         "name": "Tanjung Verde",
@@ -4643,30 +4559,9 @@
       },
       "penalty": null,
       "events": [],
-      "stats": {
-        "possession": [
-          51,
-          49
-        ],
-        "shots": [
-          10,
-          4
-        ],
-        "sot": [
-          2,
-          3
-        ],
-        "fouls": [
-          10,
-          16
-        ],
-        "offsides": [
-          2,
-          0
-        ]
-      },
+      "stats": null,
       "clock": 90,
-      "referee": "Letexier, Francois",
+      "referee": null,
       "broadcaster": null,
       "round": null
     },
@@ -5610,9 +5505,9 @@
       "id": 1333779041,
       "kickoff": "2026-07-01T16:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "1H",
+      "venue": "Atlanta Stadium, Atlanta, GA",
+      "referee": "Mohammad Tumah Makhadmeh, Adham",
+      "status": "FT",
       "clock": 90,
       "home": {
         "name": "Inggris",
@@ -5625,8 +5520,48 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "B. Cipenga",
+          "minute": "7"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "H. Kane",
+          "minute": "75"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "H. Kane",
+          "minute": "86"
+        }
+      ],
+      "stats": {
+        "possession": [
+          60,
+          40
+        ],
+        "shots": [
+          13,
+          4
+        ],
+        "sot": [
+          7,
+          2
+        ],
+        "fouls": [
+          9,
+          12
+        ],
+        "offsides": [
+          0,
+          4
+        ]
+      },
       "round": "Round of 32"
     },
     {
