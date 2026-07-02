@@ -168,6 +168,40 @@
   .scorer-goals .n{font-size:26px;font-weight:900;color:var(--lime);font-variant-numeric:tabular-nums;line-height:1}
   .scorer-goals .lbl{font-size:9.5px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
   .section-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:22px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+
+  /* Bagan Fase Gugur */
+  .bracket-outer{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:16px}
+  .bracket{display:flex;gap:4px;min-width:max-content;align-items:stretch}
+  .bcol{display:flex;flex-direction:column;width:172px;flex-shrink:0}
+  .bcol-hd{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;
+    color:var(--violet);text-align:center;padding:8px 4px 10px;border-bottom:1px solid var(--line);flex-shrink:0}
+  .bcol-body{display:grid;grid-template-rows:repeat(16,48px);gap:3px;padding:4px 0}
+  .bmatch{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:6px 8px;display:flex;flex-direction:column;justify-content:center;
+    min-height:0;overflow:hidden;transition:border-color .15s}
+  .bmatch:hover{border-color:var(--line-hi)}
+  .bmatch.blive{border-color:rgba(255,59,71,.45)}
+  .bmatch.bfinal{border-color:rgba(198,255,61,.5)!important;background:rgba(198,255,61,.03)}
+  .btbd{background:var(--surface-hi);border:1px dashed var(--line);border-radius:10px;
+    padding:6px 8px;display:flex;flex-direction:column;justify-content:center;gap:3px;min-height:0}
+  .btbd.bfinal{border-color:rgba(198,255,61,.3);background:rgba(198,255,61,.03)}
+  .btbd-t{font-size:11px;color:var(--muted2);display:flex;align-items:center;gap:6px}
+  .btbd-t::before{content:"?";display:inline-flex;align-items:center;justify-content:center;
+    width:18px;height:13px;background:var(--line);border-radius:2px;font-size:9px;font-weight:800;flex-shrink:0}
+  .bteam{display:flex;align-items:center;gap:6px;min-width:0;padding:1px 0}
+  .bnm{flex:1;font-size:11px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bsc{font-size:14px;font-weight:900;font-variant-numeric:tabular-nums;min-width:14px;text-align:right;flex-shrink:0}
+  .bteam.bwin .bnm,.bteam.bwin .bsc{color:var(--lime)}
+  .bteam.blose{opacity:.45}
+  .bpen{font-size:9.5px;color:var(--muted);text-align:right;margin-top:2px}
+  .bdate{font-size:9px;color:var(--muted2);margin-top:3px}
+  .bmatch.blg .bnm{font-size:13px}
+  .bmatch.blg .bsc{font-size:18px}
+  .bmatch.blg .bdate{font-size:11px;margin-top:8px}
+  .bmatch .flag,.btbd .flag{width:18px!important;height:13px!important}
+  .bfinal-hd{text-align:center;margin-bottom:10px}
+  .bfinal-hd .trophy{font-size:36px;display:block;margin-bottom:4px}
+  .bfinal-hd .lbl{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--lime)}
 </style>
 </head>
 <body>
@@ -195,6 +229,7 @@
       <button data-f="gugur">Fase Gugur</button>
       <button data-f="klasemen">Klasemen</button>
       <button data-f="topskor">Top Skor</button>
+      <button data-f="bagan">Bagan</button>
     </div>
   </div>
 </div>
@@ -404,10 +439,90 @@ function renderTopSkor(){
   listEl.appendChild(ul);
 }
 
+function renderBagan(){
+  listEl.innerHTML="";stateEl.style.display="none";
+  const RNDS=["Round of 32","Round of 16","Quarter Final","Semi Final","Final"];
+  const byRnd={};RNDS.forEach(r=>byRnd[r]=[]);
+  DATA.matches
+    .filter(m=>m.round&&RNDS.includes(m.round))
+    .sort((a,b)=>new Date(a.kickoff)-new Date(b.kickoff))
+    .forEach(m=>byRnd[m.round].push(m));
+
+  function wn(m){
+    if(!FINAL.has(m.status))return null;
+    if(m.status==="PEN")return m.penalty.home>m.penalty.away?m.home.name:m.away.name;
+    return m.home.goals>m.away.goals?m.home.name:m.away.name;
+  }
+
+  // Urutkan R32 berpasangan sesuai laga R16 yang diketahui (winner-matching)
+  const r32=byRnd["Round of 32"],usedR32=new Set(),ord32=[];
+  const r16s=byRnd["Round of 16"];
+  for(const r16m of r16s){
+    const teams=new Set([r16m.home.name,r16m.away.name]);
+    const feeders=r32.filter(m=>!usedR32.has(m.id)&&teams.has(wn(m)));
+    feeders.forEach(m=>usedR32.add(m.id));
+    ord32.push(feeders[0]||null,feeders[1]||null);
+  }
+  r32.filter(m=>!usedR32.has(m.id)).forEach(m=>ord32.push(m));
+  while(ord32.length<16)ord32.push(null);
+
+  // R16 slot sejajar dengan pasangan R32
+  const ord16=[...r16s,...Array(8-r16s.length).fill(null)];
+
+  const fmtD=iso=>new Intl.DateTimeFormat("id-ID",{timeZone:TZ,day:"numeric",month:"short"}).format(new Date(iso));
+
+  function card(m,span){
+    const isFinal=span===16,isLg=span>=4,showDate=span>=2;
+    if(!m){
+      const hd=isFinal?`<div class="bfinal-hd"><span class="trophy">🏆</span><span class="lbl">Grand Final</span></div>`:"";
+      return`<div class="btbd${isFinal?" bfinal":""}" style="grid-row:span ${span}">
+        ${hd}<div class="btbd-t">TBD</div><div class="btbd-t">TBD</div></div>`;
+    }
+    const b=bucket(m),fin=FINAL.has(m.status),w=wn(m);
+    const pen=fin&&m.penalty?`<div class="bpen">pen ${m.penalty.home}–${m.penalty.away}</div>`:"";
+    function team(t){
+      const isWin=fin&&w===t.name,isLose=fin&&w&&w!==t.name;
+      const sc=fin?`<span class="bsc">${t.goals}</span>`:b==="live"&&t.goals!=null?`<span class="bsc" style="color:var(--cyan)">${t.goals}</span>`:"";
+      return`<div class="bteam${isWin?" bwin":isLose?" blose":""}">
+        ${flagImg(t.name)}<span class="bnm">${t.name}</span>${sc}</div>`;
+    }
+    const dot=b==="live"?`<span class="livedot" style="display:block;margin:0 0 3px;width:6px;height:6px"></span>`:"";
+    const hd=isFinal?`<div class="bfinal-hd"><span class="trophy">🏆</span><span class="lbl">Grand Final</span></div>`:"";
+    const dateLine=showDate?`<div class="bdate">${fmtD(m.kickoff)}${fin?" · "+m.status:b==="live"?" · LIVE":""}</div>`:"";
+    return`<div class="bmatch${b==="live"?" blive":""}${isLg?" blg":""}${isFinal?" bfinal":""}" style="grid-row:span ${span}">
+      ${hd}${dot}${team(m.home)}${team(m.away)}${pen}${dateLine}</div>`;
+  }
+
+  function bcol(title,slots,span){
+    return`<div class="bcol"><div class="bcol-hd">${title}</div>
+      <div class="bcol-body">${slots.map(m=>card(m,span)).join("")}</div></div>`;
+  }
+
+  const qf=byRnd["Quarter Final"],sf=byRnd["Semi Final"],f=byRnd["Final"];
+  const outer=document.createElement("div");outer.className="bracket-outer";
+  outer.innerHTML=`<div class="bracket">
+    ${bcol("32 Besar",ord32,1)}
+    ${bcol("16 Besar",ord16,2)}
+    ${bcol("Perempat Final",[...qf,...Array(4-qf.length).fill(null)].slice(0,4),4)}
+    ${bcol("Semifinal",[...sf,...Array(2-sf.length).fill(null)].slice(0,2),8)}
+    ${bcol("Final",[f[0]||null],16)}
+  </div>`;
+
+  const tp=DATA.matches.find(m=>m.round==="Third Place");
+  if(tp){
+    const tpCard=card(tp,2).replace(' style="grid-row:span 2"',"");
+    outer.insertAdjacentHTML("beforeend",
+      `<div class="section-title" style="margin-top:24px">Perebutan Tempat Ketiga</div>
+       <div style="max-width:340px;display:grid;grid-template-rows:auto">${tpCard}</div>`);
+  }
+  listEl.appendChild(outer);
+}
+
 function render(){
   if(!DATA) return;
   if(filter==="klasemen"){renderKlasmen();return;}
   if(filter==="topskor"){renderTopSkor();return;}
+  if(filter==="bagan"){renderBagan();return;}
   // "gugur" ditangani di filter bawah, tidak perlu return lebih awal
   const q=qEl.value.trim().toLowerCase();
   const rows=DATA.matches.filter(m=>{
