@@ -466,13 +466,30 @@ function renderBagan(){
   r32.filter(m=>!usedR32.has(m.id)).forEach(m=>ord32.push(m));
   while(ord32.length<16)ord32.push(null);
 
-  // R16 slot sejajar dengan pasangan R32
-  const ord16=[...r16s,...Array(8-r16s.length).fill(null)];
+  // R16 slot sejajar dengan pasangan R32 — pakai API jika ada, inferensi pemenang jika belum
+  const ord16=Array.from({length:8},(_,i)=>{
+    const a=ord32[i*2],b=ord32[i*2+1];
+    const apiR16=r16s.find(r16m=>{
+      const ts=new Set([r16m.home.name,r16m.away.name]);
+      return(a&&wn(a)&&ts.has(wn(a)))||(b&&wn(b)&&ts.has(wn(b)));
+    });
+    if(apiR16)return apiR16;
+    const hw=a?wn(a):null,aw=b?wn(b):null;
+    return(hw||aw)?{syn:true,h:hw,a:aw}:null;
+  });
 
   const fmtD=iso=>new Intl.DateTimeFormat("id-ID",{timeZone:TZ,day:"numeric",month:"short"}).format(new Date(iso));
 
   function card(m,span){
     const isFinal=span===16,isLg=span>=4,showDate=span>=2;
+    // Slot inferensi: pemenang R32 diketahui tapi fixture R16 belum dari API
+    if(m&&m.syn){
+      function synTeam(nm){
+        if(nm)return`<div class="bteam">${flagImg(nm)}<span class="bnm">${nm}</span></div>`;
+        return`<div class="bteam" style="opacity:.35"><span class="bnm" style="color:var(--muted2)">TBD</span></div>`;
+      }
+      return`<div class="bmatch" style="grid-row:span ${span};border-style:dashed">${synTeam(m.h)}${synTeam(m.a)}</div>`;
+    }
     if(!m){
       const hd=isFinal?`<div class="bfinal-hd"><span class="trophy">🏆</span><span class="lbl">Grand Final</span></div>`:"";
       return`<div class="btbd${isFinal?" bfinal":""}" style="grid-row:span ${span}">
