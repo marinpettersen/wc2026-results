@@ -219,18 +219,20 @@ function hlParseScore(s) {
 
 // Mapping deskripsi Highlightly → kode status skema
 const HL_STATUS = {
-  "Finished":    "FT",
-  "Not started": "NS",
-  "First Half":  "1H",
-  "Half Time":   "HT",
-  "Second Half": "2H",
-  "Extra Time":  "ET",
-  "Break Time":  "BT",
-  "Penalties":   "P",
-  "Postponed":   "PST",
-  "Cancelled":   "CANC",
-  "Abandoned":   "ABD",
-  "Suspended":   "SUSP",
+  "Finished":                   "FT",
+  "Finished after extra time":  "AET",
+  "Finished after penalties":   "PEN",
+  "Not started":                "NS",
+  "First Half":                 "1H",
+  "Half Time":                  "HT",
+  "Second Half":                "2H",
+  "Extra Time":                 "ET",
+  "Break Time":                 "BT",
+  "Penalties":                  "P",
+  "Postponed":                  "PST",
+  "Cancelled":                  "CANC",
+  "Abandoned":                  "ABD",
+  "Suspended":                  "SUSP",
   // fallback apa pun yang tidak dikenal → "1H" (live, tidak masuk FINAL)
 };
 

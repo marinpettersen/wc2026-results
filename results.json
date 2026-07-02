@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-02T03:34:23.716Z",
+  "updatedAt": "2026-07-02T05:10:27.161Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -5371,7 +5371,7 @@
       "group": null,
       "venue": "Boston Stadium, Foxborough, MA",
       "referee": "Jayed, Jalal",
-      "status": "1H",
+      "status": "PEN",
       "clock": 120,
       "home": {
         "name": "Jerman",
@@ -5387,8 +5387,91 @@
         "home": 3,
         "away": 4
       },
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "J. Enciso",
+          "minute": "42"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Havertz",
+          "minute": "54"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "Mauricio",
+          "minute": "120+1",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "J. Kimmich",
+          "minute": "120+2",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "G. Gomez",
+          "minute": "120+2",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "J. Musiala",
+          "minute": "120+3",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Galarza",
+          "minute": "120+3",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "N. Amiri",
+          "minute": "120+5",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "J. Canale",
+          "minute": "120+6",
+          "tag": "pen"
+        }
+      ],
+      "stats": {
+        "possession": [
+          75,
+          25
+        ],
+        "shots": [
+          13,
+          5
+        ],
+        "sot": [
+          6,
+          3
+        ],
+        "fouls": [
+          18,
+          12
+        ],
+        "offsides": [
+          4,
+          1
+        ]
+      },
       "round": "Round of 32"
     },
     {
@@ -5397,7 +5480,7 @@
       "group": null,
       "venue": "Estadio Monterrey, Guadalupe",
       "referee": "Pereira Sampaio, Wilton",
-      "status": "1H",
+      "status": "PEN",
       "clock": 120,
       "home": {
         "name": "Belanda",
@@ -5413,8 +5496,77 @@
         "home": 2,
         "away": 3
       },
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "C. Gakpo",
+          "minute": "72"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "I. Diop",
+          "minute": "90+1"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "T. Koopmeiners",
+          "minute": "120+1",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "S. Rahimi",
+          "minute": "120+2",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "W. Weghorst",
+          "minute": "120+3",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "C. Talbi",
+          "minute": "120+3",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "I. Saibari",
+          "minute": "120+5",
+          "tag": "pen"
+        }
+      ],
+      "stats": {
+        "possession": [
+          30,
+          70
+        ],
+        "shots": [
+          3,
+          9
+        ],
+        "sot": [
+          2,
+          5
+        ],
+        "fouls": [
+          18,
+          15
+        ],
+        "offsides": [
+          3,
+          0
+        ]
+      },
       "round": "Round of 32"
     },
     {
@@ -5675,7 +5827,7 @@
       "group": null,
       "venue": "Seattle Field, Seattle, WA",
       "referee": "Martinez Sorto, Hector Said",
-      "status": "1H",
+      "status": "AET",
       "clock": 120,
       "home": {
         "name": "Belgia",
@@ -5688,8 +5840,61 @@
         "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "H. Diarra",
+          "minute": "25"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "I. Sarr",
+          "minute": "51"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "R. Lukaku",
+          "minute": "86"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Y. Tielemans",
+          "minute": "89"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Y. Tielemans",
+          "minute": "120+5",
+          "tag": "pen"
+        }
+      ],
+      "stats": {
+        "possession": [
+          52,
+          48
+        ],
+        "shots": [
+          14,
+          16
+        ],
+        "sot": [
+          5,
+          5
+        ],
+        "fouls": [
+          22,
+          12
+        ],
+        "offsides": [
+          2,
+          2
+        ]
+      },
       "round": "Round of 32"
     },
     {
