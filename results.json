@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-01T18:02:20.517Z",
+  "updatedAt": "2026-07-02T03:34:23.716Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -1435,7 +1435,7 @@
       "id": 1267463164,
       "kickoff": "2026-06-15T16:00:00.000Z",
       "group": null,
-      "venue": null,
+      "venue": "Atlanta Stadium, Atlanta, GA",
       "status": "FT",
       "home": {
         "name": "Spanyol",
@@ -1449,9 +1449,30 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null,
+      "stats": {
+        "possession": [
+          74,
+          26
+        ],
+        "shots": [
+          19,
+          4
+        ],
+        "sot": [
+          7,
+          1
+        ],
+        "fouls": [
+          10,
+          1
+        ],
+        "offsides": [
+          2,
+          3
+        ]
+      },
       "clock": 90,
-      "referee": null,
+      "referee": "Mohammad Tumah Makhadmeh, Adham",
       "broadcaster": null,
       "round": null
     },
@@ -2839,7 +2860,7 @@
       "id": 1267473376,
       "kickoff": "2026-06-21T00:00:00.000Z",
       "group": null,
-      "venue": null,
+      "venue": "Kansas City Stadium, Kansas City, MO",
       "status": "FT",
       "home": {
         "name": "Ekuador",
@@ -2853,9 +2874,30 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null,
+      "stats": {
+        "possession": [
+          75,
+          25
+        ],
+        "shots": [
+          25,
+          7
+        ],
+        "sot": [
+          15,
+          3
+        ],
+        "fouls": [
+          7,
+          10
+        ],
+        "offsides": [
+          1,
+          2
+        ]
+      },
       "clock": 90,
-      "referee": null,
+      "referee": "Ma, Ning",
       "broadcaster": null,
       "round": null
     },
@@ -3525,7 +3567,7 @@
       "id": 1267481886,
       "kickoff": "2026-06-23T20:00:00.000Z",
       "group": null,
-      "venue": null,
+      "venue": "Boston Stadium, Foxborough, MA",
       "status": "FT",
       "home": {
         "name": "Inggris",
@@ -3539,9 +3581,30 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null,
+      "stats": {
+        "possession": [
+          79,
+          21
+        ],
+        "shots": [
+          13,
+          1
+        ],
+        "sot": [
+          3,
+          1
+        ],
+        "fouls": [
+          14,
+          24
+        ],
+        "offsides": [
+          2,
+          2
+        ]
+      },
       "clock": 90,
-      "referee": null,
+      "referee": "Martinez Sorto, Hector Said",
       "broadcaster": null,
       "round": null
     },
@@ -4290,7 +4353,7 @@
       "id": 1267489545,
       "kickoff": "2026-06-26T02:00:00.000Z",
       "group": null,
-      "venue": null,
+      "venue": "San Francisco Bay Area Stadium, Santa Clara, CA",
       "status": "FT",
       "home": {
         "name": "Paraguay",
@@ -4304,9 +4367,30 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null,
+      "stats": {
+        "possession": [
+          44,
+          56
+        ],
+        "shots": [
+          6,
+          9
+        ],
+        "sot": [
+          2,
+          5
+        ],
+        "fouls": [
+          9,
+          6
+        ],
+        "offsides": [
+          0,
+          0
+        ]
+      },
       "clock": 90,
-      "referee": null,
+      "referee": "Turpin, Clement",
       "broadcaster": null,
       "round": null
     },
@@ -4545,7 +4629,7 @@
       "id": 1267491247,
       "kickoff": "2026-06-27T00:00:00.000Z",
       "group": null,
-      "venue": null,
+      "venue": "Houston Stadium, Houston, TX",
       "status": "FT",
       "home": {
         "name": "Tanjung Verde",
@@ -4559,9 +4643,30 @@
       },
       "penalty": null,
       "events": [],
-      "stats": null,
+      "stats": {
+        "possession": [
+          51,
+          49
+        ],
+        "shots": [
+          10,
+          4
+        ],
+        "sot": [
+          2,
+          3
+        ],
+        "fouls": [
+          10,
+          16
+        ],
+        "offsides": [
+          2,
+          0
+        ]
+      },
       "clock": 90,
-      "referee": null,
+      "referee": "Letexier, Francois",
       "broadcaster": null,
       "round": null
     },
@@ -5568,19 +5673,19 @@
       "id": 1333779892,
       "kickoff": "2026-07-01T20:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Seattle Field, Seattle, WA",
+      "referee": "Martinez Sorto, Hector Said",
+      "status": "1H",
+      "clock": 120,
       "home": {
         "name": "Belgia",
         "flag": "🇧🇪",
-        "goals": null
+        "goals": 3
       },
       "away": {
         "name": "Senegal",
         "flag": "🇸🇳",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
       "events": [],
@@ -5591,23 +5696,63 @@
       "id": 1329761470,
       "kickoff": "2026-07-02T00:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "San Francisco Bay Area Stadium, Santa Clara, CA",
+      "referee": "Claus, Raphael",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Amerika Serikat",
         "flag": "🇺🇸",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Bosnia & Herzegovina",
         "flag": "🇧🇦",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "F. Balogun",
+          "minute": "45"
+        },
+        {
+          "team": "home",
+          "type": "redcard",
+          "player": "F. Balogun",
+          "minute": "64"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Tillman",
+          "minute": "82"
+        }
+      ],
+      "stats": {
+        "possession": [
+          48,
+          52
+        ],
+        "shots": [
+          6,
+          7
+        ],
+        "sot": [
+          2,
+          3
+        ],
+        "fouls": [
+          7,
+          13
+        ],
+        "offsides": [
+          3,
+          0
+        ]
+      },
       "round": "Round of 32"
     },
     {
