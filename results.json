@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-02T06:49:45.966Z",
+  "updatedAt": "2026-07-03T02:14:20.525Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -5964,46 +5964,127 @@
       "id": 1333782445,
       "kickoff": "2026-07-02T19:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Los Angeles Stadium, Inglewood, CA",
+      "referee": "Nyberg, Glenn",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Spanyol",
         "flag": "🇪🇸",
-        "goals": null
+        "goals": 3
       },
       "away": {
         "name": "Austria",
         "flag": "🇦🇹",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Oyarzabal",
+          "minute": "36"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "P. Porro",
+          "minute": "66"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Oyarzabal",
+          "minute": "89"
+        }
+      ],
+      "stats": {
+        "possession": [
+          64,
+          36
+        ],
+        "shots": [
+          16,
+          4
+        ],
+        "sot": [
+          10,
+          0
+        ],
+        "fouls": [
+          8,
+          15
+        ],
+        "offsides": [
+          2,
+          5
+        ]
+      },
       "round": "Round of 32"
     },
     {
       "id": 1333780743,
       "kickoff": "2026-07-02T23:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Toronto Stadium, Toronto, ON",
+      "referee": "Eskas, Espen Andreas",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Portugal",
         "flag": "🇵🇹",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Kroasia",
         "flag": "🇭🇷",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "I. Perisic",
+          "minute": "53"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "C. Ronaldo",
+          "minute": "68",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "G. Ramos",
+          "minute": "90+4"
+        }
+      ],
+      "stats": {
+        "possession": [
+          60,
+          40
+        ],
+        "shots": [
+          11,
+          11
+        ],
+        "sot": [
+          3,
+          6
+        ],
+        "fouls": [
+          6,
+          12
+        ],
+        "offsides": [
+          1,
+          4
+        ]
+      },
       "round": "Round of 32"
     },
     {
@@ -6161,6 +6242,52 @@
       "away": {
         "name": "Norwegia",
         "flag": "🇳🇴",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1336678398,
+      "kickoff": "2026-07-06T00:00:00.000Z",
+      "group": null,
+      "round": "Round of 16",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Meksiko",
+        "flag": "🇲🇽",
+        "goals": null
+      },
+      "away": {
+        "name": "Inggris",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1336679249,
+      "kickoff": "2026-07-07T00:00:00.000Z",
+      "group": null,
+      "round": "Round of 16",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Amerika Serikat",
+        "flag": "🇺🇸",
+        "goals": null
+      },
+      "away": {
+        "name": "Belgia",
+        "flag": "🇧🇪",
         "goals": null
       },
       "penalty": null,
