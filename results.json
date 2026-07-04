@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-04T02:53:12.485Z",
+  "updatedAt": "2026-07-04T17:26:18.225Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -6327,10 +6327,10 @@
       "id": 1333781594,
       "kickoff": "2026-07-04T01:30:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "1H",
-      "clock": 59,
+      "venue": "Kansas City Stadium, Kansas City, MO",
+      "referee": "Turpin, Clement",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Kolombia",
         "flag": "🇨🇴",
@@ -6342,8 +6342,36 @@
         "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "J. Arias",
+          "minute": "14"
+        }
+      ],
+      "stats": {
+        "possession": [
+          61,
+          39
+        ],
+        "shots": [
+          16,
+          3
+        ],
+        "sot": [
+          8,
+          0
+        ],
+        "fouls": [
+          14,
+          10
+        ],
+        "offsides": [
+          2,
+          0
+        ]
+      },
       "round": "Round of 32"
     },
     {
@@ -6352,17 +6380,17 @@
       "group": null,
       "venue": null,
       "referee": null,
-      "status": "NS",
-      "clock": null,
+      "status": "1H",
+      "clock": 25,
       "home": {
         "name": "Kanada",
         "flag": "🇨🇦",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Maroko",
         "flag": "🇲🇦",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
@@ -6478,6 +6506,52 @@
       "away": {
         "name": "Belgia",
         "flag": "🇧🇪",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1341860988,
+      "kickoff": "2026-07-07T16:00:00.000Z",
+      "group": null,
+      "round": "Round of 16",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Argentina",
+        "flag": "🇦🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Mesir",
+        "flag": "🇪🇬",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1341861839,
+      "kickoff": "2026-07-07T20:00:00.000Z",
+      "group": null,
+      "round": "Round of 16",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Swiss",
+        "flag": "🇨🇭",
+        "goals": null
+      },
+      "away": {
+        "name": "Kolombia",
+        "flag": "🇨🇴",
         "goals": null
       },
       "penalty": null,
