@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-03T02:56:59.410Z",
+  "updatedAt": "2026-07-04T02:53:12.485Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -6091,69 +6091,236 @@
       "id": 1333783296,
       "kickoff": "2026-07-03T03:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "BC Place Vancouver, Vancouver",
+      "referee": "Falcon Perez, Yael",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Swiss",
         "flag": "🇨🇭",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Aljazair",
         "flag": "🇩🇿",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "B. Embolo",
+          "minute": "10"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "D. Ndoye",
+          "minute": "46"
+        }
+      ],
+      "stats": {
+        "possession": [
+          44,
+          56
+        ],
+        "shots": [
+          9,
+          5
+        ],
+        "sot": [
+          5,
+          2
+        ],
+        "fouls": [
+          10,
+          12
+        ],
+        "offsides": [
+          0,
+          2
+        ]
+      },
       "round": "Round of 32"
     },
     {
       "id": 1331967262,
       "kickoff": "2026-07-03T18:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Dallas Stadium, Arlington, TX",
+      "referee": "Tejera, Gustavo",
+      "status": "PEN",
+      "clock": 120,
       "home": {
         "name": "Australia",
         "flag": "🇦🇺",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Mesir",
         "flag": "🇪🇬",
-        "goals": null
+        "goals": 1
       },
-      "penalty": null,
-      "events": [],
-      "stats": null,
+      "penalty": {
+        "home": 2,
+        "away": 4
+      },
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "E. Ashour",
+          "minute": "13"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Hany",
+          "minute": "55",
+          "tag": "b.d."
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Saber",
+          "minute": "120+1",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "J. Irvine",
+          "minute": "120+2",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "R. Rabia",
+          "minute": "120+2",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Mabil",
+          "minute": "120+3",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Salah",
+          "minute": "120+3",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "H. Abdelmaguid",
+          "minute": "120+4",
+          "tag": "pen"
+        }
+      ],
+      "stats": {
+        "possession": [
+          42,
+          58
+        ],
+        "shots": [
+          7,
+          8
+        ],
+        "sot": [
+          1,
+          3
+        ],
+        "fouls": [
+          12,
+          14
+        ],
+        "offsides": [
+          0,
+          3
+        ]
+      },
       "round": "Round of 32"
     },
     {
       "id": 1331968113,
       "kickoff": "2026-07-03T22:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Miami Stadium, Miami, FL",
+      "referee": "Fischer, Drew",
+      "status": "AET",
+      "clock": 120,
       "home": {
         "name": "Argentina",
         "flag": "🇦🇷",
-        "goals": null
+        "goals": 3
       },
       "away": {
         "name": "Tanjung Verde",
         "flag": "🇨🇻",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "L. Messi",
+          "minute": "29"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "D. Duarte",
+          "minute": "59"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "L. Martinez",
+          "minute": "92"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "S. Lopes Cabral",
+          "minute": "103"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "D. Borges",
+          "minute": "111",
+          "tag": "b.d."
+        }
+      ],
+      "stats": {
+        "possession": [
+          64,
+          36
+        ],
+        "shots": [
+          15,
+          10
+        ],
+        "sot": [
+          10,
+          5
+        ],
+        "fouls": [
+          13,
+          12
+        ],
+        "offsides": [
+          3,
+          2
+        ]
+      },
       "round": "Round of 32"
     },
     {
@@ -6162,17 +6329,17 @@
       "group": null,
       "venue": null,
       "referee": null,
-      "status": "NS",
-      "clock": null,
+      "status": "1H",
+      "clock": 59,
       "home": {
         "name": "Kolombia",
         "flag": "🇨🇴",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Ghana",
         "flag": "🇬🇭",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
       "events": [],
@@ -6265,6 +6432,29 @@
       "away": {
         "name": "Inggris",
         "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1341820140,
+      "kickoff": "2026-07-06T19:00:00.000Z",
+      "group": null,
+      "round": "Round of 16",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "goals": null
+      },
+      "away": {
+        "name": "Spanyol",
+        "flag": "🇪🇸",
         "goals": null
       },
       "penalty": null,
