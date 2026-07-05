@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-04T17:26:18.225Z",
+  "updatedAt": "2026-07-05T03:23:02.954Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -6378,10 +6378,10 @@
       "id": 1334219008,
       "kickoff": "2026-07-04T17:00:00.000Z",
       "group": null,
-      "venue": null,
-      "referee": null,
-      "status": "1H",
-      "clock": 25,
+      "venue": "Houston Stadium, Houston, TX",
+      "referee": "Oliver, Michael",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Kanada",
         "flag": "🇨🇦",
@@ -6390,11 +6390,51 @@
       "away": {
         "name": "Maroko",
         "flag": "🇲🇦",
-        "goals": 0
+        "goals": 3
       },
       "penalty": null,
-      "events": [],
-      "stats": null,
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "A. Ounahi",
+          "minute": "50"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "A. Ounahi",
+          "minute": "82"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "S. Rahimi",
+          "minute": "90+8"
+        }
+      ],
+      "stats": {
+        "possession": [
+          45,
+          55
+        ],
+        "shots": [
+          7,
+          5
+        ],
+        "sot": [
+          3,
+          4
+        ],
+        "fouls": [
+          24,
+          14
+        ],
+        "offsides": [
+          2,
+          3
+        ]
+      },
       "round": "Round of 16"
     },
     {
@@ -6402,23 +6442,52 @@
       "kickoff": "2026-07-04T21:00:00.000Z",
       "group": null,
       "round": "Round of 16",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Philadelphia Stadium, Philadelphia, PA",
+      "referee": "Tantashev, Ilgiz",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Paraguay",
         "flag": "🇵🇾",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Prancis",
         "flag": "🇫🇷",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "K. Mbappe",
+          "minute": "70",
+          "tag": "pen"
+        }
+      ],
+      "stats": {
+        "possession": [
+          24,
+          76
+        ],
+        "shots": [
+          4,
+          11
+        ],
+        "sot": [
+          0,
+          5
+        ],
+        "fouls": [
+          13,
+          11
+        ],
+        "offsides": [
+          0,
+          0
+        ]
+      }
     },
     {
       "id": 1334453884,
