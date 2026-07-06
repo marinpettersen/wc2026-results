@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-05T03:23:02.954Z",
+  "updatedAt": "2026-07-06T03:31:10.371Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -6494,46 +6494,147 @@
       "kickoff": "2026-07-05T20:00:00.000Z",
       "group": null,
       "round": "Round of 16",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "New York New Jersey Stadium, East Rutherford, NJ",
+      "referee": "Elfath, Ismail",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Brasil",
         "flag": "🇧🇷",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Norwegia",
         "flag": "🇳🇴",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "E. Haaland",
+          "minute": "79"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "E. Haaland",
+          "minute": "90"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Neymar",
+          "minute": "90+10",
+          "tag": "pen"
+        }
+      ],
+      "stats": {
+        "possession": [
+          34,
+          66
+        ],
+        "shots": [
+          10,
+          8
+        ],
+        "sot": [
+          4,
+          5
+        ],
+        "fouls": [
+          7,
+          6
+        ],
+        "offsides": [
+          1,
+          1
+        ]
+      }
     },
     {
       "id": 1336678398,
-      "kickoff": "2026-07-06T00:00:00.000Z",
+      "kickoff": "2026-07-06T01:00:00.000Z",
       "group": null,
       "round": "Round of 16",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Mexico City Stadium, Mexico City",
+      "referee": "Faghani, Alireza",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Meksiko",
         "flag": "🇲🇽",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Inggris",
         "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "goals": null
+        "goals": 3
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "J. Bellingham",
+          "minute": "36"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "J. Bellingham",
+          "minute": "38"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "J. Quinones",
+          "minute": "42"
+        },
+        {
+          "team": "away",
+          "type": "redcard",
+          "player": "J. Quansah",
+          "minute": "54"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "H. Kane",
+          "minute": "60",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "R. Jimenez",
+          "minute": "69",
+          "tag": "pen"
+        }
+      ],
+      "stats": {
+        "possession": [
+          66,
+          34
+        ],
+        "shots": [
+          12,
+          6
+        ],
+        "sot": [
+          5,
+          5
+        ],
+        "fouls": [
+          14,
+          7
+        ],
+        "offsides": [
+          1,
+          0
+        ]
+      }
     },
     {
       "id": 1341820140,
@@ -6621,6 +6722,29 @@
       "away": {
         "name": "Kolombia",
         "flag": "🇨🇴",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1343337473,
+      "kickoff": "2026-07-09T20:00:00.000Z",
+      "group": null,
+      "round": "Quarter Final",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Prancis",
+        "flag": "🇫🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Maroko",
+        "flag": "🇲🇦",
         "goals": null
       },
       "penalty": null,
