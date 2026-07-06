@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-06T03:31:10.371Z",
+  "updatedAt": "2026-07-06T17:56:17.948Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -6745,6 +6745,29 @@
       "away": {
         "name": "Maroko",
         "flag": "🇲🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1345463271,
+      "kickoff": "2026-07-11T21:00:00.000Z",
+      "group": null,
+      "round": "Quarter Final",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Norwegia",
+        "flag": "🇳🇴",
+        "goals": null
+      },
+      "away": {
+        "name": "Inggris",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
         "goals": null
       },
       "penalty": null,
