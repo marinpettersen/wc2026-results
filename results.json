@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-06T17:56:17.948Z",
+  "updatedAt": "2026-07-07T03:21:27.958Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -6641,46 +6641,126 @@
       "kickoff": "2026-07-06T19:00:00.000Z",
       "group": null,
       "round": "Round of 16",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Dallas Stadium, Arlington, TX",
+      "referee": "Taylor, Anthony",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Portugal",
         "flag": "🇵🇹",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Spanyol",
         "flag": "🇪🇸",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Merino",
+          "minute": "90+1"
+        }
+      ],
+      "stats": {
+        "possession": [
+          45,
+          55
+        ],
+        "shots": [
+          7,
+          12
+        ],
+        "sot": [
+          2,
+          6
+        ],
+        "fouls": [
+          9,
+          13
+        ],
+        "offsides": [
+          2,
+          1
+        ]
+      }
     },
     {
       "id": 1336679249,
       "kickoff": "2026-07-07T00:00:00.000Z",
       "group": null,
       "round": "Round of 16",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Seattle Field, Seattle, WA",
+      "referee": "Mohammad Tumah Makhadmeh, Adham",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Amerika Serikat",
         "flag": "🇺🇸",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Belgia",
         "flag": "🇧🇪",
-        "goals": null
+        "goals": 4
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "C. De Ketelaere",
+          "minute": "9"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Tillman",
+          "minute": "31"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "C. De Ketelaere",
+          "minute": "33"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "H. Vanaken",
+          "minute": "57"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "R. Lukaku",
+          "minute": "90+3"
+        }
+      ],
+      "stats": {
+        "possession": [
+          56,
+          44
+        ],
+        "shots": [
+          7,
+          11
+        ],
+        "sot": [
+          2,
+          7
+        ],
+        "fouls": [
+          11,
+          9
+        ],
+        "offsides": [
+          0,
+          1
+        ]
+      }
     },
     {
       "id": 1341860988,
