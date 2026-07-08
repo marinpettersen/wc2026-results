@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-07T03:21:27.958Z",
+  "updatedAt": "2026-07-08T02:39:08.046Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -6767,46 +6767,172 @@
       "kickoff": "2026-07-07T16:00:00.000Z",
       "group": null,
       "round": "Round of 16",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Atlanta Stadium, Atlanta, GA",
+      "referee": "Letexier, Francois",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Argentina",
         "flag": "🇦🇷",
-        "goals": null
+        "goals": 3
       },
       "away": {
         "name": "Mesir",
         "flag": "🇪🇬",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "Y. Ibrahim",
+          "minute": "15"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "M. Ziko",
+          "minute": "67"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "C. Romero",
+          "minute": "79"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "L. Messi",
+          "minute": "83"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "E. Fernandez",
+          "minute": "90+2"
+        }
+      ],
+      "stats": {
+        "possession": [
+          64,
+          36
+        ],
+        "shots": [
+          15,
+          5
+        ],
+        "sot": [
+          7,
+          2
+        ],
+        "fouls": [
+          13,
+          11
+        ],
+        "offsides": [
+          3,
+          0
+        ]
+      }
     },
     {
       "id": 1341861839,
       "kickoff": "2026-07-07T20:00:00.000Z",
       "group": null,
       "round": "Round of 16",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "BC Place Vancouver, Vancouver",
+      "referee": "Barton Cisneros, Ivan Arcides",
+      "status": "PEN",
+      "clock": 120,
       "home": {
         "name": "Swiss",
         "flag": "🇨🇭",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Kolombia",
         "flag": "🇨🇴",
-        "goals": null
+        "goals": 0
       },
-      "penalty": null,
-      "events": [],
-      "stats": null
+      "penalty": {
+        "home": 4,
+        "away": 3
+      },
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "J. Quintero",
+          "minute": "120+1",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "G. Xhaka",
+          "minute": "120+1",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Z. Amdouni",
+          "minute": "120+2",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "J. Campaz",
+          "minute": "120+3",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "C. Itten",
+          "minute": "120+4",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "L. Diaz",
+          "minute": "120+5",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "?",
+          "minute": "120+5",
+          "tag": "pen"
+        }
+      ],
+      "stats": {
+        "possession": [
+          53,
+          47
+        ],
+        "shots": [
+          6,
+          11
+        ],
+        "sot": [
+          2,
+          3
+        ],
+        "fouls": [
+          22,
+          21
+        ],
+        "offsides": [
+          5,
+          4
+        ]
+      }
     },
     {
       "id": 1343337473,
@@ -6825,6 +6951,29 @@
       "away": {
         "name": "Maroko",
         "flag": "🇲🇦",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1346130455,
+      "kickoff": "2026-07-10T19:00:00.000Z",
+      "group": null,
+      "round": "Quarter Final",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Spanyol",
+        "flag": "🇪🇸",
+        "goals": null
+      },
+      "away": {
+        "name": "Belgia",
+        "flag": "🇧🇪",
         "goals": null
       },
       "penalty": null,
