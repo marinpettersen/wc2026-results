@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-08T06:03:29.946Z",
+  "updatedAt": "2026-07-09T02:58:07.365Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -6997,6 +6997,29 @@
       "away": {
         "name": "Inggris",
         "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1346862315,
+      "kickoff": "2026-07-12T01:00:00.000Z",
+      "group": null,
+      "round": "Quarter Final",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Argentina",
+        "flag": "🇦🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Swiss",
+        "flag": "🇨🇭",
         "goals": null
       },
       "penalty": null,
