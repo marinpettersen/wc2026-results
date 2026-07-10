@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-09T17:56:07.051Z",
+  "updatedAt": "2026-07-10T03:17:24.631Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -6939,23 +6939,57 @@
       "kickoff": "2026-07-09T20:00:00.000Z",
       "group": null,
       "round": "Quarter Final",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Boston Stadium, Foxborough, MA",
+      "referee": "Tello Figueroa, Facundo",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Prancis",
         "flag": "🇫🇷",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Maroko",
         "flag": "🇲🇦",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Mbappe",
+          "minute": "60"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "O. Dembele",
+          "minute": "66"
+        }
+      ],
+      "stats": {
+        "possession": [
+          48,
+          52
+        ],
+        "shots": [
+          17,
+          4
+        ],
+        "sot": [
+          8,
+          1
+        ],
+        "fouls": [
+          10,
+          13
+        ],
+        "offsides": [
+          0,
+          0
+        ]
+      }
     },
     {
       "id": 1346130455,
