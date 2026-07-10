@@ -50,6 +50,16 @@
     padding:6px 11px;border-radius:7px;cursor:pointer;white-space:nowrap;scroll-snap-align:start;flex-shrink:0}
   .seg button.on{background:var(--surface-hi);color:var(--text)}
 
+  .groupsel{background:var(--surface);border:1px solid var(--line);border-radius:10px;color:var(--text);
+    font-family:inherit;font-size:13px;font-weight:600;padding:9px 10px;cursor:pointer;flex:none}
+  .livepill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,59,71,.12);
+    border:1px solid rgba(255,59,71,.4);color:var(--red);font-family:inherit;font-size:11px;font-weight:800;
+    letter-spacing:.06em;border-radius:999px;padding:8px 12px;cursor:default;flex:none}
+  .bellbtn{display:inline-flex;align-items:center;justify-content:center;background:var(--surface);
+    border:1px solid var(--line);color:var(--muted);border-radius:10px;padding:9px 10px;cursor:pointer;flex:none}
+  .bellbtn:hover{border-color:var(--line-hi);color:var(--text)}
+  .bellbtn.on{color:var(--lime);border-color:rgba(198,255,61,.4)}
+
   .day{margin-top:26px}
   .day-head{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
   .day-dow{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--lime)}
@@ -221,6 +231,11 @@
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
       <input id="q" type="text" placeholder="Cari tim…">
     </label>
+    <select id="groupSel" class="groupsel" aria-label="Filter grup" style="display:none"></select>
+    <button id="liveDot" class="livepill" style="display:none" aria-label="Ada laga live, halaman auto-refresh"><span class="livedot"></span>LIVE</button>
+    <button id="notifyBtn" class="bellbtn" aria-label="Aktifkan notifikasi laga">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+    </button>
     <div class="seg" id="seg">
       <button data-f="all" class="on">Semua</button>
       <button data-f="finished">Selesai</button>
@@ -244,7 +259,7 @@
 import { computeStandings, topScorers } from "./src/standings.mjs";
 
 const FINAL = new Set(["FT","AET","PEN"]);
-const LIVE  = new Set(["1H","HT","2H","ET","BT","P","LIVE","INT","SUSP"]);
+const LIVE  = new Set(["1H","HT","2H","ET","BT","P","INT","SUSP"]);
 
 const TZ = "Asia/Jakarta";
 const fmtTime = iso => new Intl.DateTimeFormat("id-ID",{timeZone:TZ,hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(iso)).replace(":",".");
@@ -303,15 +318,32 @@ function roundLabel(m){
 const qEl=document.getElementById("q");
 const listEl=document.getElementById("list");
 const stateEl=document.getElementById("state");
-let DATA=null, filter="all";
+const groupSel=document.getElementById("groupSel");
+const liveDot=document.getElementById("liveDot");
+const notifyBtn=document.getElementById("notifyBtn");
+let DATA=null, filter="all", groupFilter="";
+
+const GROUP_FILTER_TABS=new Set(["all","finished","live","upcoming"]);
 
 document.getElementById("seg").addEventListener("click",e=>{
   const b=e.target.closest("button"); if(!b)return;
   filter=b.dataset.f;
   [...e.currentTarget.children].forEach(x=>x.classList.toggle("on",x===b));
+  updateGroupSelVisibility();
   render();
 });
 qEl.addEventListener("input",render);
+groupSel.addEventListener("change",()=>{groupFilter=groupSel.value;render();});
+
+function updateGroupSelVisibility(){
+  groupSel.style.display=GROUP_FILTER_TABS.has(filter)&&groupSel.options.length>1?"":"none";
+}
+function populateGroupSel(){
+  const groups=[...new Set(DATA.matches.map(m=>m.group).filter(Boolean))].sort();
+  groupSel.innerHTML=`<option value="">Semua Grup</option>`+
+    groups.map(g=>`<option value="${g}">Grup ${g}</option>`).join("");
+  updateGroupSelVisibility();
+}
 
 function bucket(m){
   if(FINAL.has(m.status))return"finished";
@@ -533,6 +565,23 @@ function renderBagan(){
        <div style="max-width:340px;display:grid;grid-template-rows:auto">${tpCard}</div>`);
   }
   listEl.appendChild(outer);
+  scrollBaganToActive(outer,[ord32,ord16,qf,sf,f].map(col=>col.filter(Boolean)));
+}
+
+function scrollBaganToActive(outer,cols){
+  const bracket=outer.querySelector(".bracket");
+  if(!bracket)return;
+  const colEls=[...bracket.children];
+  let targetIdx=colEls.length-1;
+  const liveIdx=cols.findIndex(col=>col.some(m=>bucket(m)==="live"));
+  if(liveIdx!==-1){
+    targetIdx=liveIdx;
+  }else{
+    const lastWithResult=cols.map((col,i)=>col.some(m=>FINAL.has(m.status))?i:-1).filter(i=>i!==-1).pop();
+    targetIdx=lastWithResult!==undefined?Math.min(lastWithResult+1,colEls.length-1):0;
+  }
+  const target=colEls[targetIdx];
+  if(target)outer.scrollTo({left:target.offsetLeft-12,behavior:"smooth"});
 }
 
 function render(){
@@ -545,6 +594,7 @@ function render(){
   const rows=DATA.matches.filter(m=>{
     if(filter==="gugur"){if(!isKO(m))return false;}
     else if(filter!=="all"&&bucket(m)!==filter)return false;
+    if(groupFilter&&GROUP_FILTER_TABS.has(filter)&&m.group!==groupFilter)return false;
     if(q&&!(m.home.name.toLowerCase().includes(q)||m.away.name.toLowerCase().includes(q)))return false;
     return true;
   });
@@ -624,18 +674,71 @@ function setFacts(){
   }
   document.getElementById("footer").innerHTML=
     `Data diperbarui otomatis setiap 5 menit. Skor ditampilkan saat pertandingan berlangsung atau selesai.`;
+  liveDot.style.display=live?"":"none";
 }
 
-fetch("results.json",{cache:"no-store"})
-  .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
-  .then(d=>{DATA=d;setFacts();render();})
-  .catch(err=>{
-    stateEl.style.display="block";
-    stateEl.innerHTML=`Gagal memuat <code>results.json</code> (${err.message}).<br><br>
-      Kalau membuka file ini langsung lewat <code>file://</code>, browser memblokir fetch.<br>
-      Jalankan server lokal dulu:<br><br><code>npx serve .</code> &nbsp;atau&nbsp; <code>python3 -m http.server</code><br><br>
-      lalu buka alamat yang ditampilkan.`;
-  });
+// --- Notifikasi browser ---
+function refreshNotifyBtn(){
+  notifyBtn.classList.toggle("on",typeof Notification!=="undefined"&&Notification.permission==="granted");
+}
+notifyBtn.addEventListener("click",()=>{
+  if(typeof Notification==="undefined")return;
+  if(Notification.permission==="granted"){refreshNotifyBtn();return;}
+  Notification.requestPermission().then(refreshNotifyBtn);
+});
+function notify(title,body){
+  if(typeof Notification==="undefined"||Notification.permission!=="granted")return;
+  try{new Notification(title,{body,icon:undefined});}catch{/* browser tanpa dukungan penuh */}
+}
+function goalCount(m){return(m.events||[]).filter(e=>e.type==="goal").length;}
+function diffAndNotify(prev,next){
+  if(!prev)return;
+  const prevById=new Map(prev.matches.map(m=>[m.id,m]));
+  for(const m of next.matches){
+    const old=prevById.get(m.id);
+    if(!old)continue;
+    const label=`${m.home.name} vs ${m.away.name}`;
+    if(LIVE.has(m.status)&&!LIVE.has(old.status)&&!FINAL.has(old.status)){
+      notify("🔴 Laga dimulai",`${label} kini LIVE.`);
+    }
+    if(FINAL.has(m.status)&&!FINAL.has(old.status)){
+      notify("✅ Laga selesai",`${label}: ${m.home.goals}–${m.away.goals}`);
+    }
+    const newGoals=goalCount(m);
+    if(newGoals>goalCount(old)){
+      const scorer=(m.events||[]).filter(e=>e.type==="goal").slice(-1)[0];
+      notify("⚽ Gol!",`${scorer?scorer.player+" — ":""}${label} (${m.home.goals}–${m.away.goals})`);
+    }
+  }
+}
+
+// --- Load & auto-refresh (re-fetch file statis results.json, bukan API eksternal) ---
+const REFRESH_MS=20000;
+function loadData(){
+  return fetch("results.json",{cache:"no-store"})
+    .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
+    .then(d=>{
+      const prev=DATA;
+      diffAndNotify(prev,d);
+      DATA=d;
+      if(!prev)populateGroupSel();
+      setFacts();render();
+    })
+    .catch(err=>{
+      if(DATA)return; // sudah ada data lama, biarkan tampil (gagal refresh sesekali tidak fatal)
+      stateEl.style.display="block";
+      stateEl.innerHTML=`Gagal memuat <code>results.json</code> (${err.message}).<br><br>
+        Kalau membuka file ini langsung lewat <code>file://</code>, browser memblokir fetch.<br>
+        Jalankan server lokal dulu:<br><br><code>npx serve .</code> &nbsp;atau&nbsp; <code>python3 -m http.server</code><br><br>
+        lalu buka alamat yang ditampilkan.`;
+    });
+}
+
+refreshNotifyBtn();
+loadData();
+setInterval(()=>{
+  if(document.visibilityState==="visible")loadData();
+},REFRESH_MS);
 </script>
 </body>
 </html>

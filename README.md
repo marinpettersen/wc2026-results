@@ -4,7 +4,7 @@
 
 **https://marinpettersen.github.io/JadwalPildunApp/**
 
-> Diperbarui otomatis tiap 30 menit via GitHub Actions.
+> Diperbarui otomatis tiap 5 menit via GitHub Actions (hanya saat ada laga aktif — lihat `scripts/should-fetch.mjs`).
 > GitHub Pages harus diaktifkan di **Settings → Pages → Source: GitHub Actions**.
 
 Pipeline statis & hemat: **GitHub Action terjadwal → `results.json` → frontend statis**.
