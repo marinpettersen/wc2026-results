@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-10T03:17:24.631Z",
+  "updatedAt": "2026-07-11T02:36:22.267Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -6996,23 +6996,63 @@
       "kickoff": "2026-07-10T19:00:00.000Z",
       "group": null,
       "round": "Quarter Final",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Los Angeles Stadium, Inglewood, CA",
+      "referee": "Oliver, Michael",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Spanyol",
         "flag": "🇪🇸",
-        "goals": null
+        "goals": 2
       },
       "away": {
         "name": "Belgia",
         "flag": "🇧🇪",
-        "goals": null
+        "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "F. Ruiz",
+          "minute": "30"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "C. De Ketelaere",
+          "minute": "41"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "M. Merino",
+          "minute": "88"
+        }
+      ],
+      "stats": {
+        "possession": [
+          68,
+          32
+        ],
+        "shots": [
+          12,
+          3
+        ],
+        "sot": [
+          8,
+          2
+        ],
+        "fouls": [
+          13,
+          18
+        ],
+        "offsides": [
+          3,
+          1
+        ]
+      }
     },
     {
       "id": 1345463271,
