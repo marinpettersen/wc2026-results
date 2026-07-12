@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-12T02:43:51.510Z",
+  "updatedAt": "2026-07-12T15:11:49.956Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -7122,14 +7122,14 @@
       "kickoff": "2026-07-12T01:00:00.000Z",
       "group": null,
       "round": "Quarter Final",
-      "venue": null,
-      "referee": null,
-      "status": "1H",
-      "clock": 82,
+      "venue": "Kansas City Stadium, Kansas City, MO",
+      "referee": "Pinheiro, Joao Pedro",
+      "status": "AET",
+      "clock": 120,
       "home": {
         "name": "Argentina",
         "flag": "🇦🇷",
-        "goals": 1
+        "goals": 3
       },
       "away": {
         "name": "Swiss",
@@ -7137,8 +7137,60 @@
         "goals": 1
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Mac Allister",
+          "minute": "10"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "D. Ndoye",
+          "minute": "67"
+        },
+        {
+          "team": "away",
+          "type": "redcard",
+          "player": "B. Embolo",
+          "minute": "72"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "J. Alvarez",
+          "minute": "112"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "L. Martinez",
+          "minute": "120+1"
+        }
+      ],
+      "stats": {
+        "possession": [
+          59,
+          41
+        ],
+        "shots": [
+          15,
+          8
+        ],
+        "sot": [
+          7,
+          5
+        ],
+        "fouls": [
+          14,
+          18
+        ],
+        "offsides": [
+          4,
+          3
+        ]
+      }
     },
     {
       "id": 1348947265,
@@ -7157,6 +7209,29 @@
       "away": {
         "name": "Spanyol",
         "flag": "🇪🇸",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1349752311,
+      "kickoff": "2026-07-15T19:00:00.000Z",
+      "group": null,
+      "round": "Semi Final",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Inggris",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "goals": null
+      },
+      "away": {
+        "name": "Argentina",
+        "flag": "🇦🇷",
         "goals": null
       },
       "penalty": null,
