@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-12T02:10:54.616Z",
+  "updatedAt": "2026-07-12T02:43:51.510Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -7125,7 +7125,7 @@
       "venue": null,
       "referee": null,
       "status": "1H",
-      "clock": 49,
+      "clock": 82,
       "home": {
         "name": "Argentina",
         "flag": "🇦🇷",
@@ -7134,7 +7134,7 @@
       "away": {
         "name": "Swiss",
         "flag": "🇨🇭",
-        "goals": 0
+        "goals": 1
       },
       "penalty": null,
       "events": [],
