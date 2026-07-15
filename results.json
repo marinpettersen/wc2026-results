@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-14T02:27:51.766Z",
+  "updatedAt": "2026-07-15T02:25:41.846Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -7197,23 +7197,58 @@
       "kickoff": "2026-07-14T19:00:00.000Z",
       "group": null,
       "round": "Semi Final",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Dallas Stadium, Arlington, TX",
+      "referee": "Barton Cisneros, Ivan Arcides",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Prancis",
         "flag": "🇫🇷",
-        "goals": null
+        "goals": 0
       },
       "away": {
         "name": "Spanyol",
         "flag": "🇪🇸",
-        "goals": null
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "Mikel Oyarzabal",
+          "minute": "22",
+          "tag": "pen"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "Pedro Porro",
+          "minute": "58"
+        }
+      ],
+      "stats": {
+        "possession": [
+          49,
+          51
+        ],
+        "shots": [
+          8,
+          7
+        ],
+        "sot": [
+          3,
+          2
+        ],
+        "fouls": [
+          11,
+          12
+        ],
+        "offsides": [
+          4,
+          5
+        ]
+      }
     },
     {
       "id": 1349752311,
