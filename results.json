@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-15T20:22:26.061Z",
+  "updatedAt": "2026-07-16T02:33:39.256Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -7255,10 +7255,10 @@
       "kickoff": "2026-07-15T19:00:00.000Z",
       "group": null,
       "round": "Semi Final",
-      "venue": null,
-      "referee": null,
-      "status": "1H",
-      "clock": 61,
+      "venue": "Atlanta Stadium, Atlanta, GA",
+      "referee": "Elfath, Ismail",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Inggris",
         "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
@@ -7267,11 +7267,51 @@
       "away": {
         "name": "Argentina",
         "flag": "🇦🇷",
-        "goals": 0
+        "goals": 2
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "A. Gordon",
+          "minute": "55"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "E. Fernandez",
+          "minute": "85"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "L. Martinez",
+          "minute": "90+2"
+        }
+      ],
+      "stats": {
+        "possession": [
+          36,
+          64
+        ],
+        "shots": [
+          3,
+          12
+        ],
+        "sot": [
+          2,
+          5
+        ],
+        "fouls": [
+          11,
+          15
+        ],
+        "offsides": [
+          1,
+          3
+        ]
+      }
     }
   ]
 }
