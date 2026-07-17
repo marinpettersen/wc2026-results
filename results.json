@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-16T02:33:39.256Z",
+  "updatedAt": "2026-07-17T02:35:49.784Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -7312,6 +7312,52 @@
           3
         ]
       }
+    },
+    {
+      "id": 1354677899,
+      "kickoff": "2026-07-18T21:00:00.000Z",
+      "group": null,
+      "round": "Third Place",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Prancis",
+        "flag": "🇫🇷",
+        "goals": null
+      },
+      "away": {
+        "name": "Inggris",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
+    },
+    {
+      "id": 1354678750,
+      "kickoff": "2026-07-19T19:00:00.000Z",
+      "group": null,
+      "round": "Final",
+      "venue": null,
+      "referee": null,
+      "status": "NS",
+      "clock": null,
+      "home": {
+        "name": "Spanyol",
+        "flag": "🇪🇸",
+        "goals": null
+      },
+      "away": {
+        "name": "Argentina",
+        "flag": "🇦🇷",
+        "goals": null
+      },
+      "penalty": null,
+      "events": [],
+      "stats": null
     }
   ]
 }
