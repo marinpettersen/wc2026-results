@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-18T02:27:06.432Z",
+  "updatedAt": "2026-07-19T02:40:40.466Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -7318,23 +7318,106 @@
       "kickoff": "2026-07-18T21:00:00.000Z",
       "group": null,
       "round": "Third Place",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "Miami Stadium, Miami, FL",
+      "referee": "Valenzuela Saez, Jesus",
+      "status": "FT",
+      "clock": 90,
       "home": {
         "name": "Prancis",
         "flag": "🇫🇷",
-        "goals": null
+        "goals": 4
       },
       "away": {
         "name": "Inggris",
         "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "goals": null
+        "goals": 6
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "D. Rice",
+          "minute": "3"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "E. Konsa",
+          "minute": "18"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "B. Saka",
+          "minute": "37"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "B. Saka",
+          "minute": "45+1"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Mbappe",
+          "minute": "48"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "B. Barcola",
+          "minute": "54"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "K. Mbappe",
+          "minute": "66"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "B. Saka",
+          "minute": "87",
+          "tag": "pen"
+        },
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "O. Dembele",
+          "minute": "90+6"
+        },
+        {
+          "team": "away",
+          "type": "goal",
+          "player": "J. Bellingham",
+          "minute": "90+8"
+        }
+      ],
+      "stats": {
+        "possession": [
+          46,
+          54
+        ],
+        "shots": [
+          15,
+          13
+        ],
+        "sot": [
+          9,
+          11
+        ],
+        "fouls": [
+          14,
+          8
+        ],
+        "offsides": [
+          3,
+          3
+        ]
+      }
     },
     {
       "id": 1354678750,
