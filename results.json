@@ -1,7 +1,7 @@
 {
   "competition": "FIFA World Cup 2026",
   "season": 2026,
-  "updatedAt": "2026-07-19T02:40:40.466Z",
+  "updatedAt": "2026-07-20T00:28:33.732Z",
   "source": "highlightly league 1635 season 2026",
   "standings": [
     {
@@ -7424,23 +7424,51 @@
       "kickoff": "2026-07-19T19:00:00.000Z",
       "group": null,
       "round": "Final",
-      "venue": null,
-      "referee": null,
-      "status": "NS",
-      "clock": null,
+      "venue": "New York New Jersey Stadium, East Rutherford, NJ",
+      "referee": "Vincic, Slavko",
+      "status": "AET",
+      "clock": 120,
       "home": {
         "name": "Spanyol",
         "flag": "🇪🇸",
-        "goals": null
+        "goals": 1
       },
       "away": {
         "name": "Argentina",
         "flag": "🇦🇷",
-        "goals": null
+        "goals": 0
       },
       "penalty": null,
-      "events": [],
-      "stats": null
+      "events": [
+        {
+          "team": "home",
+          "type": "goal",
+          "player": "Ferrán Torres",
+          "minute": "106"
+        }
+      ],
+      "stats": {
+        "possession": [
+          65,
+          35
+        ],
+        "shots": [
+          17,
+          1
+        ],
+        "sot": [
+          12,
+          0
+        ],
+        "fouls": [
+          19,
+          24
+        ],
+        "offsides": [
+          4,
+          1
+        ]
+      }
     }
   ]
 }
